@@ -83,11 +83,12 @@
 ###
 
 <div align="center">
-  <!-- Social Links: update your handles -->
-  <a href="www.linkedin.com/in/osama-alwaly" target="_blank">
+  <!-- Social Links -->
+  <a href="https://www.linkedin.com/in/osama-alwaly" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&color=0077B5&style=for-the-badge" height="25" />
   </a>
 </div>
+
 
 ###
 
