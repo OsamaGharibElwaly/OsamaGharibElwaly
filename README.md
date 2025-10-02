@@ -76,7 +76,7 @@
 
 ### 🔹 Tools I Use
 - **Frontend:** React, Next.js, TypeScript  
-- **Backend:** Node.js, Express, .NET (C#)  
+- **Backend:** Node.js, Express 
 - **Databases:** MongoDB, PostgreSQL  
 - **Testing/Dev:** Jest, Postman, Docker,APIDog  
 
