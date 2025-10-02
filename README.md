@@ -61,14 +61,16 @@
 ###
 
 <div align="center">
-  <!-- GitHub Stats (replace your-username with your GitHub handle) -->
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=dracula" height="150" alt="stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=dracula" height="150" alt="streak" />
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=OsamaGharibElwaly&show_icons=true&theme=dracula" height="150" alt="stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsamaGharibElwaly&theme=dracula" height="150" alt="streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=dracula" height="150" alt="top langs" />
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OsamaGharibElwaly&layout=compact&theme=dracula" height="150" alt="top langs" />
 </div>
+
 
 ###
 
