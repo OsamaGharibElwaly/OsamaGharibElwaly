@@ -1,7 +1,7 @@
 
 <h1 align="center">Hey 👋 What's Up?</h1>
 <p align="center">
-  I'm <b>Osama  Alwaly</b> — a developer passionate about building clean, scalable, and high-performance applications with C#, Python, JavaScript/TypeScript for web and APIs.
+  I'm <b>Osama  Alwaly</b> — a developer passionate about building clean, scalable, and high-performance applications with Python, JavaScript/TypeScript for web and APIs.
 </p>
 
 ###
@@ -32,7 +32,7 @@
 ###
 
 ### 🔹 About Me
-- 💻 Currently working on **Next.js ** projects with **Node/TypeScript** and 
+- 💻 Currently working on **Next.js** projects with **Node/TypeScript** and 
 - 🚀 Passionate about performance, developer experience, and clean architecture.
 - 📚 Always learning new tools and documenting my journey.
 
