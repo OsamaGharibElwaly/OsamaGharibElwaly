@@ -92,8 +92,10 @@
 ###
 
 ### 📫 Contact Me
-- 📧 osamagharib04@gmail.com
-- 🌐 On-going 
+- 📧 Email: osamagharib04@gmail.com  
+- 📱 Phone: +201210916041  
+- 🌐 Portfolio/Website: On-going  
+
 
 <!--
 Tips:
