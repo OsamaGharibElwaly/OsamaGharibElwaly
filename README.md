@@ -26,6 +26,8 @@
   <img width="10" />
   <img src="https://skillicons.dev/icons?i=mongodb" height="60" alt="mongodb" />
   <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" height="60" alt="mssql" />
+  <img width="10" />
   <img src="https://skillicons.dev/icons?i=postgres" height="60" alt="postgresql" />
 </div>
 
@@ -77,7 +79,7 @@
 ### 🔹 Tools I Use
 - **Frontend:** React, Next.js, TypeScript  
 - **Backend:** Node.js, Express 
-- **Databases:** MongoDB, PostgreSQL  
+- **Databases:** MongoDB, PostgreSQL(Learning), MSSQL Server  
 - **Testing/Dev:** Jest, Postman, Docker,APIDog  
 
 ###
