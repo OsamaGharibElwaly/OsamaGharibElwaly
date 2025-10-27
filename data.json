@@ -1,0 +1,152 @@
+{
+  "personal_info": {
+    "name": "Osama Alwaly",
+    "title": "Software Engineer | Web & AI",
+    "profile_image": "assets/profile/profile.jpeg",
+    "location": "Port Said, Egypt",
+    "contact": {
+      "phone": "+20 121 091 6041",
+      "email": "osamagharib04@gmail.com"
+    },
+    "social_links": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/OsamaGharibElwaly"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/osama-alwaly"
+      }
+    ],
+    "cv_download": "assets/downloads/Osama_Alwaly_Software Engineer_resume.pdf",
+    "about_me": "Software engineer passionate about building clean, scalable, and high-performance web/AI applications. Strong in Python, JavaScript/TypeScript, React/Next.js, Node.js, and Express. Interested in ML systems and developer experience."
+  },
+  "projects_num": "2",
+  "experience_num": "0",
+  "customers_num": "0",
+  "skills": {
+    "soft_skills": [
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
+      "Adaptability",
+      "Time Management",
+      "Creativity",
+      "Leadership",
+      "Critical Thinking",
+      "Attention to Detail",
+      "Continuous Learning"
+    ],
+    "technical_skills": [
+      "HTML5, CSS3",
+      "JavaScript (ES6+), TypeScript",
+      "React.js, Next.js, Redux, Tailwind CSS",
+      "Node.js, Express, RESTful APIs",
+      "MongoDB, PostgreSQL (learning), MSSQL Server",
+      "Jest (Testing)",
+      "API Integration",
+      "Figma (UI/UX)",
+      "Python (Pandas, NumPy, Scikit-learn)",
+      "FastAPI",
+      "Git & GitHub"
+    ]
+  },
+  "education": [
+    {
+      "degree": "B.Eng. in Computer Engineering",
+      "institution": "Port Said University",
+      "date_range": "Oct 2020 – Jul 2025"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Intern – Electronics & Software Engineering",
+      "company": "Faculty of Engineering – Port Said University",
+      "location": "Port Foad, Egypt",
+      "date_range": "Jun 2022 – Sep 2022",
+      "description_points": [
+        "Hands-on labs in electronics and applied engineering.",
+        "Practiced MATLAB for simulation and analysis.",
+        "Intro to software engineering: requirements and system design."
+      ]
+    },
+    {
+      "title": "Intern – Computer Networks",
+      "company": "Suez Canal Authority",
+      "location": "Port Foad, Egypt",
+      "date_range": "Jun 2023 – Sep 2023",
+      "description_points": [
+        "Fundamentals of networks and administration.",
+        "Configuration and troubleshooting of network infrastructure.",
+        "Exposure to large-scale IT systems."
+      ]
+    },
+    {
+      "title": "Volunteer Speaker",
+      "company": "Pioneer of Success Initiative – Ministry of Youth and Sports",
+      "location": "Port Said, Egypt",
+      "date_range": "Aug 2025",
+      "description_points": [
+        "Delivered a live session on using LinkedIn for professional growth.",
+        "Showcased AI-powered tools for interview prep and job search.",
+        "Guided participants on CV optimization and online presence."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SmartBrace",
+      "cover_image": "assets/covers/SmartBrace.png",
+      "short_description": "AI-powered health monitoring ecosystem (bracelet + mobile + web).",
+      "description": "Built and deployed ML classification models (~90–95% accuracy) for real-time healthcare monitoring and disease prediction (stroke, autism, asthma). Integrated models with backend (FastAPI) and services for data flow.",
+      "features": [
+        "Real-time vitals tracking",
+        "AI disease prediction",
+        "Web & mobile dashboards",
+        "IoT wearable integration"
+      ],
+      "technologies_used": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "FastAPI",
+        "PostgreSQL",
+        "Node.js",
+        "React",
+        "MongoDB",
+        "AWS"
+      ],
+      "links": [
+        {
+          "type": "GitHub",
+          "url": "https://github.com/islamhasib953/Graduation_Project"
+        }
+      ],
+      "media": []
+    },
+    {
+      "name": "FitTrack (Gym Tracker)",
+      "cover_image": "assets/covers/Home_Page.png",
+      "short_description": "Web app for workouts, progress tracking, and plans.",
+      "description": "Next.js platform to log workouts, track progress, and manage personalized training plans with auth, animations, and responsive UI.",
+      "features": [
+        "Auth & user profiles",
+        "Workout logging",
+        "Progress analytics",
+        "Responsive UI with animations"
+      ],
+      "technologies_used": [
+        "Next.js (Turbopack)",
+        "Prisma",
+        "PostgreSQL",
+        "NextAuth",
+        "TailwindCSS",
+        "Framer Motion",
+        "Lucide Icons"
+      ],
+      "links": [],
+      "media": []
+    }
+  ]
+}
