@@ -145,7 +145,12 @@
         "Framer Motion",
         "Lucide Icons"
       ],
-      "links": [],
+      "links": [
+        {
+          "type": "Website",
+          "url": "https://fittrack-os.vercel.app/"
+        }
+      ],
       "media": []
     }
   ]
