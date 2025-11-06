@@ -124,17 +124,22 @@
         }
       ],
       "media": [
-                "assets/covers/database_structure.png",
-                "assets/covers/doctor_dashboard.jpg",
-                "assets/covers/overview.png",
-                "assets/covers/Parent_Dashboard.jpg",
-                "assets/covers/smartbrace(Sigma)_wearable.png",
-                "assets/covers/web_medical_history.jpg"
-              ]
+              "assets/covers/database_structure.png",
+              "assets/covers/doctor_dashboard.jpg",
+              "assets/covers/overview.png",
+              "assets/covers/Parent_Dashboard.jpg",
+              "assets/covers/smartbrace(Sigma)_wearable.png",
+              "assets/covers/web_medical_history.jpg",
+              "assets/covers/s3_file_storage.png",
+              "assets/covers/hivemq_structure.png",
+              "assets/covers/render.png"
+
+]
+
     },
     {
       "name": "FitTrack (Gym Tracker)",
-      "cover_image": "assets/covers/Home_Page.png",
+      "cover_image": "assets/covers/1.png",
       "short_description": "Web app for workouts, progress tracking, and plans.",
       "description": "Next.js platform to log workouts, track progress, and manage personalized training plans with auth, animations, and responsive UI.",
       "features": [
@@ -158,7 +163,17 @@
           "url": "https://github.com/OsamaGharibElwaly/fittrack.git"
         }
       ],
-      "media": []
+      "media": [
+              "assets/covers/1.png",
+              "assets/covers/2.png",
+              "assets/covers/3.png",
+              "assets/covers/4.png",
+              "assets/covers/5.png",
+              "assets/covers/6.png",
+              "assets/covers/7.png",
+              "assets/covers/8.png",
+              "assets/covers/9.png"
+      ]
     }
   ]
 }
