@@ -4,7 +4,7 @@ const OWNER_NAME = 'Osama Alwaly';
 const OWNER_EMAIL = 'osamagharib04@gmail.com';
 const OWNER_WHATSAPP = '201210916041'; // بدون +
 
-const DATA_PATH = resolveByPageDepth('data.json'); // عدّل المسار لو مختلف
+const DATA_PATH = resolveByPageDepth('./data.json'); // عدّل المسار لو مختلف
 const EXCLUDE_FROM_GALLERY = /home_page\.png$/i; // استبعاد صورة الهوم
 
 document.addEventListener('DOMContentLoaded', () => {
