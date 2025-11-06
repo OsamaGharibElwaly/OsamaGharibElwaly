@@ -4,7 +4,7 @@ const OWNER_NAME = 'Osama Alwaly';
 const OWNER_EMAIL = 'osamagharib04@gmail.com';
 const OWNER_WHATSAPP = '201210916041'; // بدون +
 
-  const DATA_URL = resolveByPageDepth('data.json');
+const response = await fetch(new URL('data.json', document.baseURI));
 const EXCLUDE_FROM_GALLERY = /home_page\.png$/i; // استبعاد صورة الهوم
 
 document.addEventListener('DOMContentLoaded', loadProjectData);
@@ -12,21 +12,9 @@ document.addEventListener('DOMContentLoaded', loadProjectData);
 // =============== Utils ===============
 function resolveByPageDepth(p) {
   if (!p) return '';
-  // 1) URLs كاملة أو بروتوكول-نسبي
-  if (/^https?:\/\//i.test(p)) return p;
-  if (p.startsWith('//')) return window.location.protocol + p;
-  // 2) Root-relative أو مسار نسبي جاهز
-  if (p.startsWith('/')) return p;           // /assets/... أو /data.json
-  if (p.startsWith('./') || p.startsWith('../')) return p; // احترم اللي انت كاتبه
-
-  // 3) احسب عمق الصفحة: ['', 'pages', 'project-details.html'] => length=3 => depthUp=1
-  const segments = window.location.pathname.replace(/\/$/, '').split('/');
-  const depthUp = Math.max(0, segments.length - 2); // اطرح '' واسم الملف
-  const prefix = '../'.repeat(depthUp);
-
-  // 4) رجّع المسار بعد ما تشيل أي سلاشات زايدة في الأول
-  return prefix + p.replace(/^\/+/, '');
+  return new URL(p, document.baseURI).href;
 }
+
 
 function getUrlParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
