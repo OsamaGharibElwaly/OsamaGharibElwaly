@@ -4,20 +4,28 @@ const OWNER_NAME = 'Osama Alwaly';
 const OWNER_EMAIL = 'osamagharib04@gmail.com';
 const OWNER_WHATSAPP = '201210916041'; // بدون +
 
-const DATA_PATH = resolveByPageDepth('./data.json'); // عدّل المسار لو مختلف
+  const DATA_URL = resolveByPageDepth('data.json');
 const EXCLUDE_FROM_GALLERY = /home_page\.png$/i; // استبعاد صورة الهوم
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadProjectData();
-});
+document.addEventListener('DOMContentLoaded', loadProjectData);
 
 // =============== Utils ===============
 function resolveByPageDepth(p) {
-  // لو الصفحة داخل فولدر (زي /pages/...) نزود ../ للمسارات النسبية
-  const path = window.location.pathname;
-  const isNested = path.endsWith('.html') && path.split('/').length > 2;
-  const prefix = isNested ? '../' : '';
-  return /^https?:\/\//i.test(p) ? p : prefix + p.replace(/^\/+/, '');
+  if (!p) return '';
+  // 1) URLs كاملة أو بروتوكول-نسبي
+  if (/^https?:\/\//i.test(p)) return p;
+  if (p.startsWith('//')) return window.location.protocol + p;
+  // 2) Root-relative أو مسار نسبي جاهز
+  if (p.startsWith('/')) return p;           // /assets/... أو /data.json
+  if (p.startsWith('./') || p.startsWith('../')) return p; // احترم اللي انت كاتبه
+
+  // 3) احسب عمق الصفحة: ['', 'pages', 'project-details.html'] => length=3 => depthUp=1
+  const segments = window.location.pathname.replace(/\/$/, '').split('/');
+  const depthUp = Math.max(0, segments.length - 2); // اطرح '' واسم الملف
+  const prefix = '../'.repeat(depthUp);
+
+  // 4) رجّع المسار بعد ما تشيل أي سلاشات زايدة في الأول
+  return prefix + p.replace(/^\/+/, '');
 }
 
 function getUrlParameter(name) {
@@ -43,47 +51,68 @@ function showError(message) {
 
 // =============== Load Project ===============
 async function loadProjectData() {
-  try {
-    const projectName = getUrlParameter('project');
-    const projectId = getUrlParameter('id');
-    if (!projectName && !projectId) {
-      showError('No project specified');
-      return;
-    }
+  const loading = document.getElementById('loadingSpinner');
+  const main = document.getElementById('mainContent');
+  const errBox = document.getElementById('errorMessage');
 
-    const response = await fetch(DATA_PATH);
-    if (!response.ok) throw new Error('Failed to load project data');
-    const data = await response.json();
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
 
     const projects = Array.isArray(data.projects) ? data.projects : [];
+    const qName = (getUrlParameter('project') || '').toLowerCase().trim();
+    const qId = getUrlParameter('id');
+
+    // ابحث بالـ id أو بالسلاج/الاسم
     let project = null;
-
-    if (projectId) {
-      const idx = parseInt(projectId, 10);
-      project = Number.isInteger(idx) ? projects[idx] : null;
-    } else {
-      const wanted = (projectName || '').toLowerCase();
+    if (qId !== null) {
+      const idx = parseInt(qId, 10);
+      if (!Number.isNaN(idx)) project = projects[idx];
+    }
+    if (!project && qName) {
+      const norm = s => (s || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .trim();
       project =
-        projects.find(p => slugify(p.name) === slugify(wanted)) ||
-        projects.find(p => (p.name || '').toLowerCase() === wanted);
+        projects.find(p => norm(p.name) === norm(qName)) ||
+        projects.find(p => (p.name || '').toLowerCase() === qName);
     }
 
-    if (!project) {
-      showError('Project not found');
-      return;
-    }
+    // fallback: أول مشروع لو مفيش باراميتر
+    if (!project && projects.length) project = projects[0];
+    if (!project) throw new Error('PROJECT_NOT_FOUND');
 
+    // عبّي الصفحة
     populateProjectData(project);
 
-    document.getElementById('loadingSpinner').style.display = 'none';
-    document.getElementById('mainContent').style.display = 'block';
+    // أظهر المحتوى
+    if (loading) loading.style.display = 'none';
+    if (errBox) errBox.style.display = 'none';
+    if (main) main.style.display = 'block';
 
-    initializeFeatures();
-  } catch (err) {
-    console.error('Error loading project data:', err);
-    showError('Failed to load project data');
+    // فعل AOS
+    if (window.AOS) {
+      AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });
+      AOS.refresh();
+    } else {
+      // لو AOS مش لودد: أظهر العناصر اليدوي
+      document.querySelectorAll('[data-aos]').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+    }
+  } catch (e) {
+    console.error('loadProjectData error:', e);
+    if (loading) loading.style.display = 'none';
+    if (main) main.style.display = 'none';
+    if (errBox) errBox.style.display = 'flex';
   }
 }
+
+
 
 // =============== Populate UI ===============
 function populateProjectData(project) {
@@ -151,10 +180,10 @@ function populateProjectData(project) {
   gallery.innerHTML = '';
   const mediaArr = Array.isArray(project.media) ? project.media : [];
 
-  const gallerySources = mediaArr
-    .filter(Boolean)
-    .filter(src => !EXCLUDE_FROM_GALLERY.test(src))
-    .map(src => resolveByPageDepth(src));
+  const gallerySources = (Array.isArray(project.media) ? project.media : [])
+  .filter(Boolean)
+  .filter(src => !EXCLUDE_FROM_GALLERY.test(src))
+  .map(src => resolveByPageDepth(src));
 
   if (gallerySources.length) {
     gallerySources.forEach(src => {
