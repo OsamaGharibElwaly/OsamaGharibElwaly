@@ -4,7 +4,7 @@ const OWNER_NAME = 'Osama Alwaly';
 const OWNER_EMAIL = 'osamagharib04@gmail.com';
 const OWNER_WHATSAPP = '201210916041'; // بدون +
 
-const response = await fetch(new URL('data.json', document.baseURI));
+const DATA_URL = new URL('data.json', document.baseURI).href;
 const EXCLUDE_FROM_GALLERY = /home_page\.png$/i; // استبعاد صورة الهوم
 
 document.addEventListener('DOMContentLoaded', loadProjectData);
@@ -43,21 +43,52 @@ async function loadProjectData() {
   const main = document.getElementById('mainContent');
   const errBox = document.getElementById('errorMessage');
 
-  try {
-    const res = await fetch(DATA_URL, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+  // helper لإظهار/إخفاء الواجهات بسرعة
+  const showMain = () => {
+    if (loading) loading.style.display = 'none';
+    if (errBox) errBox.style.display = 'none';
+    if (main) main.style.display = 'block';
+  };
+  const showErrorBox = () => {
+    if (loading) loading.style.display = 'none';
+    if (main) main.style.display = 'none';
+    if (errBox) errBox.style.display = 'flex';
+  };
 
+  try {
+    // استخدم DATA_URL لو معرّف، وإلا حلّ المسار بالنسبة للصفحة الحالية
+    const url =
+      (typeof DATA_URL === 'string' && DATA_URL) ||
+      new URL('data.json', document.baseURI).href;
+
+    // جلب الداتا بدون كاش (مهم مع GitHub Pages)
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP_${res.status}`);
+
+    let data;
+    try {
+      data = await res.json();
+    } catch {
+      throw new Error('INVALID_JSON');
+    }
+
+    // ضمان projects مصفوفة
     const projects = Array.isArray(data.projects) ? data.projects : [];
     const qName = (getUrlParameter('project') || '').toLowerCase().trim();
-    const qId = getUrlParameter('id');
+    const qIdRaw = getUrlParameter('id');
 
     // ابحث بالـ id أو بالسلاج/الاسم
     let project = null;
-    if (qId !== null) {
-      const idx = parseInt(qId, 10);
-      if (!Number.isNaN(idx)) project = projects[idx];
+
+    // بحث بالـ id (مع فحص الحدود)
+    if (qIdRaw !== null) {
+      const idx = Number.parseInt(qIdRaw, 10);
+      if (!Number.isNaN(idx) && idx >= 0 && idx < projects.length) {
+        project = projects[idx];
+      }
     }
+
+    // بحث بالاسم/السلاج
     if (!project && qName) {
       const norm = s => (s || '')
         .toLowerCase()
@@ -77,28 +108,41 @@ async function loadProjectData() {
     populateProjectData(project);
 
     // أظهر المحتوى
-    if (loading) loading.style.display = 'none';
-    if (errBox) errBox.style.display = 'none';
-    if (main) main.style.display = 'block';
+    showMain();
 
-    // فعل AOS
+    // فعّل AOS أو أظهر العناصر يدويًا
     if (window.AOS) {
       AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });
       AOS.refresh();
     } else {
-      // لو AOS مش لودد: أظهر العناصر اليدوي
       document.querySelectorAll('[data-aos]').forEach(el => {
         el.style.opacity = '1';
         el.style.transform = 'none';
       });
     }
+
+    // (اختياري) نداء تهيئة بقية المزايا لو موجودة
+    if (typeof initializeFeatures === 'function') {
+      try { initializeFeatures(); } catch {}
+    }
   } catch (e) {
     console.error('loadProjectData error:', e);
-    if (loading) loading.style.display = 'none';
-    if (main) main.style.display = 'none';
-    if (errBox) errBox.style.display = 'flex';
+    // لو حابب توضيح الخطأ في UI
+    const msgEl = document.querySelector('#errorMessage .error-content p');
+    if (msgEl) {
+      const map = {
+        HTTP_404: 'لم يتم العثور على ملف البيانات data.json (تأكد من المسار وحالة الحروف).',
+        HTTP_403: 'صلاحيات القراءة مرفوضة لملف البيانات.',
+        INVALID_JSON: 'صيغة ملف data.json غير صالحة.',
+        PROJECT_NOT_FOUND: 'لم يتم العثور على المشروع المطلوب.',
+      };
+      const key = (e && e.message) || '';
+      msgEl.textContent = map[key] || 'حدث خطأ أثناء تحميل البيانات.';
+    }
+    showErrorBox();
   }
 }
+
 
 
 
