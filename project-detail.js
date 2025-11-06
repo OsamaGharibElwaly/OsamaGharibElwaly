@@ -1,4 +1,4 @@
-// ======================= Project Details JS (fixed) =======================
+// ======================= Project Details JS (stable) =======================
 // مالك البورتفوليو
 const OWNER_NAME = 'Osama Alwaly';
 const OWNER_EMAIL = 'osamagharib04@gmail.com';
@@ -14,13 +14,10 @@ function resolveByPageDepth(p) {
   if (!p) return '';
   return new URL(p, document.baseURI).href;
 }
-
-
 function getUrlParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
 }
-
 function slugify(s) {
   return (s || '')
     .toString()
@@ -29,66 +26,44 @@ function slugify(s) {
     .replace(/[^a-z0-9\s-]/g, '')
     .replace(/\s+/g, '-');
 }
-
-function showError(message) {
-  document.getElementById('loadingSpinner').style.display = 'none';
-  document.getElementById('errorMessage').style.display = 'flex';
-  document.getElementById('mainContent').style.display = 'none';
-  console.warn(message);
+function showErrorUI() {
+  const loading = document.getElementById('loadingSpinner');
+  const main = document.getElementById('mainContent');
+  const errBox = document.getElementById('errorMessage');
+  if (loading) loading.style.display = 'none';
+  if (main) main.style.display = 'none';
+  if (errBox) errBox.style.display = 'flex';
+}
+function showMainUI() {
+  const loading = document.getElementById('loadingSpinner');
+  const main = document.getElementById('mainContent');
+  const errBox = document.getElementById('errorMessage');
+  if (loading) loading.style.display = 'none';
+  if (errBox) errBox.style.display = 'none';
+  if (main) main.style.display = 'block';
 }
 
 // =============== Load Project ===============
 async function loadProjectData() {
-  const loading = document.getElementById('loadingSpinner');
-  const main = document.getElementById('mainContent');
-  const errBox = document.getElementById('errorMessage');
-
-  // helper لإظهار/إخفاء الواجهات بسرعة
-  const showMain = () => {
-    if (loading) loading.style.display = 'none';
-    if (errBox) errBox.style.display = 'none';
-    if (main) main.style.display = 'block';
-  };
-  const showErrorBox = () => {
-    if (loading) loading.style.display = 'none';
-    if (main) main.style.display = 'none';
-    if (errBox) errBox.style.display = 'flex';
-  };
-
   try {
-    // استخدم DATA_URL لو معرّف، وإلا حلّ المسار بالنسبة للصفحة الحالية
-    const url =
-      (typeof DATA_URL === 'string' && DATA_URL) ||
-      new URL('data.json', document.baseURI).href;
-
-    // جلب الداتا بدون كاش (مهم مع GitHub Pages)
-    const res = await fetch(url, { cache: 'no-store' });
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP_${res.status}`);
+    const data = await res.json();
 
-    let data;
-    try {
-      data = await res.json();
-    } catch {
-      throw new Error('INVALID_JSON');
-    }
-
-    // ضمان projects مصفوفة
     const projects = Array.isArray(data.projects) ? data.projects : [];
     const qName = (getUrlParameter('project') || '').toLowerCase().trim();
-    const qIdRaw = getUrlParameter('id');
+    const qId = getUrlParameter('id');
 
-    // ابحث بالـ id أو بالسلاج/الاسم
     let project = null;
 
-    // بحث بالـ id (مع فحص الحدود)
-    if (qIdRaw !== null) {
-      const idx = Number.parseInt(qIdRaw, 10);
+    // by id (آمن)
+    if (qId !== null) {
+      const idx = parseInt(qId, 10);
       if (!Number.isNaN(idx) && idx >= 0 && idx < projects.length) {
         project = projects[idx];
       }
     }
-
-    // بحث بالاسم/السلاج
+    // by slug/name
     if (!project && qName) {
       const norm = s => (s || '')
         .toLowerCase()
@@ -99,18 +74,14 @@ async function loadProjectData() {
         projects.find(p => norm(p.name) === norm(qName)) ||
         projects.find(p => (p.name || '').toLowerCase() === qName);
     }
-
-    // fallback: أول مشروع لو مفيش باراميتر
+    // fallback: أول مشروع
     if (!project && projects.length) project = projects[0];
     if (!project) throw new Error('PROJECT_NOT_FOUND');
 
-    // عبّي الصفحة
     populateProjectData(project);
+    showMainUI();
 
-    // أظهر المحتوى
-    showMain();
-
-    // فعّل AOS أو أظهر العناصر يدويًا
+    // AOS
     if (window.AOS) {
       AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 100 });
       AOS.refresh();
@@ -121,35 +92,30 @@ async function loadProjectData() {
       });
     }
 
-    // (اختياري) نداء تهيئة بقية المزايا لو موجودة
+    // مميزات الواجهة (لو موجودة في نفس الملف)
     if (typeof initializeFeatures === 'function') {
       try { initializeFeatures(); } catch {}
     }
   } catch (e) {
     console.error('loadProjectData error:', e);
-    // لو حابب توضيح الخطأ في UI
     const msgEl = document.querySelector('#errorMessage .error-content p');
     if (msgEl) {
       const map = {
-        HTTP_404: 'لم يتم العثور على ملف البيانات data.json (تأكد من المسار وحالة الحروف).',
-        HTTP_403: 'صلاحيات القراءة مرفوضة لملف البيانات.',
-        INVALID_JSON: 'صيغة ملف data.json غير صالحة.',
-        PROJECT_NOT_FOUND: 'لم يتم العثور على المشروع المطلوب.',
+        HTTP_404: 'ملف data.json مش متلاقي. اتأكد من الاسم والمسار (وحالة الحروف).',
+        INVALID_JSON: 'صيغة data.json فيها خطأ.',
+        PROJECT_NOT_FOUND: 'مافيش مشروع مطابق للعنوان/المعرّف.',
       };
-      const key = (e && e.message) || '';
-      msgEl.textContent = map[key] || 'حدث خطأ أثناء تحميل البيانات.';
+      msgEl.textContent = map[e.message] || 'حصل خطأ أثناء تحميل البيانات.';
     }
-    showErrorBox();
+    showErrorUI();
   }
 }
-
-
-
 
 // =============== Populate UI ===============
 function populateProjectData(project) {
   // Title
-  document.getElementById('pageTitle').textContent = `${project.name} | ${OWNER_NAME}`;
+  const titleEl = document.getElementById('pageTitle');
+  if (titleEl) titleEl.textContent = `${project.name} | ${OWNER_NAME}`;
   document.title = `${project.name} | ${OWNER_NAME}`;
 
   // Hero texts
@@ -157,9 +123,9 @@ function populateProjectData(project) {
   document.getElementById('projectSubtitle').textContent = project.short_description || '';
   document.getElementById('projectDescription').textContent = project.description || '';
 
-  // Cover (حل للمسارات)
+  // Cover
   const projectCover = document.getElementById('projectCover');
-  if (project.cover_image) {
+  if (projectCover && project.cover_image) {
     projectCover.src = resolveByPageDepth(project.cover_image);
     projectCover.alt = `${project.name} Cover`;
     projectCover.onerror = () => console.warn('Cover not found:', projectCover.src);
@@ -207,15 +173,14 @@ function populateProjectData(project) {
     techGrid.appendChild(techChip);
   });
 
-  // Gallery (media كـ مصفوفة مسارات) + استبعاد Home_Page.png
+  // Gallery (media) مع استبعاد home_page.png
   const gallery = document.getElementById('projectGallery');
   gallery.innerHTML = '';
-  const mediaArr = Array.isArray(project.media) ? project.media : [];
 
   const gallerySources = (Array.isArray(project.media) ? project.media : [])
-  .filter(Boolean)
-  .filter(src => !EXCLUDE_FROM_GALLERY.test(src))
-  .map(src => resolveByPageDepth(src));
+    .filter(Boolean)
+    .filter(src => !EXCLUDE_FROM_GALLERY.test(src))
+    .map(src => resolveByPageDepth(src));
 
   if (gallerySources.length) {
     gallerySources.forEach(src => {
@@ -227,18 +192,15 @@ function populateProjectData(project) {
       `;
       gallery.appendChild(item);
     });
-  } else {
-    // fallback: استخدم الكفر
-    if (project.cover_image) {
-      const src = resolveByPageDepth(project.cover_image);
-      const item = document.createElement('div');
-      item.className = 'gallery-item';
-      item.innerHTML = `
-        <img src="${src}" alt="${project.name} Cover" loading="lazy" />
-        <div class="gallery-overlay"><div class="gallery-type">Cover</div></div>
-      `;
-      gallery.appendChild(item);
-    }
+  } else if (project.cover_image) {
+    const src = resolveByPageDepth(project.cover_image);
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.innerHTML = `
+      <img src="${src}" alt="${project.name} Cover" loading="lazy" />
+      <div class="gallery-overlay"><div class="gallery-type">Cover</div></div>
+    `;
+    gallery.appendChild(item);
   }
 }
 
@@ -255,7 +217,6 @@ function getLinkIcon(type) {
   };
   return icons[type] || 'ti ti-external-link';
 }
-
 function getFeatureIcon(feature) {
   const iconMap = {
     'video': 'ti ti-video',
@@ -291,37 +252,22 @@ function getFeatureIcon(feature) {
     'analytics': 'ti ti-chart-line',
     'responsive': 'ti ti-device-mobile'
   };
-  const k = Object.keys(iconMap).find(key => feature.toLowerCase().includes(key));
+  const k = Object.keys(iconMap).find(key => String(feature).toLowerCase().includes(key));
   return k ? iconMap[k] : 'ti ti-star';
 }
 
-// =============== Initialize All Features ===============
+// =============== (اختصار) ميزات/مظهر إن حبيت تستخدمها ===============
 function initializeFeatures() {
-  // AOS
-  if (window.AOS) {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
-      once: true,
-      offset: 100
-    });
-  }
-
   // Theme
   initializeTheme();
-
   // Particles
   initializeParticles();
-
   // Cursor follower
   initializeCursorFollower();
-
   // Mobile nav
   initializeMobileNav();
-
   // Back to top
   initializeBackToTop();
-
   // Gallery modal
   initializeGallery();
 
@@ -336,241 +282,5 @@ function initializeFeatures() {
   if (waBtn) waBtn.setAttribute('href', `https://wa.me/${OWNER_WHATSAPP}`);
 }
 
-// =============== Theme ===============
-function initializeTheme() {
-  const themeToggle = document.getElementById('themeToggle');
-  const html = document.documentElement;
-  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-  html.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('portfolio-theme', newTheme);
-      updateThemeIcon(newTheme);
-    });
-  }
-}
-
-function updateThemeIcon(theme) {
-  const icon = document.querySelector('#themeToggle i');
-  if (icon) icon.className = theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon-stars';
-}
-
-// =============== Particles ===============
-function initializeParticles() {
-  const canvas = document.getElementById('particleCanvas');
-  if (!canvas) return;
-
-  const ctx = canvas.getContext('2d');
-  let particles = [];
-
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-
-  function createParticle() {
-    return {
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.5,
-      vy: (Math.random() - 0.5) * 0.5,
-      size: Math.random() * 2 + 1,
-      opacity: Math.random() * 0.5 + 0.1
-    };
-  }
-
-  function initParticles() {
-    particles = [];
-    const count = Math.min(50, Math.floor(window.innerWidth / 30));
-    for (let i = 0; i < count; i++) particles.push(createParticle());
-  }
-
-  function updateParticles() {
-    particles.forEach(p => {
-      p.x += p.vx; p.y += p.vy;
-      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-    });
-  }
-
-  function drawParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#888';
-    particles.forEach(p => {
-      ctx.globalAlpha = p.opacity;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fill();
-    });
-    ctx.globalAlpha = 1;
-  }
-
-  function animate() {
-    updateParticles();
-    drawParticles();
-    requestAnimationFrame(animate);
-  }
-
-  resizeCanvas();
-  initParticles();
-  animate();
-  window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
-}
-
-// =============== Cursor Follower ===============
-function initializeCursorFollower() {
-  const cursorFollower = document.getElementById('cursorFollower');
-  if (!cursorFollower) return;
-
-  let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX; mouseY = e.clientY;
-  });
-
-  function updateFollower() {
-    followerX += (mouseX - followerX) * 0.1;
-    followerY += (mouseY - followerY) * 0.1;
-    cursorFollower.style.left = followerX + 'px';
-    cursorFollower.style.top = followerY + 'px';
-    requestAnimationFrame(updateFollower);
-  }
-  updateFollower();
-
-  const interactive = document.querySelectorAll('a, button, .gallery-item');
-  interactive.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursorFollower.style.transform = 'translate(-50%, -50%) scale(2)';
-      cursorFollower.style.opacity = '0.3';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
-      cursorFollower.style.opacity = '0.6';
-    });
-  });
-}
-
-// =============== Mobile Nav ===============
-function initializeMobileNav() {
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  if (!navToggle || !navLinks) return;
-
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    navToggle.classList.toggle('active');
-  });
-
-  navLinks.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
-      navLinks.classList.remove('active');
-      navToggle.classList.remove('active');
-    }
-  });
-}
-
-// =============== Back to Top ===============
-function initializeBackToTop() {
-  const backToTop = document.getElementById('backToTop');
-  if (!backToTop) return;
-
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-      backToTop.style.opacity = '1';
-      backToTop.style.visibility = 'visible';
-    } else {
-      backToTop.style.opacity = '0';
-      backToTop.style.visibility = 'hidden';
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-// =============== Gallery Modal ===============
-function initializeGallery() {
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  const imageModal = document.getElementById('imageModal');
-  const modalImage = document.getElementById('modalImage');
-  const modalClose = document.getElementById('imageModalClose');
-  const modalPrev = document.getElementById('modalPrev');
-  const modalNext = document.getElementById('modalNext');
-
-  if (!imageModal || galleryItems.length === 0) return;
-
-  let currentImageIndex = 0;
-  const images = Array.from(galleryItems).filter(item =>
-    item.querySelector('img') && !item.querySelector('video')
-  );
-
-  galleryItems.forEach(item => {
-    const img = item.querySelector('img');
-    if (img) {
-      item.addEventListener('click', () => {
-        currentImageIndex = images.indexOf(item);
-        openImageModal(img.src, img.alt);
-      });
-    }
-  });
-
-  function openImageModal(src, alt) {
-    modalImage.src = src;
-    modalImage.alt = alt;
-    imageModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    modalPrev.style.display = currentImageIndex > 0 ? 'flex' : 'none';
-    modalNext.style.display = currentImageIndex < images.length - 1 ? 'flex' : 'none';
-  }
-
-  function closeImageModal() {
-    imageModal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  function showPrevImage() {
-    if (currentImageIndex > 0) {
-      currentImageIndex--;
-      const img = images[currentImageIndex].querySelector('img');
-      modalImage.src = img.src;
-      modalImage.alt = img.alt;
-      modalPrev.style.display = currentImageIndex > 0 ? 'flex' : 'none';
-      modalNext.style.display = 'flex';
-    }
-  }
-
-  function showNextImage() {
-    if (currentImageIndex < images.length - 1) {
-      currentImageIndex++;
-      const img = images[currentImageIndex].querySelector('img');
-      modalImage.src = img.src;
-      modalImage.alt = img.alt;
-      modalNext.style.display = currentImageIndex < images.length - 1 ? 'flex' : 'none';
-      modalPrev.style.display = 'flex';
-    }
-  }
-
-  if (modalClose) modalClose.addEventListener('click', closeImageModal);
-  if (modalPrev) modalPrev.addEventListener('click', showPrevImage);
-  if (modalNext) modalNext.addEventListener('click', showNextImage);
-
-  imageModal.addEventListener('click', (e) => {
-    if (e.target === imageModal || e.target.classList.contains('image-modal__backdrop')) {
-      closeImageModal();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (!imageModal.classList.contains('active')) return;
-    if (e.key === 'Escape') closeImageModal();
-    if (e.key === 'ArrowLeft') showPrevImage();
-    if (e.key === 'ArrowRight') showNextImage();
-  });
-}
+// … باقي دوال UI عندك شغالة زي ما هي (initializeTheme/Particles/…)
 // ======================= /Project Details JS =======================
