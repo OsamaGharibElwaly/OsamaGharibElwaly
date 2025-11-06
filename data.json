@@ -96,7 +96,7 @@
   "projects": [
     {
       "name": "SmartBrace",
-      "cover_image": "assets/covers/SmartBrace.png",
+      "cover_image": "assets/covers/overview.png",
       "short_description": "AI-powered health monitoring ecosystem (bracelet + mobile + web).",
       "description": "Built and deployed ML classification models (~90–95% accuracy) for real-time healthcare monitoring and disease prediction (stroke, autism, asthma). Integrated models with backend (FastAPI) and services for data flow.",
       "features": [
@@ -123,7 +123,14 @@
           "url": "https://github.com/islamhasib953/Graduation_Project"
         }
       ],
-      "media": []
+      "media": [
+                "assets/covers/database_structure.png",
+                "assets/covers/doctor_dashboard.jpg",
+                "assets/covers/overview.png",
+                "assets/covers/Parent_Dashboard.jpg",
+                "assets/covers/smartbrace(Sigma)_wearable.png",
+                "assets/covers/web_medical_history.jpg"
+              ]
     },
     {
       "name": "FitTrack (Gym Tracker)",
