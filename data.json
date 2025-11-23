@@ -1,7 +1,7 @@
 {
   "personal_info": {
     "name": "Osama Alwaly",
-    "title": "Software Engineer | Web & AI",
+    "title": "Front-End Developer",
     "profile_image": "assets/profile/profile.jpeg",
     "location": "Port Said, Egypt",
     "contact": {
@@ -18,7 +18,7 @@
         "url": "https://www.linkedin.com/in/osama-alwaly"
       }
     ],
-    "cv_download": "assets/downloads/Osama_Alwaly_Software Engineer_resume.pdf",
+    "cv_download": "assets/downloads/Osama_Alwaly_CV.pdf",
     "about_me": "Software engineer passionate about building clean, scalable, and high-performance web/AI applications. Strong in Python, JavaScript/TypeScript, React/Next.js, Node.js, and Express. Interested in ML systems and developer experience."
   },
   "projects_num": "2",
