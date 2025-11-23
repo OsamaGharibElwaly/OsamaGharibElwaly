@@ -199,13 +199,8 @@
         "links": [
           {
             "type": "GitHub",
-            "url": ""
+            "url": "https://github.com/OsamaGharibElwaly/UI-UX-Designs"
           }
-        ],
-        "projects_included": [
-          "Bajaru – AI Vegetable Vendor App",
-          "Piddi URL – Link Shortener Landing Page",
-          "LinguaLearn – Language Learning Platform"
         ],
         "media": [
           "assets/covers/lingualearn.png",
