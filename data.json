@@ -174,6 +174,45 @@
               "assets/covers/8.png",
               "assets/covers/9.png"
       ]
-    }
+    },
+      {
+        "name": "UI/UX Design Collection",
+        "cover_image": "assets/covers/lingualearn.png",
+        "short_description": "A collection of mobile and web UI/UX projects showcasing clean layouts, structured flows, and modern visual identities.",
+        "description": "A unified set of UI/UX design projects including mobile applications, landing pages, and web interfaces. Each project focuses on user-centered design principles, clear information hierarchy, and visually consistent component systems. This category will continue expanding with new designs and interface concepts over time.",
+        "features": [
+          "Mobile & web interface design",
+          "User-centered experience flows",
+          "Component-based UI systems",
+          "Clear typography hierarchy",
+          "Modern visual identity design",
+          "Responsive layout principles"
+        ],
+        "technologies_used": [
+          "Figma",
+          "Wireframing",
+          "Design Systems",
+          "Prototyping",
+          "UI Components",
+          "Layout Grids"
+        ],
+        "links": [
+          {
+            "type": "GitHub",
+            "url": ""
+          }
+        ],
+        "projects_included": [
+          "Bajaru – AI Vegetable Vendor App",
+          "Piddi URL – Link Shortener Landing Page",
+          "LinguaLearn – Language Learning Platform"
+        ],
+        "media": [
+          "assets/covers/lingualearn.png",
+          "assets/covers/bajaru.png",
+          "assets/covers/piddi.png"
+        ]
+      }
+
   ]
 }
