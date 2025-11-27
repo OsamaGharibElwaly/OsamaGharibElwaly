@@ -1,0 +1,214 @@
+{
+  "personal_info": {
+    "name": "Osama Alwaly",
+    "title": "Front-end Developer",
+    "profile_image": "/assets/profile/profile.jpeg",
+    "location": "Port Said, Egypt",
+    "contact": {
+      "phone": "+20 121 091 6041",
+      "email": "osamagharib04@gmail.com"
+    },
+    "social_links": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/OsamaGharibElwaly"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/osama-alwaly"
+      }
+    ],
+    "cv_download": "/assets/downloads/Osama_Alwaly_CV.pdf",
+    "about_me": "Front-end developer passionate about crafting clean, scalable, and high-performance web interfaces. Strong with JavaScript/TypeScript, React, Next.js, and modern UI engineering practices. Focused on building smooth user experiences, reusable component systems, and maintainable front-end architectures. Always exploring performance optimization, design systems, and improving developer experience."
+  },
+  "projects_num": "3",
+  "experience_num": "0",
+  "customers_num": "0",
+  "skills": {
+  "technical_skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Redux",
+    "Tailwind CSS",
+    "Responsive Design",
+    "API Integration",
+    "Testing (Jest)",
+    "Python",
+    "C#"
+  ],
+  
+  "soft_skills": [
+    "Communication",
+    "Teamwork",
+    "Problem-Solving",
+    "Adaptability",
+    "Time Management",
+    "Creativity",
+    "Leadership",
+    "Critical Thinking",
+    "Attention to Detail",
+    "Continuous Learning"
+  ]
+}
+,
+  "education": [
+    {
+      "degree": "B.Eng. in Computer Engineering",
+      "institution": "Port Said University",
+      "date_range": "Oct 2020 – Jul 2025"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Intern – Electronics & Software Engineering",
+      "company": "Faculty of Engineering – Port Said University",
+      "location": "Port Foad, Egypt",
+      "date_range": "Jun 2022 – Sep 2022",
+      "description_points": [
+        "Hands-on labs in electronics and applied engineering.",
+        "Practiced MATLAB for simulation and analysis.",
+        "Intro to software engineering: requirements and system design."
+      ]
+    },
+    {
+      "title": "Intern – Computer Networks",
+      "company": "Suez Canal Authority",
+      "location": "Port Foad, Egypt",
+      "date_range": "Jun 2023 – Sep 2023",
+      "description_points": [
+        "Fundamentals of networks and administration.",
+        "Configuration and troubleshooting of network infrastructure.",
+        "Exposure to large-scale IT systems."
+      ]
+    },
+    {
+      "title": "Volunteer Speaker",
+      "company": "Pioneer of Success Initiative – Ministry of Youth and Sports",
+      "location": "Port Said, Egypt",
+      "date_range": "Aug 2025",
+      "description_points": [
+        "Delivered a live session on using LinkedIn for professional growth.",
+        "Showcased AI-powered tools for interview prep and job search.",
+        "Guided participants on CV optimization and online presence."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SmartBrace",
+      "cover_image": "/assets/covers/overview.png",
+      "short_description": "AI-powered health monitoring ecosystem (bracelet + mobile + web).",
+      "description": "Built and deployed ML classification models (~90–95% accuracy) for real-time healthcare monitoring and disease prediction (stroke, autism, asthma). Integrated models with backend (FastAPI) and services for data flow.",
+      "features": [
+        "Real-time vitals tracking",
+        "AI disease prediction",
+        "Web & mobile dashboards",
+        "IoT wearable integration"
+      ],
+      "technologies_used": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "FastAPI",
+        "PostgreSQL",
+        "Node.js",
+        "React",
+        "MongoDB",
+        "AWS"
+      ],
+      "links": [
+        {
+          "type": "GitHub",
+          "url": "https://github.com/islamhasib953/Graduation_Project"
+        }
+      ],
+      "media": [
+        "/assets/covers/database_structure.png",
+        "/assets/covers/doctor_dashboard.jpg",
+        "/assets/covers/overview.png",
+        "/assets/covers/Parent_Dashboard.jpg",
+        "/assets/covers/smartbrace(Sigma)_wearable.png",
+        "/assets/covers/web_medical_history.jpg",
+        "/assets/covers/s3_file_storage.png",
+        "/assets/covers/hivemq_structure.png",
+        "/assets/covers/render.png"
+      ]
+    },
+    {
+      "name": "FitTrack (Gym Tracker)",
+      "cover_image": "/assets/covers/1.png",
+      "short_description": "Web app for workouts, progress tracking, and plans.",
+      "description": "Next.js platform to log workouts, track progress, and manage personalized training plans with auth, animations, and responsive UI.",
+      "features": [
+        "Auth & user profiles",
+        "Workout logging",
+        "Progress analytics",
+        "Responsive UI with animations"
+      ],
+      "technologies_used": [
+        "Next.js (Turbopack)",
+        "Prisma",
+        "PostgreSQL",
+        "NextAuth",
+        "TailwindCSS",
+        "Framer Motion",
+        "Lucide Icons"
+      ],
+      "links": [
+        {
+          "type": "GitHub",
+          "url": "https://github.com/OsamaGharibElwaly/fittrack.git"
+        }
+      ],
+      "media": [
+        "/assets/covers/1.png",
+        "/assets/covers/2.png",
+        "/assets/covers/3.png",
+        "/assets/covers/4.png",
+        "/assets/covers/5.png",
+        "/assets/covers/6.png",
+        "/assets/covers/7.png",
+        "/assets/covers/8.png",
+        "/assets/covers/9.png"
+      ]
+    },
+    {
+      "name": "UI/UX Design Collection",
+      "cover_image": "/assets/covers/lingualearn.png",
+      "short_description": "A collection of mobile and web UI/UX projects showcasing clean layouts, structured flows, and modern visual identities.",
+      "description": "A unified set of UI/UX design projects including mobile applications, landing pages, and web interfaces. Each project focuses on user-centered design principles, clear information hierarchy, and visually consistent component systems. This category will continue expanding with new designs and interface concepts over time.",
+      "features": [
+        "Mobile & web interface design",
+        "User-centered experience flows",
+        "Component-based UI systems",
+        "Clear typography hierarchy",
+        "Modern visual identity design",
+        "Responsive layout principles"
+      ],
+      "technologies_used": [
+        "Figma",
+        "Wireframing",
+        "Design Systems",
+        "Prototyping",
+        "UI Components",
+        "Layout Grids"
+      ],
+      "links": [
+        {
+          "type": "GitHub",
+          "url": "https://github.com/OsamaGharibElwaly/UI-UX-Designs"
+        }
+      ],
+      "media": [
+        "/assets/covers/lingualearn.png",
+        "/assets/covers/bajaru.png",
+        "/assets/covers/piddi.png"
+      ]
+    }
+  ]
+}
