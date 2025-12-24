@@ -1,6 +1,6 @@
-# Osama Alwaly's Portfolio
+# Osama Alwaly's Front-End Portfolio
 
-Welcome to my portfolio! I'm Osama Alwaly, a Computer Engineering student at Port Said University, Egypt. I'm passionate about web development, UX/UI design, and AI-driven solutions. This portfolio showcases my skills, projects, certifications, and experience.
+Welcome to my portfolio! I'm Osama Alwaly, a fresh graduate in Computer Engineering with a passion for Front-End development. I specialize in creating responsive, user-friendly websites and web applications. This portfolio showcases my skills, projects, certifications, and experience.
 
 ## About Me
 
@@ -16,12 +16,22 @@ Welcome to my portfolio! I'm Osama Alwaly, a Computer Engineering student at Por
 - **B.Sc. in Computer Engineering**, Port Said University, Egypt (2020 – 2025)
   - **GPA**: 2.97 (Good)
 
-## Skills
+## Front-End Skills
 
-- **Programming Languages**: JavaScript, TypeScript, HTML5, CSS3, Python
-- **Frameworks & Libraries**: React, Next.js, Node.js, Express.js, TailwindCSS
-- **Tools**: GitHub, Docker (Basic), Postman, REST APIs
-- **Other Skills**: Problem Solving, OOP, Data Structures, Algorithms, API Architecture, MVC, Agile Development
+- **Languages**: 
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) 
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+
+- **Frameworks & Libraries**: 
+  ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) 
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) 
+  ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+
+- **Tools**:
+  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) 
+  ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white) 
 
 ## Work Experience
 
@@ -46,29 +56,21 @@ Welcome to my portfolio! I'm Osama Alwaly, a Computer Engineering student at Por
 ## Projects
 
 ### 1. FitTrack - Training Management System
-- Developed a modern gym tracking web application using Next.js 15, React 19, and TailwindCSS v4.
-- Focus on Front-End development, including responsiveness, animations, and UI quality.
-- Technologies used: Next.js, TailwindCSS, React.js, Framer motion, Lucide React.
+- Developed a modern gym tracking web application using Next.js, React, and TailwindCSS.
+- Focus on Front-End development with responsiveness and smooth animations.
+- Technologies used: Next.js, React.js, TailwindCSS, Framer motion.
 
 ### 2. UI/UX Design Projects
-- Designed multiple mobile and web interfaces using Figma, focusing on clean layouts and user-friendly flows.
-- Projects include: Bajaru App, Piddi URL Landing Page, and LinguaLearn Platform.
-
-### 3. Graduation Project – SmartBrace (Sigma)
-- Built and deployed AI classification models using Python, achieving 90–95% accuracy.
-- Integrated with backend using FastAPI and Node.js, deployed on AWS.
-- Focus on disease prediction modules.
+- Designed multiple mobile and web interfaces using Figma.
+- Projects include: Bajaru App, Piddi URL Landing Page, LinguaLearn Platform.
 
 ## Certifications
 
 - **Effective Communication Skills Program** – AAST
-  - Training on presentation skills, teamwork, and professional communication.
-  
-- **One Million Prompters Certificate** – Dubai Future Foundation
-  - Skills in AI prompt engineering and optimization techniques.
+  - Training on presentation skills and teamwork.
   
 - **UX Design Fundamentals Certificate** – Maharatech
-  - Knowledge of user-centered design principles and usability studies.
+  - Knowledge of user-centered design principles.
 
 ## Contact
 
