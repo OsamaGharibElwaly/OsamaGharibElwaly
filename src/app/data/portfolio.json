@@ -212,7 +212,7 @@
     },
     {
   "name": "Physio Therapy Web",
-  "cover_image": "assets/covers/marwan-home.png",
+  "cover_image": "/assets/covers/marwan-home.png",
   "short_description": "A modern, responsive website for a physiotherapy clinic featuring multi-page layout, dynamic content, and interactive user interface.",
   "description": "This project is a fully responsive website developed for Dr. Marwan Hesham's physiotherapy clinic. Built with Next.js 16, TypeScript, and Tailwind CSS, it includes essential pages such as Home, Services, About, and Contact. Content is dynamically loaded from JSON files for easy management, with interactive components, smooth navigation, and a clean, professional design focused on user experience and accessibility.",
   "features": [
@@ -238,9 +238,9 @@
     }
   ],
   "media": [
-    "assets/covers/marwan-contact.png",
-    "assets/covers/marwan-about.png",
-    "assets/covers/marwan-home.png"
+    "/assets/covers/marwan-home.png",
+        "/assets/covers/marwan-about.png",
+        "/assets/covers/marwan-contact.png"
     
   ]
 }

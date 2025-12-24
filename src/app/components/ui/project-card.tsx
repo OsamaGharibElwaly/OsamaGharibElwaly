@@ -30,7 +30,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.short_description}
         </p>
         <div className="flex flex-wrap gap-1.5">
-          {project.technologies_used.slice(0, 3).map((tech) => (
+          {project.technologies_used.slice(0, 4).map((tech) => (
             <Badge key={tech} className="text-[11px]">
               {tech}
             </Badge>
