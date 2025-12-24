@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Osama Alwaly's Portfolio
 
-## Getting Started
+Welcome to my portfolio! I'm Osama Alwaly, a Computer Engineering student at Port Said University, Egypt. I'm passionate about web development, UX/UI design, and AI-driven solutions. This portfolio showcases my skills, projects, certifications, and experience.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Name**: Osama Alwaly
+- **Email**: osamagharib04@gmail.com
+- **Phone**: +20 1210916041
+- **LinkedIn**: [linkedin.com/in/osama-alwaly](https://linkedin.com/in/osama-alwaly/)
+- **GitHub**: [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
+- **Portfolio**: [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Education
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **B.Sc. in Computer Engineering**, Port Said University, Egypt (2020 – 2025)
+  - **GPA**: 2.97 (Good)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Skills
 
-## Learn More
+- **Programming Languages**: JavaScript, TypeScript, HTML5, CSS3, Python
+- **Frameworks & Libraries**: React, Next.js, Node.js, Express.js, TailwindCSS
+- **Tools**: GitHub, Docker (Basic), Postman, REST APIs
+- **Other Skills**: Problem Solving, OOP, Data Structures, Algorithms, API Architecture, MVC, Agile Development
 
-To learn more about Next.js, take a look at the following resources:
+## Work Experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Volunteer Speaker - Pioneer of Success Initiative
+**Egyptian Ministry of Youth and Sports**  
+*Aug 2025 – Present*  
+- Delivered online training on LinkedIn usage, AI job search tools, and CV optimization.
+- Utilized: Zoom, Google Meet, Microsoft Office.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Trainee - Internship
+**Suez Canal Authority**  
+*June 2023 – Sept 2023*  
+- Worked with network systems, optimizing performance.
+- Utilized: Cisco Packet Tracer for network simulations and troubleshooting.
 
-## Deploy on Vercel
+### Trainee - Internship
+**Port Said University**  
+*June 2022 – Sept 2022*  
+- Worked in electronics labs, applying engineering concepts.
+- Utilized: MATLAB for system analysis and modeling.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. FitTrack - Training Management System
+- Developed a modern gym tracking web application using Next.js 15, React 19, and TailwindCSS v4.
+- Focus on Front-End development, including responsiveness, animations, and UI quality.
+- Technologies used: Next.js, TailwindCSS, React.js, Framer motion, Lucide React.
+
+### 2. UI/UX Design Projects
+- Designed multiple mobile and web interfaces using Figma, focusing on clean layouts and user-friendly flows.
+- Projects include: Bajaru App, Piddi URL Landing Page, and LinguaLearn Platform.
+
+### 3. Graduation Project – SmartBrace (Sigma)
+- Built and deployed AI classification models using Python, achieving 90–95% accuracy.
+- Integrated with backend using FastAPI and Node.js, deployed on AWS.
+- Focus on disease prediction modules.
+
+## Certifications
+
+- **Effective Communication Skills Program** – AAST
+  - Training on presentation skills, teamwork, and professional communication.
+  
+- **One Million Prompters Certificate** – Dubai Future Foundation
+  - Skills in AI prompt engineering and optimization techniques.
+  
+- **UX Design Fundamentals Certificate** – Maharatech
+  - Knowledge of user-centered design principles and usability studies.
+
+## Contact
+
+Feel free to reach out to me for collaboration or inquiries. Let's connect and create something amazing together!
+
+- **Email**: osamagharib04@gmail.com
+- **Phone**: +20 1210916041
