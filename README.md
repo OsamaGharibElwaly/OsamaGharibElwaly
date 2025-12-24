@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Osama Alwaly's Front-End Portfolio
 
-## Getting Started
+Welcome to my portfolio! I'm Osama Alwaly, a fresh graduate in Computer Engineering with a passion for Front-End development. I specialize in creating responsive, user-friendly websites and web applications. This portfolio showcases my skills, projects, certifications, and experience.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Name**: Osama Alwaly
+- **Email**: osamagharib04@gmail.com
+- **Phone**: +20 1210916041
+- **LinkedIn**: [linkedin.com/in/osama-alwaly](https://linkedin.com/in/osama-alwaly/)
+- **GitHub**: [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
+- **Portfolio**: [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Education
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **B.Sc. in Computer Engineering**, Port Said University, Egypt (2020 – 2025)
+  - **GPA**: 2.97 (Good)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Front-End Skills
 
-## Learn More
+- **Languages**: 
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) 
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+- **Frameworks & Libraries**: 
+  ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) 
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white) 
+  ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Tools**:
+  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) 
+  ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Work Experience
 
-## Deploy on Vercel
+### Volunteer Speaker - Pioneer of Success Initiative
+**Egyptian Ministry of Youth and Sports**  
+*Aug 2025 – Present*  
+- Delivered online training on LinkedIn usage, AI job search tools, and CV optimization.
+- Utilized: Zoom, Google Meet, Microsoft Office.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Trainee - Internship
+**Suez Canal Authority**  
+*June 2023 – Sept 2023*  
+- Worked with network systems, optimizing performance.
+- Utilized: Cisco Packet Tracer for network simulations and troubleshooting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Trainee - Internship
+**Port Said University**  
+*June 2022 – Sept 2022*  
+- Worked in electronics labs, applying engineering concepts.
+- Utilized: MATLAB for system analysis and modeling.
+
+## Projects
+
+### 1. FitTrack - Training Management System
+- Developed a modern gym tracking web application using Next.js, React, and TailwindCSS.
+- Focus on Front-End development with responsiveness and smooth animations.
+- Technologies used: Next.js, React.js, TailwindCSS, Framer motion.
+
+### 2. UI/UX Design Projects
+- Designed multiple mobile and web interfaces using Figma.
+- Projects include: Bajaru App, Piddi URL Landing Page, LinguaLearn Platform.
+
+## Certifications
+
+- **Effective Communication Skills Program** – AAST
+  - Training on presentation skills and teamwork.
+  
+- **UX Design Fundamentals Certificate** – Maharatech
+  - Knowledge of user-centered design principles.
+
+## Contact
+
+Feel free to reach out to me for collaboration or inquiries. Let's connect and create something amazing together!
+
+- **Email**: osamagharib04@gmail.com
+- **Phone**: +20 1210916041
