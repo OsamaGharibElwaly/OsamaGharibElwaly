@@ -169,7 +169,7 @@ export default function HomePage() {
           description="A mix of real-world applications and UI/UX explorations."
         />
         <div className="grid gap-5 md:grid-cols-3">
-          {projects.slice(0, 4).map((project) => (
+          {projects.slice(0, projects.length).map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
         </div>

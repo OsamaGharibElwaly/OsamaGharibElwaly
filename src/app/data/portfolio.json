@@ -21,7 +21,7 @@
     "cv_download": "/assets/downloads/Osama_Alwaly_CV.pdf",
     "about_me": "Front-end developer passionate about crafting clean, scalable, and high-performance web interfaces. Strong with JavaScript/TypeScript, React, Next.js, and modern UI engineering practices. Focused on building smooth user experiences, reusable component systems, and maintainable front-end architectures. Always exploring performance optimization, design systems, and improving developer experience."
   },
-  "projects_num": "4",
+  "projects_num": "5",
   "experience_num": "0",
   "customers_num": "0",
   "skills": {
@@ -242,6 +242,38 @@
         "/assets/covers/marwan-about.png",
         "/assets/covers/marwan-contact.png"
     
+  ]
+},{
+  "name": "Osama Blog - Full Stack Blog Management System",
+  "cover_image": "/assets/covers/osama-blog.png",
+  "short_description": "A full-stack blog management system with responsive frontend and seamless CRUD functionality.",
+  "description": "This project is a complete blog management web application built with Next.js, Prisma, and BFF architecture. It includes a fully responsive frontend with dynamic blog posts, user authentication, and CRUD operations for posts. The backend uses Prisma ORM for data management, and BFF architecture ensures smooth communication between frontend and backend.",
+  "features": [
+    "Fully responsive blog management system",
+    "CRUD functionality for blog posts",
+    "BFF architecture for optimized communication",
+    "Prisma ORM for efficient database management",
+    "Clean, professional UI with seamless navigation",
+    "Mobile-first design"
+  ],
+  "technologies_used": [
+    "Next.js",
+    "Prisma",
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "BFF architecture"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/osama_blog"
+    }
+  ],
+  "media": [
+    "/assets/covers/osama-blog.png",
+    "/assets/covers/authors-blog.png",
+    "/assets/covers/osama-blog-home.png"    
   ]
 }
   ]
