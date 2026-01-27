@@ -56,6 +56,13 @@ export interface Project {
   media: string[];
 }
 
+export interface Review {
+  clientName: string;
+  jobTitle: string;
+  rating: number;
+  reviewText: string;
+}
+
 export interface PortfolioData {
   personal_info: PersonalInfo;
   projects_num: string;
@@ -65,6 +72,7 @@ export interface PortfolioData {
   education: EducationItem[];
   experience: ExperienceItem[];
   projects: Project[];
+  reviews?: Review[];
 }
 
 const data = portfolio as PortfolioData;
@@ -99,4 +107,8 @@ export function getExperience(): ExperienceItem[] {
 
 export function getProjects(): Project[] {
   return data.projects;
+}
+
+export function getReviews(): Review[] {
+  return data.reviews || [];
 }

@@ -9,6 +9,7 @@ const sections = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#reviews", label: "Reviews" },
 ];
 
 export function Navbar() {
@@ -36,7 +37,19 @@ export function Navbar() {
             {sections.map((item) => (
               <li key={item.href}>
                 <a
-                  href={item.href}
+                  href={pathname === "/" || pathname === "" ? item.href : `/${item.href}`}
+                  onClick={(e) => {
+                    // Handle smooth scroll if we're on the homepage
+                    if (pathname === "/" || pathname === "") {
+                      e.preventDefault();
+                      const element = document.querySelector(item.href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth", block: "start" });
+                      }
+                    }
+                    // If on another page, let the default navigation handle it
+                    // The browser will navigate to /#reviews and scroll automatically
+                  }}
                   className="rounded-full px-3 py-1 dark:hover:bg-slate-300 transition hover:bg-slate-300"
                 >
                   {item.label}

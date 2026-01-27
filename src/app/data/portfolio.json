@@ -309,6 +309,13 @@
     "/assets/covers/cart-ecommerce.png"
   ]
 }
-
+  ],
+  "reviews": [
+    {
+      "clientName": "Marwan Hisham",
+      "jobTitle": "Physiotherapist",
+      "rating": 5,
+      "reviewText": "Working with Osama Alwaly was a fantastic experience. The project was completed ahead of schedule, and the communication was excellent."
+    }
   ]
 }

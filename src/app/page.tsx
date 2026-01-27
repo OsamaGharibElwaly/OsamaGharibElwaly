@@ -5,6 +5,7 @@ import {
   getExperience,
   getPersonalInfo,
   getProjects,
+  getReviews,
   getSkills,
   getStats,
 } from "./lib/portfolio-data";
@@ -14,6 +15,7 @@ import { SectionHeader } from "./components/ui/section-header";
 import { SkillsGrid } from "./components/ui/skills-grid";
 import { Timeline } from "./components/ui/timeline";
 import { ProjectCard } from "./components/ui/project-card";
+import { ReviewCarousel } from "./components/ui/review-carousel";
 import { Mail, Phone, Briefcase, FolderGit2, Users } from "lucide-react";
 
 export default function HomePage() {
@@ -23,6 +25,7 @@ export default function HomePage() {
   const education = getEducation();
   const experience = getExperience();
   const projects = getProjects();
+  const reviews = getReviews();
 
   const mainEducation = education[0];
 
@@ -174,7 +177,20 @@ export default function HomePage() {
           ))}
         </div>
       </MotionSection>
-            {/* CTA */}
+
+      {/* REVIEWS */}
+      {reviews.length > 0 && (
+        <MotionSection id="reviews" className="space-y-6">
+          <SectionHeader
+            eyebrow="Reviews"
+            title="What clients say"
+            description="Feedback from clients I've had the pleasure of working with."
+          />
+          <ReviewCarousel reviews={reviews} />
+        </MotionSection>
+      )}
+
+      {/* CTA */}
       <MotionSection className="mt-4">
         <div className="rounded-3xl border border-[#E0E0E0] bg-white p-6 text-center shadow-sm dark:border-darkBorder dark:bg-darkSurface">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-700">
