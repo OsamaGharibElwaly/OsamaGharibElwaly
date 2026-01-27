@@ -72,7 +72,7 @@ export function ReviewCarousel({ reviews }: ReviewCarouselProps) {
             </div>
 
             {/* Review Text */}
-            <p className="text-base leading-relaxed text-slate-700 dark:text-slate-300 md:text-lg">
+            <p className="text-base leading-relaxed text-slate-700  md:text-lg">
               &ldquo;{currentReview.reviewText}&rdquo;
             </p>
 
@@ -82,10 +82,10 @@ export function ReviewCarousel({ reviews }: ReviewCarouselProps) {
                 {currentReview.clientName.charAt(0)}
               </div>
               <div>
-                <p className="font-semibold text-slate-900 dark:text-slate-200">
+                <p className="font-semibold text-slate-900 dark:text-slate-900">
                   {currentReview.clientName}
                 </p>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="text-sm text-slate-600 dark:text-slate-900">
                   {currentReview.jobTitle}
                 </p>
               </div>
