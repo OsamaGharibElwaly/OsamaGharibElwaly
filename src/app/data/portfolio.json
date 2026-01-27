@@ -21,8 +21,8 @@
     "cv_download": "/assets/downloads/Osama_Alwaly_CV.pdf",
     "about_me": "Front-end developer passionate about crafting clean, scalable, and high-performance web interfaces. Strong with JavaScript/TypeScript, React, Next.js, and modern UI engineering practices. Focused on building smooth user experiences, reusable component systems, and maintainable front-end architectures. Always exploring performance optimization, design systems, and improving developer experience."
   },
-  "projects_num": "5",
-  "experience_num": "0",
+  "projects_num": "6",
+  "experience_num": "1",
   "customers_num": "0",
   "skills": {
   "technical_skills": [
@@ -275,6 +275,42 @@
     "/assets/covers/authors-blog.png",
     "/assets/covers/osama-blog-home.png"    
   ]
+},
+{
+  "name": "E-Commerce Full Stack Application",
+  "cover_image": "/assets/covers/home-ecommerce.png",
+  "short_description": "A full-stack e-commerce web application built with a modern frontend and a structured backend, covering the complete shopping flow.",
+  "description": "A full-stack e-commerce web application created to demonstrate end-to-end development, from building a responsive frontend to implementing backend logic and database integration. The project focuses on real e-commerce functionality such as authentication, product browsing, cart operations, and order handling, with clean structure and scalable organization.",
+  "features": [
+    "User authentication & authorization",
+    "Product listing and management",
+    "Shopping cart functionality",
+    "Order creation and checkout flow",
+    "Database integration",
+    "Responsive web interface"
+  ],
+  "technologies_used": [
+    "Angular",
+    "TypeScript",
+    "Java",
+    "Spring Boot",
+    "SQL",
+    "HTML5",
+    "CSS3",
+    "Git"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/ecomm-fullstack"
+    }
+  ],
+  "media": [
+    "/assets/covers/home-ecommerce.png",
+    "/assets/covers/ecommerce-performance.png",
+    "/assets/covers/cart-ecommerce.png"
+  ]
 }
+
   ]
 }
