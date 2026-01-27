@@ -168,9 +168,9 @@ export default function HomePage() {
           title="Selected work"
           description="A mix of real-world applications and UI/UX explorations."
         />
-        <div className="grid gap-5 md:grid-cols-3">
-          {projects.slice(0, projects.length).map((project) => (
-            <ProjectCard key={project.name} project={project} />
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.slice(0, projects.length).map((project, index) => (
+            <ProjectCard key={project.name} project={project} index={index} />
           ))}
         </div>
       </MotionSection>

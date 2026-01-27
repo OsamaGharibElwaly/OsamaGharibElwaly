@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Github } from "lucide-react";
@@ -7,6 +6,8 @@ import { getProjects } from "../../lib/portfolio-data";
 import { MotionSection } from "../../components/ui/motion-section";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
+import { ProjectImageViewer } from "../../components/ui/project-image-viewer";
+import { ImageCarousel } from "../../components/ui/image-carousel";
 
 // نفس طريقة الـ slug اللي هتستخدمها في الكارد
 function projectSlug(name: string) {
@@ -81,18 +82,11 @@ export default async function ProjectDetailPage(props: PageProps) {
 
       {/* Main preview */}
       <MotionSection>
-        <div className="overflow-hidden rounded-3xl border border-[#E0E0E0] bg-white shadow-sm dark:border-darkBorder dark:bg-darkSurface">
-          <div className="relative w-full pb-[52%]">
-            <Image
-              src={project.cover_image}
-              alt={project.name}
-              fill
-              sizes="(min-width: 1024px) 900px, 100vw"
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
+        <ProjectImageViewer
+          coverImage={project.cover_image}
+          galleryImages={project.media || []}
+          projectName={project.name}
+        />
       </MotionSection>
 
       {/* About this project */}
@@ -145,28 +139,19 @@ export default async function ProjectDetailPage(props: PageProps) {
 
       {/* Gallery */}
       {project.media?.length > 0 && (
-        <MotionSection className="space-y-4">
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-200">
-            Project gallery
-          </h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {project.media.map((src, index) => (
-              <div
-                key={src + index}
-                className="overflow-hidden rounded-3xl border border-[#E0E0E0] bg-white shadow-sm transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg dark:border-darkBorder dark:bg-darkSurface"
-              >
-                <div className="relative w-full pb-[70%]">
-                  <Image
-                    src={src}
-                    alt={`${project.name} preview ${index + 1}`}
-                    fill
-                    sizes="(min-width: 1024px) 400px, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
+        <MotionSection className="space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-200">
+              Project gallery
+            </h2>
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              {project.media.length} {project.media.length === 1 ? "image" : "images"}
+            </p>
           </div>
+          <ImageCarousel
+            images={project.media}
+            projectName={project.name}
+          />
         </MotionSection>
       )}
 
