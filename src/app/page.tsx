@@ -14,9 +14,9 @@ import { MotionSection } from "./components/ui/motion-section";
 import { SectionHeader } from "./components/ui/section-header";
 import { SkillsGrid } from "./components/ui/skills-grid";
 import { Timeline } from "./components/ui/timeline";
-import { ProjectCard } from "./components/ui/project-card";
 import { ReviewCarousel } from "./components/ui/review-carousel";
-import { Mail, Phone, Briefcase, FolderGit2, Users } from "lucide-react";
+import { Mail, Briefcase, FolderGit2, Users } from "lucide-react";
+import { ProjectsShowcase } from "./components/ui/projects-showcase";
 
 export default function HomePage() {
   const personal = getPersonalInfo();
@@ -171,11 +171,7 @@ export default function HomePage() {
           title="Selected work"
           description="A mix of real-world applications and UI/UX explorations."
         />
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(0, projects.length).map((project, index) => (
-            <ProjectCard key={project.name} project={project} index={index} />
-          ))}
-        </div>
+        <ProjectsShowcase projects={projects} />
       </MotionSection>
 
       {/* REVIEWS */}

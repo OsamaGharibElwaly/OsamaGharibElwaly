@@ -278,6 +278,7 @@
 },
 {
   "name": "E-Commerce Full Stack Application",
+  "category": "Fullstack Web",
   "cover_image": "/assets/covers/home-ecommerce.png",
   "short_description": "A full-stack e-commerce web application built with a modern frontend and a structured backend, covering the complete shopping flow.",
   "description": "A full-stack e-commerce web application created to demonstrate end-to-end development, from building a responsive frontend to implementing backend logic and database integration. The project focuses on real e-commerce functionality such as authentication, product browsing, cart operations, and order handling, with clean structure and scalable organization.",
@@ -307,6 +308,74 @@
     "/assets/covers/home-ecommerce.png",
     "/assets/covers/product-ecommerce.png",
     "/assets/covers/cart-ecommerce.png"
+  ]
+},
+{
+  "name": "QA E-Commerce Automation Portfolio",
+  "category": "QA Testing",
+  "cover_image": "/assets/covers/qa-ecom-testing-1.png",
+  "short_description": "QA-ready full-stack e-commerce app with backend validation, Selenium POM E2E tests, CI pipeline, and Docker setup.",
+  "description": "Comprehensive QA automation portfolio combining a Next.js frontend, Express API, Jest/Supertest backend tests, and Selenium end-to-end flows. Includes robust auth/cart/checkout edge-case handling, test artifacts, and CI jobs for backend, frontend build, and browser automation.",
+  "features": [
+    "Selenium Page Object Model suite with headed/headless modes",
+    "Backend validation and auth/cart/checkout negative-case handling",
+    "Jest + Supertest API tests and CI workflow integration",
+    "Docker orchestration for frontend/backend local runs"
+  ],
+  "technologies_used": [
+    "Next.js",
+    "Express",
+    "Jest",
+    "Supertest",
+    "Selenium",
+    "Pytest",
+    "Docker",
+    "GitHub Actions"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/qa-ecommerce-automation-portfolio"
+    }
+  ],
+  "media": [
+    "/assets/covers/qa-ecom-testing-1.png",
+    "/assets/covers/product-ecommerce.png",
+    "/assets/covers/cart-ecommerce.png"
+  ]
+},
+{
+  "name": "User & Order API QA Automation",
+  "category": "QA Testing",
+  "cover_image": "/assets/covers/api-test-stack-1.png",
+  "short_description": "Express REST API with JWT auth, strict validation, Postman/Newman automation, Jest/Supertest tests, Docker, and CI.",
+  "description": "API-focused QA automation project centered on user/order flows with comprehensive payload validation, status/error coverage, and automated checks. Includes Postman collection execution via Newman, Jest/Supertest API tests, SQL-like integrity checks, and containerized runtime.",
+  "features": [
+    "JWT-protected user and order endpoints with edge-case validation",
+    "Postman collection + Newman command execution for API regression",
+    "Jest and Supertest automated API test suite",
+    "Dockerized service with GitHub Actions CI workflow"
+  ],
+  "technologies_used": [
+    "Node.js",
+    "Express",
+    "JWT",
+    "Jest",
+    "Supertest",
+    "Postman",
+    "Newman",
+    "Docker"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/user-order-api-qa-automation"
+    }
+  ],
+  "media": [
+    "/assets/covers/api-test-stack-1.png",
+    "/assets/covers/database_structure.png",
+    "/assets/covers/render.png"
   ]
 }
   ],

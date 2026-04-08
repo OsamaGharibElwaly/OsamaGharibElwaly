@@ -47,6 +47,7 @@ export interface ProjectLink {
 
 export interface Project {
   name: string;
+  category?: "Fullstack Web" | "QA Testing";
   cover_image: string;
   short_description: string;
   description: string;
