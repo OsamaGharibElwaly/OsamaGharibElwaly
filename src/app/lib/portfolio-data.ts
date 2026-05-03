@@ -47,7 +47,13 @@ export interface ProjectLink {
 
 export interface Project {
   name: string;
-  category?: "Fullstack Web" | "QA Testing";
+  category?: "Fullstack Web" | "QA Testing" | "AI Engineering";
+  /** High-level system pattern (e.g. event-driven, RAG service). */
+  architecture_tag?: string;
+  /** AI-specific building blocks for this system. */
+  ai_components?: string[];
+  /** Ordered stages for a compact pipeline visualization on cards. */
+  pipeline_steps?: string[];
   cover_image: string;
   short_description: string;
   description: string;

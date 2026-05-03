@@ -69,11 +69,16 @@ export default async function ProjectDetailPage(props: PageProps) {
 
         <div className="space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-            Project
+            {project.category ? `${project.category} · ` : ""}Project
           </p>
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900 md:text-3xl dark:text-slate-200">
             {project.name}
           </h1>
+          {project.architecture_tag && (
+            <p className="text-xs font-semibold uppercase tracking-wide text-cyan-700 dark:text-cyan-400">
+              Architecture · {project.architecture_tag}
+            </p>
+          )}
           <p className="max-w-2xl text-sm text-slate-600 dark:text-slate-500">
             {project.short_description}
           </p>
@@ -98,6 +103,46 @@ export default async function ProjectDetailPage(props: PageProps) {
           {project.description}
         </p>
       </MotionSection>
+
+      {project.pipeline_steps && project.pipeline_steps.length > 0 && (
+        <MotionSection className="space-y-4">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-200">
+            System pipeline
+          </h2>
+          <div className="flex flex-wrap items-center gap-2 rounded-3xl border border-slate-200 bg-white p-4 dark:border-darkBorder dark:bg-darkSurface">
+            {project.pipeline_steps.map((step, idx) => (
+              <div key={step} className="flex items-center gap-2">
+                {idx > 0 && (
+                  <span className="text-cyan-600/70 dark:text-cyan-400/60" aria-hidden>
+                    →
+                  </span>
+                )}
+                <span className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-medium text-slate-800 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200">
+                  {step}
+                </span>
+              </div>
+            ))}
+          </div>
+        </MotionSection>
+      )}
+
+      {project.ai_components && project.ai_components.length > 0 && (
+        <MotionSection className="space-y-4">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-200">
+            AI components
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {project.ai_components.map((c) => (
+              <Badge
+                key={c}
+                className="rounded-full border-0 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-800 dark:bg-violet-500/15 dark:text-violet-200"
+              >
+                {c}
+              </Badge>
+            ))}
+          </div>
+        </MotionSection>
+      )}
 
       {/* Key Features */}
       {project.features?.length > 0 && (

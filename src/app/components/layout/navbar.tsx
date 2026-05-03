@@ -27,13 +27,22 @@ export function Navbar() {
               Osama Alwaly
             </span>
             <span className="text-xs text-slate-900 dark:text-slate-400 ">
-              Front-end Developer
+              AI Engineer · Software Engineer
             </span>
           </div>
         </Link>
 
         <div className="flex items-center gap-6">
           <ul className="hidden items-center gap-4 text-xs font-medium text-slate-600 md:flex dark:text-slate-900">
+            <li>
+              <Link
+                href="/ai"
+                className="rounded-full px-3 py-1 text-cyan-700 transition hover:bg-cyan-500/10 dark:text-cyan-300 dark:hover:bg-cyan-400/10"
+                data-testid="nav-ai-systems"
+              >
+                AI Systems
+              </Link>
+            </li>
             {sections.map((item) => (
               <li key={item.href}>
                 <a

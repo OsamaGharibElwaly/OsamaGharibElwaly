@@ -20,3 +20,17 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@keyframes hero-ai-float-badge {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-4px);
+  }
+}
+
+.hero-ai-float-badge {
+  animation: hero-ai-float-badge 5s ease-in-out infinite;
+}

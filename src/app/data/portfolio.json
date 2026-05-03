@@ -1,7 +1,7 @@
 {
   "personal_info": {
     "name": "Osama Alwaly",
-    "title": "Front-end Developer",
+    "title": "AI Engineer | Software Engineer",
     "profile_image": "/assets/profile/profile.jpeg",
     "location": "Port Said, Egypt",
     "contact": {
@@ -19,9 +19,9 @@
       }
     ],
     "cv_download": "/assets/downloads/Osama_Alwaly_CV.pdf",
-    "about_me": "Front-end developer passionate about crafting clean, scalable, and high-performance web interfaces. Strong with JavaScript/TypeScript, React, Next.js, and modern UI engineering practices. Focused on building smooth user experiences, reusable component systems, and maintainable front-end architectures. Always exploring performance optimization, design systems, and improving developer experience."
+    "about_me": "AI Engineer and software engineer building full-stack AI systems: LLM orchestration, RAG pipelines, embeddings, and production APIs (e.g. FastAPI). Equally strong shipping polished web interfaces with React, Next.js, and TypeScript—focused on observable stages, evaluation, and maintainable architecture."
   },
-  "projects_num": "6",
+  "projects_num": "10",
   "experience_num": "1",
   "customers_num": "1",
   "skills": {
@@ -38,6 +38,9 @@
     "API Integration",
     "Testing (Jest)",
     "Python",
+    "LLMs / RAG",
+    "Embeddings",
+    "FastAPI",
     "C#"
   ],
   
@@ -376,6 +379,97 @@
     "/assets/covers/api-test-stack-1.png",
     "/assets/covers/database_structure.png",
     "/assets/covers/render.png"
+  ]
+},
+{
+  "name": "ATS AI System",
+  "category": "AI Engineering",
+  "architecture_tag": "RAG + structured extraction",
+  "ai_components": [
+    "Embeddings",
+    "Vector retrieval",
+    "LLM parsing",
+    "ATS-style scoring"
+  ],
+  "pipeline_steps": [
+    "Ingest CV / job",
+    "Chunk + embed",
+    "Retrieve top-K",
+    "LLM structured output",
+    "Ranked insights"
+  ],
+  "cover_image": "/assets/covers/ats_score.png",
+  "short_description": "resume_job_parser — ATS-oriented AI system for parsing roles and CVs into comparable signals.",
+  "description": "End-to-end ATS-style intelligence: ingest job postings and résumés, embed and retrieve the most relevant chunks, then use an LLM to emit structured fields (skills, seniority, gaps) for recruiters or applicants. Designed around clear pipeline stages, evaluation hooks, and API boundaries suitable for automation.",
+  "features": [
+    "Document ingestion and normalization",
+    "Embedding + similarity retrieval",
+    "LLM-guided structured extraction",
+    "Comparable candidate ↔ role signals",
+    "API-friendly outputs for downstream tools"
+  ],
+  "technologies_used": [
+    "Python",
+    "FastAPI",
+    "Embeddings",
+    "Vector store",
+    "LLM APIs",
+    "Pydantic"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/resume_job_parser"
+    }
+  ],
+  "media": [
+    "/assets/covers/ats_score.png"
+  ]
+},
+{
+  "name": "AI CRM Intelligence Module",
+  "category": "AI Engineering",
+  "architecture_tag": "Event-driven CRM copilot",
+  "ai_components": [
+    "Lead summarization",
+    "RAG on accounts",
+    "Tool-style actions",
+    "Scoring / routing"
+  ],
+  "pipeline_steps": [
+    "CRM event",
+    "Context assembly",
+    "RAG + LLM",
+    "Next-best action",
+    "Audit trail"
+  ],
+  "cover_image": "/assets/covers/ai_hcrm.png",
+  "short_description": "ai-first-crm-hcp-module — AI-first CRM intelligence for HCP workflows: context, retrieval, and guided actions.",
+  "description": "A CRM intelligence layer that listens to CRM signals, assembles account and interaction context, retrieves supporting knowledge, and proposes concise next steps for reps. Emphasizes guardrails, traceability, and pipeline-style decomposition so teams can evolve prompts and tools without losing observability.",
+  "features": [
+    "Account-centric context windows",
+    "Retrieval over product / policy corpora",
+    "Action suggestions with human-in-the-loop",
+    "Modular service boundaries for CRM webhooks",
+    "Logging suitable for compliance review"
+  ],
+  "technologies_used": [
+    "TypeScript",
+    "Next.js",
+    "LLM orchestration",
+    "RAG",
+    "REST / webhooks",
+    "Vector search"
+  ],
+  "links": [
+    {
+      "type": "GitHub",
+      "url": "https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module"
+    }
+  ],
+  "media": [
+    "/assets/covers/osama-blog.png",
+    "/assets/covers/osama-blog-home.png"
   ]
 }
   ],

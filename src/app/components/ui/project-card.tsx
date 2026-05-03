@@ -7,6 +7,7 @@ import { Badge } from "./badge";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { projectSlug } from "../../lib/slug";
 import { motion } from "framer-motion";
+import { PipelineStrip } from "./pipeline-strip";
 
 interface ProjectCardProps {
   project: Project;
@@ -21,7 +22,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group flex flex-col overflow-hidden rounded-3xl border border-[#E0E0E0] bg-white shadow-md transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl dark:border-darkBorder dark:bg-darkSurface"
+      className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white/90 shadow-md backdrop-blur-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:border-cyan-500/25 hover:shadow-[0_20px_50px_-20px_rgba(34,211,238,0.2)] dark:border-white/10 dark:bg-slate-950/60 dark:hover:border-cyan-400/20"
     >
       {/* Image Container with Enhanced Effects */}
       <Link href={`/projects/${slug}`} className="relative block overflow-hidden">
@@ -54,7 +55,12 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       {/* Content Section */}
       <div className="flex flex-1 flex-col gap-3 p-6">
         <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-slate-900 transition-colors duration-200 group-hover:text-[#00AEEF] dark:text-slate-200 dark:group-hover:text-[#00AEEF]">
+          {project.architecture_tag && (
+            <Badge className="w-fit border-0 bg-cyan-500/10 text-[10px] font-semibold uppercase tracking-wide text-cyan-800 dark:bg-cyan-400/10 dark:text-cyan-200">
+              {project.architecture_tag}
+            </Badge>
+          )}
+          <h3 className="text-lg font-semibold text-slate-900 transition-colors duration-200 group-hover:text-cyan-600 dark:text-slate-200 dark:group-hover:text-cyan-400">
             {project.name}
           </h3>
           <p className="line-clamp-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
@@ -62,21 +68,51 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </p>
         </div>
 
-        {/* Technologies Badges */}
-        <div className="flex flex-wrap gap-1.5">
-          {project.technologies_used.slice(0, 4).map((tech) => (
-            <Badge
-              key={tech}
-              className="text-[10px] bg-sky-50 text-sky-700 dark:bg-[#0b2237] dark:text-sky-300 border-0"
-            >
-              {tech}
-            </Badge>
-          ))}
-          {project.technologies_used.length > 4 && (
-            <Badge className="text-[10px] bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 border-0">
-              +{project.technologies_used.length - 4}
-            </Badge>
-          )}
+        {project.ai_components && project.ai_components.length > 0 && (
+          <div>
+            <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              AI components
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {project.ai_components.slice(0, 6).map((c) => (
+                <Badge
+                  key={c}
+                  className="border-0 bg-violet-500/10 text-[10px] text-violet-800 dark:bg-violet-500/15 dark:text-violet-200"
+                >
+                  {c}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {project.pipeline_steps && project.pipeline_steps.length > 0 && (
+          <PipelineStrip
+            steps={project.pipeline_steps}
+            data-testid={`pipeline-${projectSlug(project.name)}`}
+          />
+        )}
+
+        {/* Stack */}
+        <div>
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            Stack
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {project.technologies_used.slice(0, 4).map((tech) => (
+              <Badge
+                key={tech}
+                className="text-[10px] border-0 bg-sky-50 text-sky-700 dark:bg-sky-950/50 dark:text-sky-300"
+              >
+                {tech}
+              </Badge>
+            ))}
+            {project.technologies_used.length > 4 && (
+              <Badge className="text-[10px] border-0 bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+                +{project.technologies_used.length - 4}
+              </Badge>
+            )}
+          </div>
         </div>
 
         {/* View Project Link */}

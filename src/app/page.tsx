@@ -17,6 +17,7 @@ import { Timeline } from "./components/ui/timeline";
 import { ReviewCarousel } from "./components/ui/review-carousel";
 import { Mail, Briefcase, FolderGit2, Users } from "lucide-react";
 import { ProjectsShowcase } from "./components/ui/projects-showcase";
+import { HeroAiThree } from "./components/ui/hero-ai-three";
 
 export default function HomePage() {
   const personal = getPersonalInfo();
@@ -32,26 +33,33 @@ export default function HomePage() {
   return (
     <div className="space-y-14 lg:space-y-16 dark:[#101622]">
                   {/* HERO */}
-      <MotionSection className="grid gap-10 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:items-center">
-        {/* left side */}
+      <MotionSection className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center">
         <div className="space-y-6">
-          <div className="space-y-2">
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+              AI systems · full-stack
+            </p>
             <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              <span className="block text-[#00AEEF]">Front-end Developer</span>
+              <span className="block bg-gradient-to-r from-cyan-600 via-sky-600 to-violet-600 bg-clip-text text-transparent dark:from-cyan-400 dark:via-sky-400 dark:to-violet-400">
+                AI Engineer | Software Engineer
+              </span>
+              <span className="mt-1 block text-lg font-medium text-slate-700 md:text-xl dark:text-slate-300">
+                (Full-Stack AI Systems)
+              </span>
             </h1>
             <p className="max-w-xl text-sm text-slate-600 md:text-base dark:text-slate-300">
-              Coding smooth. Designing smart. Delivering fast.
+              Focus: LLMs, RAG pipelines, embeddings, and AI architecture you can ship—observable stages,
+              clear APIs, and guardrails that hold in production.
             </p>
           </div>
 
-          {/* buttons + contact */}
-          <div className="flex max-w-xs flex-col gap-3">
+          <div className="flex max-w-md flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Button
               asChild
               size="lg"
-              className="w-full rounded-full bg-[#00AEEF] text-white shadow-md transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-lg hover:bg-brandBlue/90 hover:text-black"
+              className="w-full rounded-full bg-[#00AEEF] text-white shadow-md transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-lg hover:bg-cyan-500/90 sm:w-auto"
             >
-              <Link href={personal.cv_download} download>
+              <Link href={personal.cv_download} download data-testid="hero-download-cv">
                 Download CV
               </Link>
             </Button>
@@ -60,35 +68,49 @@ export default function HomePage() {
               asChild
               size="lg"
               variant="outline"
-              className="w-full rounded-full border-transparent bg-white text-black shadow-md transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-lg hover:text-[#00AEEF]"
+              className="w-full rounded-full border-slate-200/90 bg-white/90 text-slate-900 shadow-md backdrop-blur-sm transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:border-cyan-400/40 hover:text-cyan-700 dark:border-white/10 dark:bg-slate-950/50 dark:text-slate-100 dark:hover:border-cyan-400/30 sm:w-auto"
             >
-              <Link href="#projects">View Projects</Link>
+              <Link href="#projects" data-testid="hero-view-projects">
+                AI Systems Showcase
+              </Link>
             </Button>
 
-            {/* Contact centered under buttons */}
-            <div className="flex justify-center pt-1">
-              <Link
-                href={`mailto:${personal.contact.email}`}
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#00AEEF] transition hover:scale-[1.02] hover:text-black dark:hover:text-white"
-              >
-                <Mail className="h-4 w-4" />
-                Contact
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full rounded-full border-cyan-500/25 bg-cyan-500/5 text-cyan-900 shadow-sm transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] dark:border-cyan-400/20 dark:bg-cyan-400/10 dark:text-cyan-100 sm:w-auto"
+            >
+              <Link href="/ai" data-testid="hero-ai-journey">
+                AI engineering journey
               </Link>
+            </Button>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4 pt-1">
+            <Link
+              href={`mailto:${personal.contact.email}`}
+              className="inline-flex items-center gap-2 text-sm font-medium text-cyan-600 transition hover:text-cyan-800 dark:text-cyan-400 dark:hover:text-cyan-200"
+              data-testid="hero-contact-email"
+            >
+              <Mail className="h-4 w-4" />
+              Contact
+            </Link>
+            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-cyan-500/40 ring-2 ring-cyan-500/10 dark:border-cyan-400/30">
+              <Image
+                src={personal.profile_image}
+                alt={personal.name}
+                fill
+                className="object-cover"
+                priority
+                sizes="56px"
+              />
             </div>
           </div>
         </div>
 
-        {/* right side image */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative h-56 w-56 overflow-hidden rounded-full border-8 border-[#00AEEF] md:h-64 md:w-64 transition hover:scale-[1.2]">
-            <Image
-              src={personal.profile_image}
-              alt={personal.name}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+        <div className="flex min-h-[280px] flex-col justify-center">
+          <HeroAiThree />
         </div>
       </MotionSection>
 
@@ -99,7 +121,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Overview"
             title="Quick snapshot"
-            description={`Delivering clean and scalable front-end solutions with modern tooling.`}
+            description="Shipping AI-backed systems and interfaces with the same rigor as any production service."
           />
         </div>
         <div className="grid gap-4 md:col-span-2 md:grid-cols-3">
@@ -167,9 +189,9 @@ export default function HomePage() {
       {/* PROJECTS */}
       <MotionSection id="projects" className="space-y-6">
         <SectionHeader
-          eyebrow="Projects"
-          title="Selected work"
-          description="A mix of real-world applications and UI/UX explorations."
+          eyebrow="AI Systems Showcase"
+          title="Systems, not just screens"
+          description="Architecture tags, AI building blocks, and compact pipeline views—organized by AI engineering, full-stack web, and QA automation."
         />
         <ProjectsShowcase projects={projects} />
       </MotionSection>
@@ -193,8 +215,8 @@ export default function HomePage() {
             Interested in similar work?
           </h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-500">
-            Let&apos;s connect and discuss how I can bring your next project to
-            life with clean, effective design and front-end development.
+            Let&apos;s connect on LLM features, RAG, or full-stack delivery—from first
+            prototype to production checks.
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <Button
