@@ -1,0 +1,75 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0b0f19; }
+
+  .title {
+    font: bold 22px monospace;
+    fill: #ffffff;
+    opacity: 0.9;
+  }
+
+  /* LEFT SIDE (AI) */
+  .ai {
+    fill: #1e90ff;
+    opacity: 0.7;
+    animation: pulseAI 3s ease-in-out infinite;
+  }
+
+  /* RIGHT SIDE (SOFTWARE) */
+  .sw {
+    fill: #00c853;
+    opacity: 0.7;
+    animation: pulseSW 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseAI {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.9; }
+    100% { opacity: 0.4; }
+  }
+
+  @keyframes pulseSW {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.9; }
+    100% { opacity: 0.4; }
+  }
+
+  .line {
+    stroke: #ffffff;
+    stroke-width: 2;
+    opacity: 0.2;
+    stroke-dasharray: 6;
+    animation: flow 4s linear infinite;
+  }
+
+  @keyframes flow {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+  </style>
+  <!-- Background -->
+    <rect width="100%" height="100%" class="bg"/>
+    <!-- Title -->
+      <text x="240" y="60" class="title">
+        🧠 AI × Software Engineering Brain
+      </text>
+      <!-- CENTER DIVIDER -->
+        <line x1="450" y1="100" x2="450" y2="420" class="line"/>
+        <!-- LEFT BRAIN (AI SIDE - SIMPLE SHAPE) -->
+          <circle cx="300" cy="250" r="120" class="ai"/>
+          <circle cx="250" cy="200" r="40" class="ai"/>
+          <circle cx="350" cy="220" r="50" class="ai"/>
+          <circle cx="300" cy="300" r="60" class="ai"/>
+          <!-- RIGHT BRAIN (SOFTWARE SIDE - SIMPLE SHAPE) -->
+            <circle cx="600" cy="250" r="120" class="sw"/>
+            <circle cx="550" cy="200" r="40" class="sw"/>
+            <circle cx="650" cy="220" r="50" class="sw"/>
+            <circle cx="600" cy="300" r="60" class="sw"/>
+            <!-- LABELS -->
+              <text x="220" y="430" fill="#1e90ff" font-family="monospace" font-size="18">
+                AI — Intelligence Layer
+              </text>
+              <text x="520" y="430" fill="#00c853" font-family="monospace" font-size="18">
+                Software — System Layer
+              </text>
+            </svg>
