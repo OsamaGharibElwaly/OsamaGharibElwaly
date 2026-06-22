@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/ai-software-brain.svg"
+     width="50%" />
+</p>
+
 # Osama Alwaly
 **AI Engineer | Software Engineer**
 
@@ -98,6 +103,10 @@ pytest | Selenium | Postman | Jest | Supertest | ISTQB (CTFL certified)
   *User-centered design principles*
 
 ---
+<p align="center">
+  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/featured-projects-visual.svg"
+     width="70%" />
+</p>
 
 ## Featured Projects
 
