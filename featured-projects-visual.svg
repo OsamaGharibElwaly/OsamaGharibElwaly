@@ -1,0 +1,123 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+  .bg {
+    fill: #0b0f19;
+  }
+
+  .title {
+    font: bold 26px monospace;
+    fill: #FFD700;
+  }
+
+  /* NODE STYLE */
+  .node {
+    fill: #111827;
+    stroke: #374151;
+    stroke-width: 2;
+    rx: 14;
+    transition: 0.3s;
+  }
+
+  .node:hover {
+    stroke: #6FA8DC;
+    transform: scale(1.02);
+  }
+
+  .node-title {
+    font: bold 13px monospace;
+    fill: #81D4FA;
+  }
+
+  .node-text {
+    font: 11px monospace;
+    fill: #E5E7EB;
+  }
+
+  /* CONNECTION LINES */
+  .line {
+    stroke: #6FA8DC;
+    stroke-width: 2;
+    opacity: 0.6;
+    stroke-dasharray: 6;
+    animation: flow 3s linear infinite;
+  }
+
+  @keyframes flow {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* LAYER LABEL */
+  .layer {
+    font: bold 14px monospace;
+    fill: #9CA3AF;
+  }
+
+</style>
+
+<rect width="100%" height="100%" class="bg"/>
+
+<!-- TITLE -->
+<text x="450" y="50" class="title">🚀 Featured Projects — System Map</text>
+
+<!-- ================= LAYER LABELS ================= -->
+<text x="60" y="120" class="layer">AI LAYER</text>
+<text x="60" y="320" class="layer">APPLICATION LAYER</text>
+<text x="60" y="520" class="layer">ENGINEERING LAYER</text>
+
+<!-- ================= NODES ================= -->
+
+<!-- PROJECT 1 -->
+<rect x="200" y="100" width="300" height="120" class="node"/>
+<text x="220" y="130" class="node-title">RAG Document System</text>
+<text x="220" y="155" class="node-text">FAISS + Groq + Semantic Search</text>
+<text x="220" y="175" class="node-text">Explainable AI + Citations</text>
+<text x="220" y="195" class="node-text">Next.js + FastAPI</text>
+
+<!-- PROJECT 2 -->
+<rect x="650" y="100" width="300" height="120" class="node"/>
+<text x="670" y="130" class="node-title">Resume ATS Analyzer</text>
+<text x="670" y="155" class="node-text">AI Scoring Engine</text>
+<text x="670" y="175" class="node-text">Hybrid Matching Logic</text>
+<text x="670" y="195" class="node-text">FastAPI + LangChain</text>
+
+<!-- PROJECT 3 -->
+<rect x="200" y="300" width="300" height="120" class="node"/>
+<text x="220" y="330" class="node-title">AI CRM System</text>
+<text x="220" y="355" class="node-text">LangGraph Agents</text>
+<text x="220" y="375" class="node-text">Tool-first execution</text>
+<text x="220" y="395" class="node-text">React + PostgreSQL</text>
+
+<!-- PROJECT 4 -->
+<rect x="650" y="300" width="300" height="120" class="node"/>
+<text x="670" y="330" class="node-title">REST API QA System</text>
+<text x="670" y="355" class="node-text">JWT + Testing Pipeline</text>
+<text x="670" y="375" class="node-text">CI/CD Automation</text>
+<text x="670" y="395" class="node-text">Node.js + Jest</text>
+
+<!-- ENGINEERING FOUNDATION -->
+<rect x="400" y="520" width="350" height="140" class="node"/>
+<text x="420" y="550" class="node-title">Engineering Foundation</text>
+<text x="420" y="575" class="node-text">System Design • Reliability</text>
+<text x="420" y="595" class="node-text">Testing • Evaluation • CI/CD</text>
+<text x="420" y="615" class="node-text">Production-Ready Architecture</text>
+
+<!-- ================= CONNECTIONS ================= -->
+
+<!-- AI → Apps -->
+<line x1="350" y1="220" x2="350" y2="300" class="line"/>
+<line x1="800" y1="220" x2="800" y2="300" class="line"/>
+
+<!-- Apps → Engineering -->
+<line x1="350" y1="420" x2="575" y2="520" class="line"/>
+<line x1="800" y1="420" x2="575" y2="520" class="line"/>
+
+<!-- AI link -->
+<line x1="350" y1="220" x2="800" y2="220" class="line"/>
+
+<!-- Apps link -->
+<line x1="350" y1="420" x2="800" y2="420" class="line"/>
+
+</svg>
