@@ -43,6 +43,10 @@ AI Engineer with hands-on experience integrating **LLMs via APIs**, building **R
 
 </div>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/tech-tree.svg" width="90%" />
+</p>
+
 ### AI & LLM
 - Prompt Engineering (Certified)
 - LLM Integration via APIs
