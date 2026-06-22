@@ -21,7 +21,27 @@ AI Engineer with hands-on experience integrating **LLMs via APIs**, building **R
 
 ---
 
-## Technologies
+<p align="center">
+  <img 
+    src="https://capsule-render.vercel.app/api?type=rect&color=0:0f2027,50:203a43,100:2c5364&height=160&section=header&text=Areas%20of%20Expertise&fontSize=32&fontColor=ffffff&animation=fadeIn"
+    width="92%"
+  />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=2200&pause=600&color=4FC3F7&center=true&vCenter=true&width=700&lines=AI+Engineering+%E2%86%92+Software+Systems;RAG+Pipelines+%E2%86%92+Production+APIs;LLMs+with+Evaluation+%26+QA;Full-Stack+AI+Applications;Dockerized+%26+CI-Ready+Systems" />
+</p>
+
+<div align="center">
+  
+| 🤖 **AI & ML** | 🏗️ **Backend** | 🎨 **Frontend** | 🛠️ **DevOps** |
+|:---:|:---:|:---:|:---:|
+| RAG Architectures | FastAPI/Django | React.js | Docker/K8s |
+| LLM Fine-tuning | Node.js | Next.js | CI/CD Pipelines |
+| Multi-Modal AI | Python/TypeScript | TailwindCSS | AWS/Azure |
+| Agent Frameworks | RESTful APIs | Responsive Design | Linux Systems |
+
+</div>
 
 ### AI & LLM
 - Prompt Engineering (Certified)
@@ -77,33 +97,101 @@ pytest | Selenium | Postman | Jest | Supertest | ISTQB (CTFL certified)
 
 ## Featured Projects
 
-### 🔹 FitTrack - Training Management System
-*Next.js, React, TypeScript, TailwindCSS, Redux, Python, Jest, Selenium*  
-- Full-stack gym tracking web application with responsive UI & smooth animations  
-- Implemented comprehensive test suites: unit (Jest), integration (RTL), E2E (Selenium)  
-- Integrated REST & GraphQL APIs with data validation  
-- Used Agile/Scrum methodology
+### 1. Intelligent NLP-Powered Document Management System (RAG Document Assistant)
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/intelligent-nlp-powered-document-management-system)**
 
-### 🔹 API Test Stack
-*Python, Jest, Supertest, Postman, Newman, PostgreSQL*  
-- Automated API contract testing with edge case & auth validation  
-- Applied black-box testing, boundary value analysis, equivalence partitioning
+A **production-ready full-stack RAG (Retrieval-Augmented Generation) system** for intelligent document management and Q&A.
 
-### 🔹 UI/UX Design Projects (Figma)
-- Bajaru App, Piddi URL Landing Page, LinguaLearn Platform  
-- User-centered design research and prototyping
+- **Core Features**: Document upload (PDF, DOCX, TXT), semantic retrieval with FAISS, hybrid (keyword + vector) search, grounded answers via Groq LLM, citations, confidence scores, evidence spans, and feedback-driven learning.
+- **Architecture**: Next.js frontend + FastAPI backend, deterministic chunking, SentenceTransformer embeddings, multi-tenant RBAC, versioning, audit logging, and observability.
+- **Highlights**: C4 model diagrams, phased implementation (Foundation → AI Intelligence → Observability), explainable AI outputs, and deployment configs (Render, Vercel, Railway).
+- **Tech Stack**: FastAPI, Next.js, FAISS, Groq, SentenceTransformers, Docker.
 
+*Ideal for enterprises needing reliable, auditable document intelligence.*
+
+---
+
+### 2. Resume Job Parser - AI-Powered ATS Analyzer
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/resume_job_parser)**
+
+An **AI-driven ATS (Applicant Tracking System) scoring tool** that compares resumes against job descriptions and delivers detailed insights.
+
+- **Key Outputs**: ATS score (0-100), weighted skill breakdown, match table, actionable recommendations, and human-readable explanations.
+- **Architecture**: Deterministic parsing + matching engine (exact, semantic, lexical), Groq LLM for structured extraction, FastAPI backend, and modern Next.js frontend with 3D visuals.
+- **Highlights**: Modular design (parsing, extraction, matching, scoring, explanation), Docker Compose support, and reproducible results without over-reliance on LLMs for core logic.
+- **Tech Stack**: FastAPI, LangChain, Groq, FastEmbed, Next.js 15, React 19, TypeScript, Docker.
+
+*Perfect for recruiters and job seekers optimizing application success rates.*
+
+---
+
+### 3. AI-First CRM (HCP Interaction Module)
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module)**
+
+**AI-powered CRM module** focused on Healthcare Professional (HCP) interaction workflows, leveraging LangGraph for intelligent agent behavior.
+
+- **Features**: Log interactions, edit records, view history, summarize conversations, and generate follow-up suggestions. Tool-first deterministic execution.
+- **Architecture**: React + Redux frontend, FastAPI backend with LangGraph orchestration, PostgreSQL persistence, and seamless Docker deployment.
+- **Highlights**: Intent routing (log/edit/history/summarize/follow-up), one-command startup, and evaluator-friendly demo scripts.
+- **Tech Stack**: React, Redux Toolkit, FastAPI, LangGraph, PostgreSQL, Docker Compose.
+
+*Demonstrates practical AI agent integration in domain-specific CRM systems.*
+
+---
+
+### 4. User & Order REST API QA Automation
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/user-order-api-qa-automation)**
+
+**Comprehensive REST API** with robust QA practices, built for reliability and testability.
+
+- **Features**: JWT authentication, user/order CRUD operations, comprehensive validation, file-based persistence, and multi-layered testing (Jest/Supertest + Postman/Newman).
+- **Highlights**: CI/CD pipeline (GitHub Actions), Docker support, detailed API documentation, edge-case coverage, and deployment guides (Render, etc.).
+- **Tech Stack**: Node.js, Express, Jest, Supertest, Postman, Docker, GitHub Actions.
+
+*Showcases end-to-end QA engineering for backend services.*
+
+---
+
+### 5. QA E-commerce Automation Portfolio
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/qa-ecommerce-automation-portfolio)**
+
+**Full-stack e-commerce platform** designed as a QA showcase with layered automation testing.
+
+- **Components**: Next.js frontend, Express backend, Python Selenium E2E tests (POM pattern), Jest/Supertest integration tests.
+- **Key QA Features**: Auth protections, checkout validations, mock failure scenarios, CI pipeline with artifact reports, HTML reports + failure screenshots.
+- **Highlights**: Multi-browser support (Chrome/Firefox), Docker orchestration, structured error codes, and free-tier deployment instructions.
+- **Tech Stack**: Next.js, Express, Selenium, Pytest, Jest, Docker, GitHub Actions.
+
+*Comprehensive demonstration of modern QA practices across the stack.*
+
+---
+
+### 6. HRMS Backend (Human Resource Management System)
+**🔗 [View Repository](https://github.com/OsamaGharibElwaly/hrms-backend)**
+
+**Robust Node.js backend** for a Human Resource Management System, emphasizing secure auth and role-based access.
+
+- **Features**: User registration/login with JWT, role-based authorization (admin/manager/employee), Sequelize ORM with PostgreSQL, and comprehensive testing resources.
+- **Highlights**: Detailed Postman collections/scenarios, database setup guides (local + cloud), and extensible models for attendance, leaves, etc.
+- **Tech Stack**: Node.js, Express, Sequelize, PostgreSQL, JWT, bcrypt, Docker-ready.
+
+*Solid foundation for enterprise HR applications with strong security and scalability focus.*
+
+---
+
+## Other Repositories
+Explore more projects on my **[GitHub Profile](https://github.com/OsamaGharibElwaly?tab=repositories)**.
+
+---
+
+**Skills**: AI/ML (RAG, LLMs, Embeddings), Full-Stack Development, QA Automation, Backend Engineering, Docker, CI/CD.
+
+*Open to collaborations, opportunities, and interesting problems in AI and software engineering.*
 > 📂 **All projects on GitHub:** [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
 
 ---
 
 ## Work Experience
-
-### Freelance Fullstack Developer | Self-Employed
-*01/2024 – Present*
-- Built 4+ production applications with comprehensive test suites (pytest, Selenium, Postman)
-- Deployed using Docker + AWS — ready for AI model deployment
-- Practiced root cause analysis, defect tracking, and test coverage analysis
 
 ### Volunteer Speaker | Pioneer of Success Initiative – Egyptian Ministry of Youth & Sports
 *08/2025 – Present*
@@ -118,6 +206,48 @@ pytest | Selenium | Postman | Jest | Supertest | ISTQB (CTFL certified)
 - Applied engineering concepts in electronics labs using MATLAB
 
 ---
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:141e30,100:243b55&height=120&section=header&text=Current%20Engineering%20Focus&fontSize=26&fontColor=ffffff" />
+</p>
+
+
+```python
+current_focus = {
+    "learning": [
+        "Advanced RAG Architectures",
+        "LLM Fine-tuning with LoRA & PEFT",
+        "AI System Evaluation & Reliability",
+        "Multi-Modal AI Pipelines"
+    ],
+    "building": [
+        "Production-Ready Arabic Voice AI Systems",
+        "Deterministic Multi-Agent Applications"
+    ],
+    "exploring": [
+        "AI Agent Frameworks (LangGraph, Tool-First Agents)",
+        "Structured Prompt Engineering & Prompt Testing"
+    ],
+    "reading": [
+        "Applied AI Research Papers",
+        "LLM Architecture & Optimization Techniques"
+    ],
+    "goal": (
+        "Growing as a junior AI/Software Engineer by building "
+        "reliable, scalable AI systems that create real-world impact 🌍"
+    )
+}
+```
+
+
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0f2027,100:203a43&height=90&section=header&text=Thanks%20for%20visiting%20👋&fontSize=28&fontColor=ffffff" />
+</p>
+
+<p align="center">
+  I’m <b>Osama</b> — a software engineer leading systems toward <b>practical, reliable AI</b>.<br/>
+  I don’t chase hype. I build foundations that scale.
+</p>
 
 ## Contact
 
