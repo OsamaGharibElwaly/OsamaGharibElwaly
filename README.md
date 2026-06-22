@@ -256,16 +256,24 @@ current_focus = {
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0f2027,100:203a43&height=90&section=header&text=Thanks%20for%20visiting%20👋&fontSize=28&fontColor=ffffff" />
 </p>
-
+---
 <p align="center">
-  I’m <b>Osama</b> — a software engineer leading systems toward <b>practical, reliable AI</b>.<br/>
-  I don’t chase hype. I build foundations that scale.
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0f2027,100:203a43&height=90&section=header&text=Contact%20Me%20📡&fontSize=28&fontColor=ffffff" />
 </p>
-
-## Contact
-
-- **Email**: osamagharib04@gmail.com
-- **Phone**: +20 1210916041
-- **GitHub**: [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
-- **Portfolio**: [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
-- **LinkedIn**: [linkedin.com/in/osama-alwaly](https://linkedin.com/in/osama-alwaly/)
+---
+<p align="center">
+  <table>
+    <tr>
+      <td align="center" width="120">
+        <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/contact-icon.svg" width="90"/>
+      </td>
+      <td align="left">
+        <strong>📧 Email</strong>: osamagharib04@gmail.com<br/>
+        <strong>📞 Phone</strong>: +20 1210916041<br/>
+        <strong>🐙 GitHub</strong>: github.com/OsamaGharibElwaly<br/>
+        <strong>🌐 Portfolio</strong>: osama-gharib-elwaly.vercel.app<br/>
+        <strong>💼 LinkedIn</strong>: linkedin.com/in/osama-alwaly
+      </td>
+    </tr>
+  </table>
+</p>
