@@ -277,3 +277,17 @@ current_focus = {
     </tr>
   </table>
 </p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsamaGharibElwaly&theme=react&hide_border=true&background=0D1117&stroke=4FC3F7&ring=4FC3F7&fire=4FC3F7&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=4FC3F7&sideLabels=4FC3F7&dates=aaaaaa" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=OsamaGharibElwaly&show_icons=true&count_private=true&hide_border=true&theme=react&bg_color=0D1117&icon_color=4FC3F7&title_color=4FC3F7&text_color=ffffff" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OsamaGharibElwaly&bg_color=0D1117&color=4FC3F7&line=4FC3F7&point=ffffff&area=true&hide_border=true" width="90%" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=OsamaGharibElwaly&label=Profile%20Views&color=4FC3F7&style=flat" />
+  <img src="https://img.shields.io/github/followers/OsamaGharibElwaly?label=Followers&style=social" />
+  <img src="https://img.shields.io/github/stars/OsamaGharibElwaly?label=Stars&style=social" />
+</p>
