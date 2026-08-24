@@ -1,293 +1,344 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/ai-software-brain.svg"
-     width="50%" />
+<img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/ai-software-brain.svg" width="44%" alt="Artificial intelligence and software research illustration" />
+</p> <h1 align="center">Osama Gharib Al-Waly</h1> <p align="center">
+  <strong>AI Engineer & Data Scientist · Research, R&D, and Applied Artificial Intelligence</strong>
+</p> <p align="center">
+  <a href="https://github.com/OsamaGharibElwaly"><img src="https://img.shields.io/badge/GitHub-Profile-181717?logo=github" alt="GitHub profile" /></a>
+  <a href="https://osama-gharib-elwaly.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit-000?logo=vercel" alt="Portfolio" /></a>
+  <a href="https://linkedin.com/in/osama-alwaly/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:osamagharib04@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?logo=gmail" alt="Email" /></a>
+</p> <p align="center">
+  <a href="#about-me">About Me</a> ·
+  <a href="#research-and-rd">Research & R&D</a> ·
+  <a href="#academic-projects">Projects</a> ·
+  <a href="#skills">Skills</a> ·
+  <a href="#opportunities-and-collaboration">Opportunities</a> ·
+  <a href="#contact">Contact</a>
 </p>
 
-# Osama Alwaly
-**AI Engineer | Software Engineer**
-
-[![GitHub](https://img.shields.io/badge/GitHub-OsamaGharibElwaly-181717?logo=github)](https://github.com/OsamaGharibElwaly)
-[![Portfolio](https://img.shields.io/badge/Portfolio-osama--gharib--elwaly.vercel.app-000?logo=vercel)](https://osama-gharib-elwaly.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-osama--alwaly-0A66C2?logo=linkedin)](https://linkedin.com/in/osama-alwaly/)
-[![Email](https://img.shields.io/badge/Email-osamagharib04@gmail.com-D14836?logo=gmail)](mailto:osamagharib04@gmail.com)
-
 ---
 
-## Professional Summary
+<a id="about-me"></a>
 
-AI Engineer with hands-on experience integrating **LLMs via APIs**, building **RAG pipelines**, and writing **production-grade prompts**. Strong full-stack software engineering background (React, Next.js, TypeScript, Python) enables end-to-end ownership from UI to AI model integration. Certified in **prompt engineering** (One Million Promoters) with ISTQB testing fundamentals. Seeking a junior role to build, evaluate, and deploy AI-powered features alongside senior engineers.
+<details open>
+<summary><strong>About Me</strong></summary>
 
----
+I am a **Computer Engineering graduate** building my career at the intersection of **Data Science, Artificial Intelligence, Statistics, and software engineering**. My strongest motivation is to work on problems where careful research, rigorous experimentation, and practical engineering can produce solutions that are measurable and useful in real environments.
 
-## Education
+I am pursuing a long-term path in **Research and Development**, while remaining open to opportunities in the wider job market, including **AI Engineer, Data Scientist, Machine Learning Engineer, Research Engineer, and applied R&D roles**. I am also preparing for future Master's and PhD study by strengthening my foundations in statistics, machine learning, scientific computing, and research communication.
 
-**B.Sc. in Computer Engineering** – Port Said University, Egypt (2020–2025)  
-*GPA: 2.97 (Good)*
+My approach follows the full **research-to-impact cycle**: define a meaningful problem, study existing approaches, prepare and understand the data, design reproducible experiments, evaluate results honestly, analyze failure cases, and turn findings into a reliable prototype or decision-support system.
 
----
+My current direction combines **NLP, LLMs, information retrieval, RAG, AI-system evaluation, predictive analytics, optimization, and operational data science**. I am especially interested in applications across **manufacturing, transportation, logistics, and supply-chain systems**, where AI can support forecasting, predictive maintenance, process optimization, and intelligent decision-making.
 
-<p align="center">
-  <img 
-    src="https://capsule-render.vercel.app/api?type=rect&color=0:0f2027,50:203a43,100:2c5364&height=160&section=header&text=Areas%20of%20Expertise&fontSize=32&fontColor=ffffff&animation=fadeIn"
-    width="92%"
-  />
-</p>
+> **My goal:** grow into an AI Engineer and Data Scientist who can move confidently between academic research, R&D experimentation, and production-oriented intelligent systems.
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=2200&pause=600&color=4FC3F7&center=true&vCenter=true&width=700&lines=AI+Engineering+%E2%86%92+Software+Systems;RAG+Pipelines+%E2%86%92+Production+APIs;LLMs+with+Evaluation+%26+QA;Full-Stack+AI+Applications;Dockerized+%26+CI-Ready+Systems" />
-</p>
+<details>
+<summary><strong>Explore my research mindset</strong></summary>
 
-<div align="center">
-  
-| 🤖 **AI & ML** | 🏗️ **Backend** | 🎨 **Frontend** | 🛠️ **DevOps** |
-|:---:|:---:|:---:|:---:|
-| RAG Architectures | FastAPI/Django | React.js | Docker/K8s |
-| LLM Fine-tuning | Node.js | Next.js | CI/CD Pipelines |
-| Multi-Modal AI | Python/TypeScript | TailwindCSS | AWS/Azure |
-| Agent Frameworks | RESTful APIs | Responsive Design | Linux Systems |
+- **Reproducibility:** Clear experiments, documented assumptions, versioned code, and repeatable workflows.
 
-</div>
+- **Reliability:** Explicit evaluation criteria, error analysis, validation, and careful separation of deterministic and probabilistic components.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/tech-tree.svg" width="90%" />
-</p>
+- **Practical impact:** Research questions connected to operational efficiency, process improvement, forecasting, and decision support.
 
-### AI & LLM
-- Prompt Engineering (Certified)
-- LLM Integration via APIs
-- RAG Pipeline Design
-- Model Behavior Validation (hallucinations, accuracy, relevance)
+- **Continuous learning:** Reading research, building experiments, comparing methods, and translating lessons into better systems.
 
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JS-F7DF1E?logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TS-3178C6?logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+</details> </details>
 
-### Front-End Frameworks & Libraries
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white)
+<a id="research-and-rd"></a>
 
-### Back-End & DevOps
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI/CD-2088FF?logo=githubactions&logoColor=white)
+<details>
+<summary><strong>Research and R&D Direction</strong></summary>
 
-### Testing & Quality
-pytest | Selenium | Postman | Jest | Supertest | ISTQB (CTFL certified)
+<strong>Core Academic Fields</strong>
 
-### Tools
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)
+- Data science and statistical analysis
 
----
+- Artificial intelligence and machine learning
 
-## Certifications
+- Natural language processing and language models
 
-- **One Million Promoters Certificate** – Dubai Future Foundation  
-  *Prompt engineering for AI systems, AI prompt creation & optimization*
+- Information retrieval and retrieval-augmented generation
 
-- **ISTQB Foundation Level (CTFL)** – Knowledge-based  
-  *Testing fundamentals, defect lifecycle, risk-based testing*
+- Experimental design and reproducible research
 
-- **Effective Communication Skills Program** – AAST  
-  *Presentation skills, teamwork, collaboration*
+- AI and LLM evaluation, validation, and reliability
 
-- **UX Design Fundamentals** – Maharatech  
-  *User-centered design principles*
+<strong>Application Areas</strong>
 
----
-<p align="center">
-  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/featured-projects-visual.svg"
-     width="70%" />
-</p>
+I am especially interested in applying data-driven and AI methods to **manufacturing, transportation, logistics, supply-chain systems, predictive maintenance, forecasting, process optimization, and intelligent decision-making**.
 
-## Featured Projects
+These application areas connect technical research with operational challenges where better data analysis, prediction, and decision support can produce measurable improvements.
 
-### 1. Intelligent NLP-Powered Document Management System (RAG Document Assistant)
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/intelligent-nlp-powered-document-management-system)**
+<strong>Interactive Research-to-Impact Map</strong>
 
-A **production-ready full-stack RAG (Retrieval-Augmented Generation) system** for intelligent document management and Q&A.
+```mermaid
+flowchart LR
+    A[Research Question] --> B[Data and Literature]
+    B --> C[Statistical Analysis]
+    C --> D[ML / NLP / LLM Experiments]
+    D --> E[Evaluation and Error Analysis]
+    E --> F[Reproducible Prototype]
+    F --> G[Operational Impact]
+    E -. feedback .-> B
+    G -. new questions .-> A
+```
 
-- **Core Features**: Document upload (PDF, DOCX, TXT), semantic retrieval with FAISS, hybrid (keyword + vector) search, grounded answers via Groq LLM, citations, confidence scores, evidence spans, and feedback-driven learning.
-- **Architecture**: Next.js frontend + FastAPI backend, deterministic chunking, SentenceTransformer embeddings, multi-tenant RBAC, versioning, audit logging, and observability.
-- **Highlights**: C4 model diagrams, phased implementation (Foundation → AI Intelligence → Observability), explainable AI outputs, and deployment configs (Render, Vercel, Railway).
-- **Tech Stack**: FastAPI, Next.js, FAISS, Groq, SentenceTransformers, Docker.
+<details>
+<summary><strong>Explore possible R&D themes</strong></summary>
 
-*Ideal for enterprises needing reliable, auditable document intelligence.*
+- Predictive maintenance and anomaly detection
 
----
+- Forecasting for transportation, logistics, and inventory systems
 
-### 2. Resume Job Parser - AI-Powered ATS Analyzer
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/resume_job_parser)**
+- Process optimization and intelligent decision support
 
-An **AI-driven ATS (Applicant Tracking System) scoring tool** that compares resumes against job descriptions and delivers detailed insights.
+- NLP and LLM tools for technical or operational documents
 
-- **Key Outputs**: ATS score (0-100), weighted skill breakdown, match table, actionable recommendations, and human-readable explanations.
-- **Architecture**: Deterministic parsing + matching engine (exact, semantic, lexical), Groq LLM for structured extraction, FastAPI backend, and modern Next.js frontend with 3D visuals.
-- **Highlights**: Modular design (parsing, extraction, matching, scoring, explanation), Docker Compose support, and reproducible results without over-reliance on LLMs for core logic.
-- **Tech Stack**: FastAPI, LangChain, Groq, FastEmbed, Next.js 15, React 19, TypeScript, Docker.
+- Retrieval quality, grounded generation, and trustworthy AI
 
-*Perfect for recruiters and job seekers optimizing application success rates.*
+- Data-centric experimentation and model-performance analysis
 
----
+</details> </details>
 
-### 3. AI-First CRM (HCP Interaction Module)
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module)**
+<a id="academic-projects"></a>
 
-**AI-powered CRM module** focused on Healthcare Professional (HCP) interaction workflows, leveraging LangGraph for intelligent agent behavior.
+<details>
+<summary><strong>Academic Projects</strong></summary> <details>
+<summary><strong>Research Data Science Lab</strong></summary>
 
-- **Features**: Log interactions, edit records, view history, summarize conversations, and generate follow-up suggestions. Tool-first deterministic execution.
-- **Architecture**: React + Redux frontend, FastAPI backend with LangGraph orchestration, PostgreSQL persistence, and seamless Docker deployment.
-- **Highlights**: Intent routing (log/edit/history/summarize/follow-up), one-command startup, and evaluator-friendly demo scripts.
-- **Tech Stack**: React, Redux Toolkit, FastAPI, LangGraph, PostgreSQL, Docker Compose.
+**Independent Research Project · Python · R · Statistics · Machine Learning**
 
-*Demonstrates practical AI agent integration in domain-specific CRM systems.*
+A research-oriented learning and experimentation environment focused on applying statistical and data-science methods to practical problems.
 
----
+- Covers statistical inference, hypothesis testing, ANOVA, regression, predictive modeling, and experimental analysis.
 
-### 4. User & Order REST API QA Automation
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/user-order-api-qa-automation)**
+- Uses Python and R to implement reproducible statistical experiments and practical exercises.
 
-**Comprehensive REST API** with robust QA practices, built for reliability and testability.
+- Focuses on model evaluation, statistical reasoning, data interpretation, and connecting analytical methods to real-world decisions.
 
-- **Features**: JWT authentication, user/order CRUD operations, comprehensive validation, file-based persistence, and multi-layered testing (Jest/Supertest + Postman/Newman).
-- **Highlights**: CI/CD pipeline (GitHub Actions), Docker support, detailed API documentation, edge-case coverage, and deployment guides (Render, etc.).
-- **Tech Stack**: Node.js, Express, Jest, Supertest, Postman, Docker, GitHub Actions.
+- Serves as a foundation for future research in predictive analytics, operational efficiency, and process optimization.
 
-*Showcases end-to-end QA engineering for backend services.*
+</details> <details>
+<summary><strong>Supply Chain Lab</strong></summary>
 
----
+**Independent Learning and Professional Development · ASCM CLTD · Logistics · Transportation · Supply Chain**
 
-### 5. QA E-commerce Automation Portfolio
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/qa-ecommerce-automation-portfolio)**
+A structured knowledge base connecting supply-chain concepts with future applications of data science and artificial intelligence.
 
-**Full-stack e-commerce platform** designed as a QA showcase with layered automation testing.
+- Covers the nine modules of the ASCM CLTD curriculum, including logistics, transportation, warehousing, inventory, and distribution.
 
-- **Components**: Next.js frontend, Express backend, Python Selenium E2E tests (POM pattern), Jest/Supertest integration tests.
-- **Key QA Features**: Auth protections, checkout validations, mock failure scenarios, CI pipeline with artifact reports, HTML reports + failure screenshots.
-- **Highlights**: Multi-browser support (Chrome/Firefox), Docker orchestration, structured error codes, and free-tier deployment instructions.
-- **Tech Stack**: Next.js, Express, Selenium, Pytest, Jest, Docker, GitHub Actions.
+- Develops domain knowledge for future work on supply-chain optimization, transportation systems, forecasting, and data-driven decision-making.
 
-*Comprehensive demonstration of modern QA practices across the stack.*
+- Establishes a foundation for continued professional development in supply-chain management and related certifications.
 
----
+</details> <details>
+<summary><strong>DistilBERT Fine-Tuning — Sentiment-Analysis Pipeline</strong></summary>
 
-### 6. HRMS Backend (Human Resource Management System)
-**🔗 [View Repository](https://github.com/OsamaGharibElwaly/hrms-backend)**
+**Python · PyTorch · Hugging Face Transformers · Google Colab**
 
-**Robust Node.js backend** for a Human Resource Management System, emphasizing secure auth and role-based access.
+An end-to-end NLP experiment for studying transformer-based text classification.
 
-- **Features**: User registration/login with JWT, role-based authorization (admin/manager/employee), Sequelize ORM with PostgreSQL, and comprehensive testing resources.
-- **Highlights**: Detailed Postman collections/scenarios, database setup guides (local + cloud), and extensible models for attendance, leaves, etc.
-- **Tech Stack**: Node.js, Express, Sequelize, PostgreSQL, JWT, bcrypt, Docker-ready.
+- Implemented dataset preparation, tokenization, fine-tuning, evaluation, and model inference.
 
-*Solid foundation for enterprise HR applications with strong security and scalability focus.*
+- Separated training, evaluation, and inference stages to support reliable and reproducible experimentation.
 
----
+- Strengthened practical understanding of transformer models, NLP workflows, and model-performance analysis.
 
-## Other Repositories
-Explore more projects on my **[GitHub Profile](https://github.com/OsamaGharibElwaly?tab=repositories)**.
+</details> <details>
+<summary><strong>Additional AI Engineering Projects</strong></summary>
 
----
+- [Intelligent NLP-Powered Document Management System](https://github.com/OsamaGharibElwaly/intelligent-nlp-powered-document-management-system) — RAG, document intelligence, semantic retrieval, citations, and grounded answers.
 
-**Skills**: AI/ML (RAG, LLMs, Embeddings), Full-Stack Development, QA Automation, Backend Engineering, Docker, CI/CD.
+- [Resume Job Parser](https://github.com/OsamaGharibElwaly/resume_job_parser) — deterministic and semantic resume-to-job matching with structured LLM extraction.
 
-*Open to collaborations, opportunities, and interesting problems in AI and software engineering.*
-> 📂 **All projects on GitHub:** [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
+- [AI-First CRM HCP Module](https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module) — tool-first AI-agent workflows using LangGraph, FastAPI, and PostgreSQL.
 
----
+- [User and Order API QA Automation](https://github.com/OsamaGharibElwaly/user-order-api-qa-automation) — API validation, automated testing, Docker, and CI/CD.
 
-## Work Experience
+</details> </details>
 
-### Volunteer Speaker | Pioneer of Success Initiative – Egyptian Ministry of Youth & Sports
-*08/2025 – Present*
-- Delivered online training on LinkedIn usage, AI job search tools, and CV optimization
+<a id="skills"></a>
 
-### Trainee | Suez Canal Authority
-*06/2023 – 09/2023*
-- Worked with network systems, performance optimization using Cisco Packet Tracer
+<details>
+<summary><strong>Skills and Technical Stack</strong></summary>
 
-### Trainee | Port Said University
-*06/2022 – 09/2022*
-- Applied engineering concepts in electronics labs using MATLAB
+<strong>Research and Scientific Computing</strong>
 
----
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:141e30,100:243b55&height=120&section=header&text=Current%20Engineering%20Focus&fontSize=26&fontColor=ffffff" />
-</p>
+Literature review, research-paper analysis, statistical reasoning, experimental design, hypothesis testing, model evaluation, technical writing, LaTeX, experimental documentation, and reproducible research.
 
+<strong>Data Science and Statistics</strong>
+
+Probability and statistics, statistical modeling fundamentals, regression, ANOVA, predictive modeling, feature engineering, data analysis, model comparison, and experimental analysis.
+
+<strong>Machine Learning and AI</strong>
+
+Scikit-learn, PyTorch, Hugging Face Transformers, machine-learning algorithms, NLP, LLMs, generative AI, embeddings, and model validation.
+
+<strong>LLM and Retrieval Engineering</strong>
+
+LangChain, LangGraph, OpenAI API, retrieval-augmented generation, prompt engineering, AI agents, vector search, retrieval systems, and LLM evaluation.
+
+<strong>Programming and Systems</strong>
+
+Python, R, JavaScript, TypeScript, SQL, FastAPI, REST APIs, asynchronous Python, PostgreSQL, MongoDB, FAISS, Pinecone, and data pipelines.
+
+<strong>Engineering, Testing, and Deployment</strong>
+
+Docker, Docker Compose, AWS ECR/EC2/S3/Lambda, Git, GitHub Actions, CI/CD, pytest, Postman, ISTQB principles, API validation, and software quality assurance.
+
+</details>
+
+<a id="academic-background"></a>
+
+<details>
+<summary><strong>Academic Background</strong></summary>
+
+**Bachelor of Science in Computer Engineering**Port Said University, Egypt · October 2020 – July 2025GPA: **2.97 / 4.00** — Good
+
+</details>
+
+<a id="certifications"></a>
+
+<details>
+<summary><strong>Certifications and Training</strong></summary>
+
+- **One Million Prompters Certificate** — Dubai Future Foundation. Prompt engineering for AI systems and LLM optimization.
+
+- **Effective Communication Skills Program** — Arab Academy for Science, Technology & Maritime Transport. Communication and cross-functional collaboration.
+
+</details>
+
+<a id="experience"></a>
+
+<details>
+<summary><strong>Experience</strong></summary>
+
+<strong>Volunteer Speaker — Pioneer of Success Initiative, Egyptian Ministry of Youth & Sports</strong>
+
+**August 2025 – Present**Deliver online training on LinkedIn usage, AI-assisted job-search tools, and CV optimization.
+
+<strong>Trainee — Suez Canal Authority</strong>
+
+**June 2023 – September 2023**Worked with network systems and explored performance optimization using Cisco Packet Tracer.
+
+<strong>Trainee — Port Said University</strong>
+
+**June 2022 – September 2022**Applied engineering concepts in electronics laboratories using MATLAB.
+
+</details>
+
+<a id="current-focus"></a>
+
+<details>
+<summary><strong>Current Research and R&D Focus</strong></summary>
 
 ```python
 current_focus = {
-    "learning": [
-        "Advanced RAG Architectures",
-        "LLM Fine-tuning with LoRA & PEFT",
-        "AI System Evaluation & Reliability",
-        "Multi-Modal AI Pipelines"
+    "researching": [
+        "Statistical inference, experimental design, and model evaluation",
+        "NLP and transformer-based machine learning",
+        "LLM reliability, retrieval quality, and grounded generation",
+        "Predictive analytics for operational and supply-chain problems",
     ],
     "building": [
-        "Production-Ready Arabic Voice AI Systems",
-        "Deterministic Multi-Agent Applications"
+        "Reproducible research notebooks and data-science experiments",
+        "AI prototypes with Python, FastAPI, and modern ML frameworks",
+        "Evaluation and validation workflows for intelligent systems",
     ],
-    "exploring": [
-        "AI Agent Frameworks (LangGraph, Tool-First Agents)",
-        "Structured Prompt Engineering & Prompt Testing"
+    "developing": [
+        "R and Python for applied statistics and data science",
+        "Domain knowledge in logistics, transportation, and supply chains",
+        "Research writing, technical documentation, and literature review",
     ],
-    "reading": [
-        "Applied AI Research Papers",
-        "LLM Architecture & Optimization Techniques"
-    ],
-    "goal": (
-        "Growing as a junior AI/Software Engineer by building "
-        "reliable, scalable AI systems that create real-world impact 🌍"
-    )
+    "long_term_goal": (
+        "Build a research and R&D career developing reliable AI and data-driven "
+        "solutions for real-world operational challenges."
+    ),
 }
 ```
 
+</details>
 
+<a id="opportunities-and-collaboration"></a>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0f2027,100:203a43&height=90&section=header&text=Thanks%20for%20visiting%20👋&fontSize=28&fontColor=ffffff" />
-</p>
----
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0f2027,100:203a43&height=90&section=header&text=Contact%20Me%20📡&fontSize=28&fontColor=ffffff" />
-</p>
----
-<p align="center">
-  <table>
-    <tr>
-      <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/contact-icon.svg" width="90"/>
-      </td>
-      <td align="left">
-        <strong>📧 Email</strong>: osamagharib04@gmail.com<br/>
-        <strong>📞 Phone</strong>: +20 1210916041<br/>
-        <strong>🐙 GitHub</strong>: github.com/OsamaGharibElwaly<br/>
-        <strong>🌐 Portfolio</strong>: osama-gharib-elwaly.vercel.app<br/>
-        <strong>💼 LinkedIn</strong>: linkedin.com/in/osama-alwaly
-      </td>
-    </tr>
-  </table>
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsamaGharibElwaly&theme=react&hide_border=true&background=0D1117&stroke=4FC3F7&ring=4FC3F7&fire=4FC3F7&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=4FC3F7&sideLabels=4FC3F7&dates=aaaaaa" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=OsamaGharibElwaly&show_icons=true&count_private=true&hide_border=true&theme=react&bg_color=0D1117&icon_color=4FC3F7&title_color=4FC3F7&text_color=ffffff" width="48%" />
-</p>
+<details open>
+<summary><strong>Opportunities and Collaboration</strong></summary>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OsamaGharibElwaly&bg_color=0D1117&color=4FC3F7&line=4FC3F7&point=ffffff&area=true&hide_border=true" width="90%" />
-</p>
+I am open to opportunities that connect **research, R&D, data science, and AI engineering**, including:
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=OsamaGharibElwaly&label=Profile%20Views&color=4FC3F7&style=flat" />
-  <img src="https://img.shields.io/github/followers/OsamaGharibElwaly?label=Followers&style=social" />
-  <img src="https://img.shields.io/github/stars/OsamaGharibElwaly?label=Stars&style=social" />
-</p>
+- Research internships, research assistantships, and graduate-research opportunities.
+
+- Junior AI Engineer, Machine Learning Engineer, Data Scientist, Research Engineer, and applied R&D roles.
+
+- Projects involving predictive analytics, NLP, LLM applications, model evaluation, process optimization, forecasting, and intelligent decision-support systems.
+
+- Applied AI work in manufacturing, transportation, logistics, supply chains, and other data-rich operational environments.
+
+- Collaborations involving reproducible experiments, technical research, data analysis, or AI-system prototyping.
+
+I am particularly interested in environments where I can **learn from experienced researchers and engineers, contribute to meaningful projects, and grow toward a long-term research and development career**.
+
+<details>
+<summary><strong>What I can contribute</strong></summary>
+
+- Research-oriented Python and data-science experimentation.
+
+- Statistical analysis, model evaluation, and error analysis.
+
+- NLP, LLM, RAG, and information-retrieval prototypes.
+
+- FastAPI backends and Dockerized AI services.
+
+- Technical documentation, reproducibility, and quality assurance.
+
+</details> </details>
+
+<a id="contact"></a>
+
+<details open>
+<summary><strong>Contact</strong></summary>
+
+- **Email:** [osamagharib04@gmail.com](mailto:osamagharib04@gmail.com)
+
+- **Portfolio:** [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
+
+- **LinkedIn:** [linkedin.com/in/osama-alwaly](https://linkedin.com/in/osama-alwaly/)
+
+- **GitHub:** [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
+
+</details>
+
+<a id="languages"></a>
+
+<details>
+<summary><strong>Languages</strong></summary>
+
+- **Arabic:** Native
+
+- **English:** Professional working proficiency
+
+- **Turkish:** Beginner — A1
+
+</details>
+
+<a id="github-dashboard"></a>
+
+<details>
+<summary><strong>Interactive GitHub Dashboard</strong></summary> <p align="center">
+  <a href="https://github.com/OsamaGharibElwaly?tab=repositories">
+    <img src="https://github-readme-stats.vercel.app/api?username=OsamaGharibElwaly&show_icons=true&hide_border=true&theme=default&rank_icon=github" width="47%" alt="GitHub statistics" />
+  </a>
+  <a href="https://github.com/OsamaGharibElwaly?tab=stars">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsamaGharibElwaly&theme=default&hide_border=true" width="47%" alt="GitHub contribution streak" />
+  </a>
+</p> <p align="center">
+  <a href="https://github.com/OsamaGharibElwaly?tab=activity">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=OsamaGharibElwaly&bg_color=ffffff&color=4F46E5&line=4F46E5&point=111827&area=true&hide_border=true" width="90%" alt="GitHub activity graph" />
+  </a>
+</p> <p align="center">
+  <a href="https://github.com/OsamaGharibElwaly?tab=repositories">Browse repositories</a> ·
+  <a href="https://github.com/OsamaGharibElwaly?tab=stars">View starred projects</a> ·
+  <a href="https://github.com/OsamaGharibElwaly?tab=activity">View activity</a>
+</p> </details>
