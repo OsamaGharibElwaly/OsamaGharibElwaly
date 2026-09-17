@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/ai-software-brain.svg" width="44%" alt="Artificial intelligence and software research illustration" />
+<img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/sysintlanaly.jpg" width="44%" alt="Artificial intelligence and software research illustration" />
 </p> <h1 align="center">Osama Gharib Al-Waly</h1> <p align="center">
   <strong>AI Engineer & Data Scientist · Research, R&D, and Applied Artificial Intelligence</strong>
 </p> <p align="center">
