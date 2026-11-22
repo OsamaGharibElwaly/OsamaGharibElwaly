@@ -45,6 +45,12 @@ export interface ProjectLink {
   url: string;
 }
 
+export interface ProjectProof {
+  status?: string;
+  focus?: string[];
+  highlights?: string[];
+}
+
 export interface Project {
   name: string;
   category?: "Fullstack Web" | "QA Testing" | "AI Engineering";
@@ -61,6 +67,7 @@ export interface Project {
   technologies_used: string[];
   links: ProjectLink[];
   media: string[];
+  proof?: ProjectProof;
 }
 
 export interface Review {

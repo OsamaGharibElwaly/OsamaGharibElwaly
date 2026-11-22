@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-const SKILL_LABELS = ["Python", "LLMs", "RAG", "FastAPI", "Embeddings"] as const;
+const SKILL_LABELS = ["Python", "LLMs", "RAG", "FastAPI", "Eval"] as const;
 
 export function HeroAiThree() {
   const wrapRef = useRef<HTMLDivElement>(null);

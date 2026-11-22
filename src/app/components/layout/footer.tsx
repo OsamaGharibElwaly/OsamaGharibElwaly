@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="border-t border-[#E0E0E0] bg-slate-500 transition hover:bg-slate-400 py-6 text-center text-xs text-black dark:border-darkBorder dark:bg-darkSurface dark:text-black">
-      All rights reserved © Osama Alwaly 2025
+    <footer className="border-t border-slate-200/70 bg-white/70 py-6 text-center text-xs text-slate-500 dark:border-darkBorder dark:bg-darkSurface dark:text-slate-400">
+      © {new Date().getFullYear()} Osama Gharib Al-Waly · AI Engineer | Data Scientist · Built with Next.js
     </footer>
   );
 }

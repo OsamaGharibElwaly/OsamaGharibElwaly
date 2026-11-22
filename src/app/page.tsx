@@ -15,7 +15,7 @@ import { SectionHeader } from "./components/ui/section-header";
 import { SkillsGrid } from "./components/ui/skills-grid";
 import { Timeline } from "./components/ui/timeline";
 import { ReviewCarousel } from "./components/ui/review-carousel";
-import { Mail, Briefcase, FolderGit2, Users } from "lucide-react";
+import { Mail, Briefcase, FolderGit2, Sparkles, ArrowRight, Github, Linkedin } from "lucide-react";
 import { ProjectsShowcase } from "./components/ui/projects-showcase";
 import { HeroAiThree } from "./components/ui/hero-ai-three";
 
@@ -27,222 +27,128 @@ export default function HomePage() {
   const experience = getExperience();
   const projects = getProjects();
   const reviews = getReviews();
-
   const mainEducation = education[0];
 
   return (
-    <div className="space-y-14 lg:space-y-16 dark:[#101622]">
-                  {/* HERO */}
+    <div className="space-y-16 lg:space-y-20">
       <MotionSection className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center">
         <div className="space-y-6">
-          <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
-              AI systems · full-stack
+          <div className="space-y-4">
+            <p className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700 dark:text-cyan-300">
+              <Sparkles className="h-3.5 w-3.5" /> AI Engineer · Data Scientist
             </p>
-            <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              <span className="block bg-gradient-to-r from-cyan-600 via-sky-600 to-violet-600 bg-clip-text text-transparent dark:from-cyan-400 dark:via-sky-400 dark:to-violet-400">
-                AI Engineer | Software Engineer
+            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+              <span className="bg-gradient-to-r from-cyan-500 via-sky-500 to-violet-500 bg-clip-text text-transparent">
+                Building reliable AI systems
               </span>
-              <span className="mt-1 block text-lg font-medium text-slate-700 md:text-xl dark:text-slate-300">
-                (Full-Stack AI Systems)
+              <span className="mt-2 block text-xl font-medium text-slate-700 dark:text-slate-300 md:text-2xl">
+                from data to deployed product.
               </span>
             </h1>
-            <p className="max-w-xl text-sm text-slate-600 md:text-base dark:text-slate-300">
-              Focus: LLMs, RAG pipelines, embeddings, and AI architecture you can ship—observable stages,
-              clear APIs, and guardrails that hold in production.
+            <p className="max-w-xl text-sm leading-relaxed text-slate-600 md:text-base dark:text-slate-300">
+              {personal.about_me}
             </p>
           </div>
 
-          <div className="flex max-w-md flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <Button
-              asChild
-              size="lg"
-              className="w-full rounded-full bg-[#00AEEF] text-white shadow-md transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-lg hover:bg-cyan-500/90 sm:w-auto"
-            >
-              <Link href={personal.cv_download} download data-testid="hero-download-cv">
-                Download CV
-              </Link>
+          <div className="flex max-w-xl flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Button asChild size="lg" className="rounded-full bg-cyan-500 text-white hover:bg-cyan-400">
+              <Link href="#projects" data-testid="hero-view-projects">View Flagship Projects <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
-
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="w-full rounded-full border-slate-200/90 bg-white/90 text-slate-900 shadow-md backdrop-blur-sm transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] hover:border-cyan-400/40 hover:text-cyan-700 dark:border-white/10 dark:bg-slate-950/50 dark:text-slate-100 dark:hover:border-cyan-400/30 sm:w-auto"
-            >
-              <Link href="#projects" data-testid="hero-view-projects">
-                AI Systems Showcase
-              </Link>
+            <Button asChild size="lg" variant="outline" className="rounded-full border-slate-300 bg-white/80 dark:border-white/10 dark:bg-slate-950/40">
+              <Link href={personal.cv_download} download data-testid="hero-download-cv">Download CV</Link>
             </Button>
-
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="w-full rounded-full border-cyan-500/25 bg-cyan-500/5 text-cyan-900 shadow-sm transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] dark:border-cyan-400/20 dark:bg-cyan-400/10 dark:text-cyan-100 sm:w-auto"
-            >
-              <Link href="/ai" data-testid="hero-ai-journey">
-                AI engineering journey
-              </Link>
+            <Button asChild size="lg" variant="outline" className="rounded-full border-cyan-500/25 bg-cyan-500/5 text-cyan-800 dark:text-cyan-100">
+              <Link href="/ai" data-testid="hero-ai-journey">AI Systems</Link>
             </Button>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 pt-1">
-            <Link
-              href={`mailto:${personal.contact.email}`}
-              className="inline-flex items-center gap-2 text-sm font-medium text-cyan-600 transition hover:text-cyan-800 dark:text-cyan-400 dark:hover:text-cyan-200"
-              data-testid="hero-contact-email"
-            >
-              <Mail className="h-4 w-4" />
-              Contact
-            </Link>
-            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-cyan-500/40 ring-2 ring-cyan-500/10 dark:border-cyan-400/30">
-              <Image
-                src={personal.profile_image}
-                alt={personal.name}
-                fill
-                className="object-cover"
-                priority
-                sizes="56px"
-              />
-            </div>
+          <div className="flex flex-wrap items-center gap-4 pt-1 text-sm">
+            <Link href={`mailto:${personal.contact.email}`} className="inline-flex items-center gap-2 text-cyan-700 hover:text-cyan-500 dark:text-cyan-300"><Mail className="h-4 w-4" />{personal.contact.email}</Link>
+            <Link href="https://github.com/OsamaGharibElwaly" target="_blank" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"><Github className="h-4 w-4" />GitHub</Link>
+            <Link href="https://www.linkedin.com/in/osama-alwaly" target="_blank" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"><Linkedin className="h-4 w-4" />LinkedIn</Link>
           </div>
         </div>
-
         <div className="flex min-h-[280px] flex-col justify-center">
           <HeroAiThree />
         </div>
       </MotionSection>
 
-
-      {/* STATS */}
-      <MotionSection className="grid gap-4 md:grid-cols-3">
+      <MotionSection className="grid gap-4 md:grid-cols-3" id="proof">
         <div>
-          <SectionHeader
-            eyebrow="Overview"
-            title="Quick snapshot"
-            description="Shipping AI-backed systems and interfaces with the same rigor as any production service."
-          />
+          <SectionHeader eyebrow="Proof" title="Evidence, not claims" description="Generated visuals and architecture snapshots back the portfolio narrative." />
         </div>
         <div className="grid gap-4 md:col-span-2 md:grid-cols-3">
-          <StatItem
-            icon={<FolderGit2 className="h-4 w-4" />}
-            label="Projects shipped"
-            value={stats.projects}
-          />
-          <StatItem
-            icon={<Briefcase className="h-4 w-4" />}
-            label="Years of experience"
-            value={stats.experience}
-          />
-          <StatItem
-            icon={<Users className="h-4 w-4" />}
-            label="Happy clients"
-            value={stats.customers}
-          />
+          <StatItem icon={<FolderGit2 className="h-4 w-4" />} label="Flagship projects" value={stats.projects} />
+          <StatItem icon={<Briefcase className="h-4 w-4" />} label="Experience roles" value={stats.experience} />
+          <StatItem icon={<Sparkles className="h-4 w-4" />} label="Core capabilities" value={8} />
         </div>
       </MotionSection>
 
-      {/* ABOUT */}
-      <MotionSection id="about">
-        <SectionHeader
-          eyebrow="About"
-          title="Blending engineering and design"
-          description={personal.about_me}
-        />
-        {mainEducation && (
-          <div className="rounded-2xl border border-[#E0E0E0] bg-white p-4 text-sm text-lightMuted shadow-sm dark:border-darkBorder dark:bg-darkSurface dark:text-darkMuted transition hover:scale-[1.02] dark:text-slate-900">
-            <span className="font-medium text-slate-900 dark:text-slate-900">
-              {mainEducation.degree}
-            </span>{" "}
-            at {mainEducation.institution} · {mainEducation.date_range}
+      <MotionSection>
+        <div className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white/70 shadow-sm dark:border-white/10 dark:bg-slate-950/50">
+          <Image src="/assets/generated/stats-dashboard.png" alt="Portfolio proof snapshot" width={1600} height={500} className="w-full" priority />
+        </div>
+      </MotionSection>
+
+      <MotionSection id="about" className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div>
+          <SectionHeader eyebrow="About" title="AI Engineer with a Data Scientist core" description="I care about measurable outcomes: clean data, clear assumptions, evaluated models, and systems that survive real usage." />
+          <div className="grid gap-3 sm:grid-cols-2">
+            {["RAG & LLM systems","Statistical & ML evaluation","FastAPI data/AI backends","Product-ready interfaces"].map((item) => (
+              <div key={item} className="rounded-2xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-slate-200">{item}</div>
+            ))}
           </div>
-        )}
-      </MotionSection>
-
-      {/* SKILLS */}
-      <MotionSection id="skills" className="space-y-6">
-        <SectionHeader
-          eyebrow="Skills"
-          title="What I work with"
-          description="From pixel-perfect interfaces to clean, maintainable code."
-        />
-        <div className="grid gap-4 md:grid-cols-2">
-          <SkillsGrid
-            title="Technical"
-            items={skills.technical_skills}
-          />
-          <SkillsGrid title="Soft skills" items={skills.soft_skills} />
+        </div>
+        <div className="rounded-3xl border border-slate-200 bg-white/80 p-5 dark:border-white/10 dark:bg-slate-950/50">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600 dark:text-cyan-400">Education</p>
+          <p className="mt-3 text-base font-semibold text-slate-900 dark:text-slate-100">{mainEducation?.degree}</p>
+          <p className="text-sm text-slate-600 dark:text-slate-400">{mainEducation?.institution} · {mainEducation?.date_range}</p>
+          <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200 dark:border-white/10">
+            <Image src="/assets/generated/delivery-pipeline.png" alt="AI delivery workflow" width={1200} height={280} className="w-full" />
+          </div>
         </div>
       </MotionSection>
 
-      {/* EXPERIENCE */}
-      <MotionSection id="experience" className="space-y-6">
-        <SectionHeader
-          eyebrow="Experience"
-          title="Learning from real-world systems"
-          description="Internships and volunteering that shaped how I think about software, networks, and people."
-        />
-        <Timeline items={experience} />
+      <MotionSection id="skills" className="space-y-6">
+        <SectionHeader eyebrow="Skills" title="Technical arsenal" description="Capabilities used across the two flagship projects and AI/data product work." />
+        <div className="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-white/10">
+          <Image src="/assets/generated/skill-matrix.png" alt="Skill matrix" width={1400} height={700} className="w-full" />
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <SkillsGrid title="Technical" items={skills.technical_skills} />
+          <SkillsGrid title="Professional" items={skills.soft_skills} />
+        </div>
       </MotionSection>
 
-      {/* PROJECTS */}
       <MotionSection id="projects" className="space-y-6">
-        <SectionHeader
-          eyebrow="AI Systems Showcase"
-          title="Systems, not just screens"
-          description="Architecture tags, AI building blocks, and compact pipeline views—organized by AI engineering, full-stack web, and QA automation."
-        />
+        <SectionHeader eyebrow="Featured Projects" title="Two flagship proof-of-concept systems" description="Selected for depth: real architecture, AI/data workflow, and documented proof." />
+        <div className="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-white/10">
+          <Image src="/assets/generated/project-scope.png" alt="Project scope comparison" width={1400} height={700} className="w-full" />
+        </div>
         <ProjectsShowcase projects={projects} />
       </MotionSection>
 
-      {/* REVIEWS */}
+      <MotionSection id="experience" className="space-y-6">
+        <SectionHeader eyebrow="Experience" title="Grounded in real environments" description="Engineering, networking, and communication experience that supports practical AI delivery." />
+        <Timeline items={experience} />
+      </MotionSection>
+
       {reviews.length > 0 && (
         <MotionSection id="reviews" className="space-y-6">
-          <SectionHeader
-            eyebrow="Reviews"
-            title="What clients say"
-            description="Feedback from clients I've had the pleasure of working with."
-          />
+          <SectionHeader eyebrow="Signal" title="What collaborators say" description="A small signal, backed by bigger project evidence." />
           <ReviewCarousel reviews={reviews} />
         </MotionSection>
       )}
 
-      {/* CTA */}
-      <MotionSection className="mt-4">
-        <div className="rounded-3xl border border-[#E0E0E0] bg-white p-6 text-center shadow-sm dark:border-darkBorder dark:bg-darkSurface">
-          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-700">
-            Interested in similar work?
-          </h2>
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-500">
-            Let&apos;s connect on LLM features, RAG, or full-stack delivery—from first
-            prototype to production checks.
+      <MotionSection id="contact" className="mt-4">
+        <div className="overflow-hidden rounded-3xl border border-cyan-500/20 bg-slate-950 p-8 text-center shadow-[0_0_60px_-20px_rgba(34,211,238,0.35)]">
+          <h2 className="text-2xl font-semibold text-white">Let&apos;s build reliable AI products</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-300">
+            Open to AI Engineer and Data Scientist roles where data quality, model evaluation, and production engineering matter.
           </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <Button
-              asChild
-              size="md"
-              className="rounded-full bg-[#00AEEF] px-5 text-sm text-white shadow-md hover:bg-[#0096D6] transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02]"
-            >
-              <Link href="mailto:osamagharib04@gmail.com">
-                Send me an email
-              </Link>
-            </Button>
-
-            <Button
-              asChild
-              size="md"
-              variant="outline"
-              className="rounded-full border-[#E0E0E0] bg-white px-5 text-sm text-slate-800 shadow-md hover:bg-slate-100 dark:border-darkBorder dark:bg-[#0b2237] dark:text-slate-100 dark:hover:bg-[#182235] transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02]"
-            >
-              <Link
-                href="https://wa.me/201210916041"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Send me on WhatsApp
-              </Link>
-            </Button>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <Button asChild size="lg" className="rounded-full bg-cyan-500 text-slate-950 hover:bg-cyan-400"><Link href="mailto:osamagharib04@gmail.com">Email me</Link></Button>
+            <Button asChild size="lg" variant="outline" className="rounded-full border-white/15 bg-white/5 text-white hover:bg-white/10"><Link href="https://github.com/OsamaGharibElwaly/OsamaGharibElwaly" target="_blank">View GitHub</Link></Button>
           </div>
         </div>
       </MotionSection>
@@ -250,31 +156,14 @@ export default function HomePage() {
   );
 }
 
-function StatItem({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: number;
-}) {
+function StatItem({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {
   return (
-    <div className="flex flex-col gap-1 rounded-2xl border border-[#E0E0E0] bg-white p-4 shadow-sm transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg dark:border-darkBorder dark:bg-darkSurface">
+    <div className="flex flex-col gap-1 rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm transition-transform duration-200 hover:-translate-y-1 dark:border-white/10 dark:bg-white/[0.03]">
       <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-        <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100">
-          {icon}
-        </span>
+        <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-700 dark:text-cyan-300">{icon}</span>
         <span>{label}</span>
       </div>
-      <div className="text-2xl text-center text-[#00BFFF] font-semibold ">
-        {value}
-        {label.toLowerCase().includes("years") && (
-          <span className="ml-1 text-sm font-normal text-slate-500 dark:text-slate-400">
-            
-          </span>
-        )}
-      </div>
+      <div className="text-center text-2xl font-semibold text-cyan-600 dark:text-cyan-400">{value}</div>
     </div>
   );
 }

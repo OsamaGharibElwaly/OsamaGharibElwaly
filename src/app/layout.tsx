@@ -8,9 +8,9 @@ import { Footer } from "./components/layout/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Osama Alwaly | AI Engineer · Software Engineer",
+  title: "Osama Gharib Al-Waly | AI Engineer · Data Scientist",
   description:
-    "AI Engineer and software engineer building LLM systems, RAG pipelines, embeddings, and full-stack AI architecture.",
+    "AI Engineer and Data Scientist building auditable AI systems, RAG pipelines, evaluation workflows, and data-driven products. Flagship projects: TalentOS and Waly_Presentation.",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-       className={`${inter.className} bg-lightBg text-lightText antialiased dark:bg-darkBg dark:text-darkText`}
+        className={`${inter.className} bg-lightBg text-lightText antialiased dark:bg-darkBg dark:text-darkText`}
       >
         <ThemeProvider>
           <div className="flex min-h-screen flex-col">

@@ -36,9 +36,9 @@ const diagrams = [
 ];
 
 export const metadata = {
-  title: "AI Systems | Osama Alwaly",
+  title: "AI Systems | Osama Gharib Al-Waly",
   description:
-    "AI engineering journey: LLMs, RAG, embeddings, and production-minded AI architecture.",
+    "AI Engineer and Data Scientist: LLMs, RAG, evaluation, data pipelines, and production-minded AI architecture.",
 };
 
 export default function AiSystemsPage() {
@@ -56,15 +56,13 @@ export default function AiSystemsPage() {
 
         <div className="rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 p-6 text-slate-100 shadow-[0_0_48px_-16px_rgba(34,211,238,0.25)] backdrop-blur-md dark:border-cyan-400/10 md:p-10">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400/90">
-            AI systems engineering
+            AI Engineer · Data Scientist
           </p>
           <h1 className="mt-3 text-2xl font-semibold tracking-tight text-white md:text-3xl">
-            From prototypes to dependable AI pipelines
+            From data experiments to dependable AI systems
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-300">
-            I design and ship AI features the same way as other systems: clear contracts, observable
-            stages, and guardrails. Work spans LLM orchestration, retrieval-augmented generation,
-            embeddings and ranking, and FastAPI-style services that keep latency and cost predictable.
+            I build AI with a data-science backbone: clear problem framing, structured data, evaluated models, and observable production pipelines. Work spans LLM/RAG systems, embeddings, analytics, and FastAPI services designed for reliability.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-cyan-100/90">
@@ -130,11 +128,10 @@ export default function AiSystemsPage() {
       <MotionSection>
         <div className="rounded-3xl border border-slate-200 bg-white/80 p-6 text-center shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-slate-950/60">
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            See live system cards on the homepage under{" "}
-            <Link href="/#projects" className="font-medium text-cyan-600 hover:underline dark:text-cyan-400">
-              AI Systems Showcase
-            </Link>
-            .
+            Flagship proof-of-concept systems:{" "}
+            <Link href="/projects/talentos" className="font-medium text-cyan-600 hover:underline dark:text-cyan-400">TalentOS</Link>
+            {" "}and{" "}
+            <Link href="/projects/waly-presentation" className="font-medium text-cyan-600 hover:underline dark:text-cyan-400">Waly_Presentation</Link>.
           </p>
         </div>
       </MotionSection>

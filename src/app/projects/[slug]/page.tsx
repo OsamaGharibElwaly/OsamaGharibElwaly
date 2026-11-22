@@ -49,22 +49,18 @@ export default async function ProjectDetailPage(props: PageProps) {
             Back to portfolio
           </Link>
 
-          {githubLink && (
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full border border-[#E0E0E0] bg-white px-4 py-2 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-100 dark:border-darkBorder dark:bg-darkSurface dark:text-slate-800 dark:hover:text-slate-200 dark:hover:bg-[#182235]"
-            >
-              <Link
-                href={githubLink.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-4 w-4" />
-                View on GitHub
-              </Link>
-            </Button>
-          )}
+          <div className="flex gap-2">
+            {project.links?.find((l) => l.type?.toLowerCase() === "docs") && (
+              <Button asChild variant="outline" className="rounded-full border border-[#E0E0E0] bg-white px-4 py-2 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-100 dark:border-darkBorder dark:bg-darkSurface dark:text-slate-100 dark:hover:bg-[#182235]">
+                <Link href={project.links.find((l) => l.type?.toLowerCase() === "docs")!.url} target="_blank" rel="noopener noreferrer">Proof Doc</Link>
+              </Button>
+            )}
+            {githubLink && (
+              <Button asChild variant="outline" className="rounded-full border border-[#E0E0E0] bg-white px-4 py-2 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-100 dark:border-darkBorder dark:bg-darkSurface dark:text-slate-100 dark:hover:bg-[#182235]">
+                <Link href={githubLink.url} target="_blank" rel="noopener noreferrer"><Github className="mr-2 h-4 w-4" />View on GitHub</Link>
+              </Button>
+            )}
+          </div>
         </div>
 
         <div className="space-y-3">
@@ -102,6 +98,13 @@ export default async function ProjectDetailPage(props: PageProps) {
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-500">
           {project.description}
         </p>
+        {project.proof && (
+          <div className="grid gap-3 rounded-3xl border border-slate-200 bg-white p-4 text-sm dark:border-darkBorder dark:bg-darkSurface md:grid-cols-3">
+            <div><p className="text-xs uppercase tracking-wide text-slate-500">Status</p><p className="font-medium text-slate-800 dark:text-slate-200">{project.proof.status ?? "Proof of Concept"}</p></div>
+            <div><p className="text-xs uppercase tracking-wide text-slate-500">Focus</p><p className="font-medium text-slate-800 dark:text-slate-200">{project.proof.focus?.join(", ")}</p></div>
+            <div><p className="text-xs uppercase tracking-wide text-slate-500">Evidence</p><p className="font-medium text-slate-800 dark:text-slate-200">{project.proof.highlights?.slice(0,2).join(", ")}</p></div>
+          </div>
+        )}
       </MotionSection>
 
       {project.pipeline_steps && project.pipeline_steps.length > 0 && (
@@ -203,12 +206,11 @@ export default async function ProjectDetailPage(props: PageProps) {
       {/* CTA */}
       <MotionSection className="mt-4">
         <div className="rounded-3xl border border-[#E0E0E0] bg-white p-6 text-center shadow-sm dark:border-darkBorder dark:bg-darkSurface">
-          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-700">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
             Interested in similar work?
           </h2>
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-500">
-            Let&apos;s connect and discuss how I can bring your next project to
-            life with clean, effective design and front-end development.
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+            Let&apos;s connect on AI engineering, data science, or end-to-end product delivery—from proof of concept to production.
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <Button

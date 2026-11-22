@@ -115,13 +115,19 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </div>
         </div>
 
+        {project.proof?.status && (
+          <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
+            {project.proof.status}{project.proof.focus?.length ? ` · ${project.proof.focus.join(" · ")}` : ""}
+          </p>
+        )}
+
         {/* View Project Link */}
         <div className="mt-auto pt-2">
           <Link
             href={`/projects/${slug}`}
             className="inline-flex items-center gap-2 text-sm font-medium text-slate-700 underline-offset-4 transition-all duration-200 hover:gap-3 hover:text-[#00AEEF] hover:underline dark:text-slate-300 dark:hover:text-[#00AEEF]"
           >
-            <span>View details</span>
+            <span>View proof & details</span>
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
           </Link>
         </div>

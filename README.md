@@ -1,394 +1,153 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/sysintlanaly.jpg" width="44%" alt="Artificial intelligence and software research illustration" />
-</p>
-
-<h1 align="center">Osama Gharib Al-Waly</h1>
-
-<p align="center">
-  <strong>AI Engineer & Data Scientist · Research, R&D, and Applied Artificial Intelligence</strong>
+  <img src="docs/images/hero-banner.png" alt="Osama Gharib Al-Waly - AI Engineer | Data Scientist" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/OsamaGharibElwaly"><img src="https://img.shields.io/badge/GitHub-Profile-181717?logo=github" alt="GitHub profile" /></a>
-  <a href="https://osama-gharib-elwaly.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit-000?logo=vercel" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/osama-alwaly/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin" alt="LinkedIn" /></a>
-  <a href="mailto:osamagharib04@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?logo=gmail" alt="Email" /></a>
+  <a href="https://github.com/OsamaGharibElwaly"><img src="https://img.shields.io/badge/GitHub-OsamaGharibElwaly-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
+  <a href="https://osama-gharib-elwaly.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Live-000000?style=for-the-badge&logo=vercel" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/osama-alwaly"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="mailto:osamagharib04@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
 <p align="center">
-  <a href="#about-me">About Me</a> ·
-  <a href="#research-and-rd">Research & R&D</a> ·
-  <a href="#academic-projects">Projects</a> ·
-  <a href="#skills">Skills</a> ·
-  <a href="#opportunities-and-collaboration">Opportunities</a> ·
-  <a href="#contact">Contact</a>
+  <img src="https://img.shields.io/badge/Focus-AI%20Engineering-22d3ee?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-Data%20Science-818cf8?style=flat-square" />
+  <img src="https://img.shields.io/badge/Projects-2%20Flagship%20POCs-34d399?style=flat-square" />
+  <img src="https://img.shields.io/badge/Approach-Evidence--Driven-f59e0b?style=flat-square" />
 </p>
 
 ---
 
-<a id="about-me"></a>
+## Profile
 
-<details open>
-<summary><strong>About Me</strong></summary>
+I build **AI systems with a data-science backbone**: clear problem framing, structured data, evaluated models, and production-minded delivery. My work sits at the intersection of **AI Engineering, Data Science, and software systems** — turning experiments into auditable, usable products.
 
-I am a **Computer Engineering graduate** building my career at the intersection of **Data Science, Artificial Intelligence, Statistics, and software engineering**. My strongest motivation is to work on problems where careful research, rigorous experimentation, and practical engineering can produce solutions that are measurable and useful in real environments.
+<p align="center">
+  <img src="docs/images/stats-dashboard.png" alt="Portfolio proof snapshot" width="100%" />
+</p>
 
-I am pursuing a long-term path in **Research and Development**, while remaining open to opportunities in the wider job market, including **AI Engineer, Data Scientist, Machine Learning Engineer, Research Engineer, and applied R&D roles**. I am also preparing for future Master's and PhD study by strengthening my foundations in statistics, machine learning, scientific computing, and research communication.
+## Evidence & Delivery
 
-My approach follows the full **research-to-impact cycle**: define a meaningful problem, study existing approaches, prepare and understand the data, design reproducible experiments, evaluate results honestly, analyze failure cases, and turn findings into a reliable prototype or decision-support system.
+<p align="center">
+  <img src="docs/images/banner-evidence.png" alt="Evidence and metrics" width="100%" />
+</p>
 
-My current direction combines **NLP, LLMs, information retrieval, RAG, AI-system evaluation, predictive analytics, optimization, and operational data science**. I am especially interested in applications across **manufacturing, transportation, logistics, and supply-chain systems**, where AI can support forecasting, predictive maintenance, process optimization, and intelligent decision-making.
+| Signal | What it means |
+|---|---|
+| **2 flagship POCs** | Deep, architecture-documented projects instead of broad shallow demos |
+| **End-to-end workflow** | Problem → Data → Experiment → Evaluate → Ship → Monitor |
+| **Generated visuals** | Charts/diagrams are reproducibly generated via `scripts/generate_visuals.py` |
+| **Docs + proof** | Each project has architecture, scope, and evidence in `docs/projects/` |
 
-> **My goal:** grow into an AI Engineer and Data Scientist who can move confidently between academic research, R&D experimentation, and production-oriented intelligent systems.
+<p align="center">
+  <img src="docs/images/delivery-pipeline.png" alt="End-to-end AI delivery workflow" width="100%" />
+</p>
 
-<details>
-<summary><strong>Explore my research mindset</strong></summary>
+## Featured Projects
 
-* **Reproducibility:** Clear experiments, documented assumptions, versioned code, and repeatable workflows.
+<p align="center">
+  <img src="docs/images/banner-projects.png" alt="Featured projects" width="100%" />
+</p>
 
-* **Reliability:** Explicit evaluation criteria, error analysis, validation, and careful separation of deterministic and probabilistic components.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-* **Practical impact:** Research questions connected to operational efficiency, process improvement, forecasting, and decision support.
+### 1) TalentOS — AI-Native ATS (POC)
 
-* **Continuous learning:** Reading research, building experiments, comparing methods, and translating lessons into better systems.
+**AI Engineering + Data Science + Backend Systems**
 
-</details>
-</details>
+An auditable hiring intelligence proof of concept: structured resume extraction, rubric-weighted scoring, citation verification, hybrid semantic search, and interview copilots.
 
-<a id="research-and-rd"></a>
+<p align="center">
+  <img src="docs/images/talentos-architecture.png" alt="TalentOS architecture" width="100%" />
+</p>
 
-<details>
-<summary><strong>Research and R&D Direction</strong></summary>
+**Proof highlights**
+- Schema-validated extraction & typed contracts
+- Evidence-backed scoring with citation guardrails
+- Hybrid SQL + vector talent search
+- AI ops telemetry: latency, cost, quality
 
-<strong>Core Academic Fields</strong>
+**Stack:** Python, FastAPI, PostgreSQL, pgvector, Redis/Celery, Pydantic, Next.js, Docker
 
-* Data science and statistical analysis
+📄 [Project proof](docs/projects/talentos.md)
 
-* Artificial intelligence and machine learning
+</td>
+<td width="50%" valign="top">
 
-* Natural language processing and language models
+### 2) Waly_Presentation — Offline AI Presentation Factory (POC)
 
-* Information retrieval and retrieval-augmented generation
+**AI Workflow Automation + Data-to-Artifact + Product Engineering**
 
-* Experimental design and reproducible research
+An offline agent-style pipeline that converts structured Markdown into styled PPTX/PDF artifacts with catalog-driven design systems and deterministic rendering.
 
-* AI and LLM evaluation, validation, and reliability
+<p align="center">
+  <img src="docs/images/waly-architecture.png" alt="Waly Presentation architecture" width="100%" />
+</p>
 
-<strong>Application Areas</strong>
+**Proof highlights**
+- Offline-first, no cloud dependency for core flow
+- 30 design archetypes with theme/palette catalogs
+- Agent-style planning, parsing, layout routing
+- Deterministic PPTX/PDF artifact generation
 
-I am especially interested in applying data-driven and AI methods to **manufacturing, transportation, logistics, supply-chain systems, predictive maintenance, forecasting, process optimization, and intelligent decision-making**.
+**Stack:** Python, PyQt6, python-pptx, ReportLab, Pydantic, JSON catalogs, Matplotlib, Pillow
 
-These application areas connect technical research with operational challenges where better data analysis, prediction, and decision support can produce measurable improvements.
+📄 [Project proof](docs/projects/waly-presentation.md)
 
-<strong>Interactive Research-to-Impact Map</strong>
+</td>
+</tr>
+</table>
 
-```mermaid
-flowchart LR
-    A[Research Question] --> B[Data and Literature]
-    B --> C[Statistical Analysis]
-    C --> D[ML / NLP / LLM Experiments]
-    D --> E[Evaluation and Error Analysis]
-    E --> F[Reproducible Prototype]
-    F --> G[Operational Impact]
-    E -. feedback .-> B
-    G -. new questions .-> A
+<p align="center">
+  <img src="docs/images/project-scope.png" alt="Project scope comparison" width="100%" />
+</p>
+
+## Technical Arsenal
+
+<p align="center">
+  <img src="docs/images/banner-skills.png" alt="Technical arsenal" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/skill-matrix.png" alt="Skill matrix" width="100%" />
+</p>
+
+| Domain | Tools / Capabilities |
+|---|---|
+| **AI / ML** | Python, Scikit-learn, PyTorch, Transformers, NLP, embeddings, LLM/RAG, agent workflows |
+| **Data Science** | Pandas, NumPy, SQL, statistical reasoning, evaluation, experiment design, data visualization |
+| **Backend / APIs** | FastAPI, REST APIs, Pydantic, async workers, auth/RBAC patterns, observability |
+| **Product / Frontend** | Next.js, React, TypeScript, Tailwind, accessible UI, data-driven dashboards |
+| **Delivery** | Docker, Git/GitHub, CI/CD mindset, testing, reproducible docs, artifact generation |
+
+## Repository Structure
+
+```text
+.
+├── docs/                       # Project proof, architecture notes, generated visuals
+│   ├── images/                 # Matplotlib/PIL generated charts & banners
+│   └── projects/               # TalentOS & Waly_Presentation proof docs
+├── public/assets/generated/    # Same generated visuals for the Next.js site
+├── scripts/generate_visuals.py # Reproducible visual generation
+├── src/app/                    # Next.js portfolio app
+└── README.md
 ```
 
-<details>
-<summary><strong>Explore possible R&D themes</strong></summary>
+## Regenerate Visual Proof
 
-* Predictive maintenance and anomaly detection
-
-* Forecasting for transportation, logistics, and inventory systems
-
-* Process optimization and intelligent decision support
-
-* NLP and LLM tools for technical or operational documents
-
-* Retrieval quality, grounded generation, and trustworthy AI
-
-* Data-centric experimentation and model-performance analysis
-
-</details>
-</details>
-
-<a id="academic-projects"></a>
-
-<details>
-<summary><strong>Academic Projects</strong></summary>
-
-<details>
-<summary><strong>Research Data Science Lab</strong></summary>
-
-**Independent Research Project · Python · R · Statistics · Machine Learning**
-
-A research-oriented learning and experimentation environment focused on applying statistical and data-science methods to practical problems.
-
-* Covers statistical inference, hypothesis testing, ANOVA, regression, predictive modeling, and experimental analysis.
-
-* Uses Python and R to implement reproducible statistical experiments and practical exercises.
-
-* Focuses on model evaluation, statistical reasoning, data interpretation, and connecting analytical methods to real-world decisions.
-
-* Serves as a foundation for future research in predictive analytics, operational efficiency, and process optimization.
-
-</details>
-
-<details>
-<summary><strong>Supply Chain Lab</strong></summary>
-
-**Independent Learning and Professional Development · ASCM CLTD · Logistics · Transportation · Supply Chain**
-
-A structured knowledge base connecting supply-chain concepts with future applications of data science and artificial intelligence.
-
-* Covers the nine modules of the ASCM CLTD curriculum, including logistics, transportation, warehousing, inventory, and distribution.
-
-* Develops domain knowledge for future work on supply-chain optimization, transportation systems, forecasting, and data-driven decision-making.
-
-* Establishes a foundation for continued professional development in supply-chain management and related certifications.
-
-</details>
-
-<details>
-<summary><strong>DistilBERT Fine-Tuning — Sentiment-Analysis Pipeline</strong></summary>
-
-**Python · PyTorch · Hugging Face Transformers · Google Colab**
-
-An end-to-end NLP experiment for studying transformer-based text classification.
-
-* Implemented dataset preparation, tokenization, fine-tuning, evaluation, and model inference.
-
-* Separated training, evaluation, and inference stages to support reliable and reproducible experimentation.
-
-* Strengthened practical understanding of transformer models, NLP workflows, and model-performance analysis.
-
-</details>
-
-<details>
-<summary><strong>Additional AI Engineering Projects</strong></summary>
-
-* [Intelligent NLP-Powered Document Management System](https://github.com/OsamaGharibElwaly/intelligent-nlp-powered-document-management-system) — RAG, document intelligence, semantic retrieval, citations, and grounded answers.
-
-* [Resume Job Parser](https://github.com/OsamaGharibElwaly/resume_job_parser) — deterministic and semantic resume-to-job matching with structured LLM extraction.
-
-* [AI-First CRM HCP Module](https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module) — tool-first AI-agent workflows using LangGraph, FastAPI, and PostgreSQL.
-
-* [User and Order API QA Automation](https://github.com/OsamaGharibElwaly/user-order-api-qa-automation) — API validation, automated testing, Docker, and CI/CD.
-
-</details>
-</details>
-
-<a id="skills"></a>
-
-<details open>
-<summary><strong>Skills and Technical Stack</strong></summary>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/OsamaGharibElwaly/OsamaGharibElwaly/main/skillscat.jpg"
-       width="92%"
-       alt="Five technical skill categories: AI Engineering and Generative AI, Full-Stack and Software Engineering, Data and Analytics, Cloud DevOps and MLOps, Systems and Infrastructure" />
-</p>
-
-<p align="center">
-  <strong>AI Engineering & Generative AI</strong> ·
-  <strong>Full-Stack & Software Engineering</strong> ·
-  <strong>Data & Analytics</strong> ·
-  <strong>Cloud, DevOps & MLOps</strong> ·
-  <strong>Systems & Infrastructure</strong>
-</p>
-
-<br>
-
-<strong>AI Engineering & Generative AI</strong>
-
-Scikit-learn · PyTorch · Hugging Face Transformers · Machine Learning · Deep Learning · NLP · LLMs · Generative AI · RAG · Vector Databases · AI Agents · Prompt Engineering · LLM Evaluation · LangChain · LangGraph · CrewAI · OpenAI APIs · Embeddings
-
-<strong>Full-Stack & Software Engineering</strong>
-
-Python · JavaScript · TypeScript · React · Next.js · FastAPI · REST APIs · Backend Development · Frontend Development · API Integration · Authentication · Object-Oriented Programming · Data Structures & Algorithms · Testing · Debugging · Git/GitHub
-
-<strong>Data & Analytics</strong>
-
-SQL · PostgreSQL · MongoDB · SQLite · Pandas · NumPy · Data Analysis · Statistical Reasoning · Regression · ANOVA · Experimental Design · Predictive Modeling · Time Series · Data Visualization · Database Design
-
-<strong>Cloud, DevOps & MLOps</strong>
-
-AWS · EC2 · S3 · ECR · Lambda · IAM · Docker · Docker Compose · GitHub Actions · CI/CD · Model Deployment · Cloud Deployment · Vercel · Linux · ML Deployment · API Deployment
-
-<strong>Systems & Infrastructure</strong>
-
-Linux Fundamentals · Networking Fundamentals · TCP/IP · DNS · DHCP · CCNA Fundamentals · IT Operations · System Troubleshooting · Technical Documentation · Enterprise IT Fundamentals
-
-</details>
-
-<a id="academic-background"></a>
-
-<details>
-<summary><strong>Academic Background</strong></summary>
-
-**Bachelor of Science in Computer Engineering**
-
-Port Said University, Egypt · October 2020 – July 2025
-
-GPA: **2.97 / 4.00** — Good
-
-</details>
-
-<a id="certifications"></a>
-
-<details>
-<summary><strong>Certifications and Training</strong></summary>
-
-* **One Million Prompters Certificate** — Dubai Future Foundation. Prompt engineering for AI systems and LLM optimization.
-
-* **Effective Communication Skills Program** — Arab Academy for Science, Technology & Maritime Transport. Communication and cross-functional collaboration.
-
-</details>
-
-<a id="experience"></a>
-
-<details>
-<summary><strong>Experience</strong></summary>
-
-<strong>Volunteer Speaker — Pioneer of Success Initiative, Egyptian Ministry of Youth & Sports</strong>
-
-**August 2025 – Present**
-
-Deliver online training on LinkedIn usage, AI-assisted job-search tools, and CV optimization.
-
-<strong>Trainee — Suez Canal Authority</strong>
-
-**June 2023 – September 2023**
-
-Worked with network systems and explored performance optimization using Cisco Packet Tracer.
-
-<strong>Trainee — Port Said University</strong>
-
-**June 2022 – September 2022**
-
-Applied engineering concepts in electronics laboratories using MATLAB.
-
-</details>
-
-<a id="current-focus"></a>
-
-<details>
-<summary><strong>Current Research and R&D Focus</strong></summary>
-
-```python
-current_focus = {
-    "researching": [
-        "Statistical inference, experimental design, and model evaluation",
-        "NLP and transformer-based machine learning",
-        "LLM reliability, retrieval quality, and grounded generation",
-        "Predictive analytics for operational and supply-chain problems",
-    ],
-    "building": [
-        "Reproducible research notebooks and data-science experiments",
-        "AI prototypes with Python, FastAPI, and modern ML frameworks",
-        "Evaluation and validation workflows for intelligent systems",
-    ],
-    "developing": [
-        "R and Python for applied statistics and data science",
-        "Domain knowledge in logistics, transportation, and supply chains",
-        "Research writing, technical documentation, and literature review",
-    ],
-    "long_term_goal": (
-        "Build a research and R&D career developing reliable AI and data-driven "
-        "solutions for real-world operational challenges."
-    ),
-}
+```bash
+python scripts/generate_visuals.py
 ```
 
-</details>
-
-<a id="opportunities-and-collaboration"></a>
-
-<details open>
-<summary><strong>Opportunities and Collaboration</strong></summary>
-
-I am open to opportunities that connect **research, R&D, data science, and AI engineering**, including:
-
-* Research internships, research assistantships, and graduate-research opportunities.
-
-* Junior AI Engineer, Machine Learning Engineer, Data Scientist, Research Engineer, and applied R&D roles.
-
-* Projects involving predictive analytics, NLP, LLM applications, model evaluation, process optimization, forecasting, and intelligent decision-support systems.
-
-* Applied AI work in manufacturing, transportation, logistics, supply chains, and other data-rich operational environments.
-
-* Collaborations involving reproducible experiments, technical research, data analysis, or AI-system prototyping.
-
-I am particularly interested in environments where I can **learn from experienced researchers and engineers, contribute to meaningful projects, and grow toward a long-term research and development career**.
-
-<details>
-<summary><strong>What I can contribute</strong></summary>
-
-* Research-oriented Python and data-science experimentation.
-
-* Statistical analysis, model evaluation, and error analysis.
-
-* NLP, LLM, RAG, and information-retrieval prototypes.
-
-* FastAPI backends and Dockerized AI services.
-
-* Technical documentation, reproducibility, and quality assurance.
-
-</details>
-</details>
-
-<a id="contact"></a>
-
-<details open>
-<summary><strong>Contact</strong></summary>
-
-* **Email:** [osamagharib04@gmail.com](mailto:osamagharib04@gmail.com)
-
-* **Portfolio:** [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
-
-* **LinkedIn:** [linkedin.com/in/osama-alwaly](https://linkedin.com/in/osama-alwaly/)
-
-* **GitHub:** [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)
-
-</details>
-
-<a id="languages"></a>
-
-<details>
-<summary><strong>Languages</strong></summary>
-
-* **Arabic:** Native
-
-* **English:** Professional working proficiency
-
-* **Turkish:** Beginner — A1
-
-</details>
-
-<a id="github-dashboard"></a>
-
-<details>
-<summary><strong>Interactive GitHub Dashboard</strong></summary>
+## Contact
 
 <p align="center">
-  <a href="https://github.com/OsamaGharibElwaly?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api?username=OsamaGharibElwaly&show_icons=true&hide_border=true&theme=default&rank_icon=github" width="47%" alt="GitHub statistics" />
-  </a>
-  <a href="https://github.com/OsamaGharibElwaly?tab=stars">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsamaGharibElwaly&theme=default&hide_border=true" width="47%" alt="GitHub contribution streak" />
-  </a>
+  <img src="docs/images/banner-contact.png" alt="Contact banner" width="100%" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/OsamaGharibElwaly?tab=activity">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=OsamaGharibElwaly&bg_color=ffffff&color=4F46E5&line=4F46E5&point=111827&area=true&hide_border=true" width="90%" alt="GitHub activity graph" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/OsamaGharibElwaly?tab=repositories">Browse repositories</a> ·
-  <a href="https://github.com/OsamaGharibElwaly?tab=stars">View starred projects</a> ·
-  <a href="https://github.com/OsamaGharibElwaly?tab=activity">View activity</a>
-</p>
-
-</details>
+- **Email:** [osamagharib04@gmail.com](mailto:osamagharib04@gmail.com)
+- **Portfolio:** [osama-gharib-elwaly.vercel.app](https://osama-gharib-elwaly.vercel.app/)
+- **LinkedIn:** [linkedin.com/in/osama-alwaly](https://www.linkedin.com/in/osama-alwaly)
+- **GitHub:** [github.com/OsamaGharibElwaly](https://github.com/OsamaGharibElwaly)

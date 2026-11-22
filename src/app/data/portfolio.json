@@ -1,7 +1,7 @@
 {
   "personal_info": {
-    "name": "Osama Alwaly",
-    "title": "AI Engineer | Software Engineer",
+    "name": "Osama Gharib Al-Waly",
+    "title": "AI Engineer | Data Scientist",
     "profile_image": "/assets/profile/profile.jpeg",
     "location": "Port Said, Egypt",
     "contact": {
@@ -19,45 +19,37 @@
       }
     ],
     "cv_download": "/assets/downloads/Osama_Alwaly_CV.pdf",
-    "about_me": "AI Engineer and software engineer building full-stack AI systems: LLM orchestration, RAG pipelines, embeddings, and production APIs (e.g. FastAPI). Equally strong shipping polished web interfaces with React, Next.js, and TypeScript—focused on observable stages, evaluation, and maintainable architecture."
+    "about_me": "AI Engineer and Data Scientist building auditable AI systems, data-driven products, and production-ready workflows. I focus on LLM/RAG pipelines, evaluation, structured data extraction, and backend services that turn experiments into reliable user-facing systems."
   },
-  "projects_num": "10",
-  "experience_num": "1",
-  "customers_num": "1",
+  "projects_num": "2",
+  "experience_num": "3",
+  "customers_num": "5",
   "skills": {
-  "technical_skills": [
-    "HTML5",
-    "CSS3",
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React.js",
-    "Next.js",
-    "Redux",
-    "Tailwind CSS",
-    "Responsive Design",
-    "API Integration",
-    "Testing (Jest)",
-    "Python",
-    "LLMs / RAG",
-    "Embeddings",
-    "FastAPI",
-    "C#"
-  ],
-  
-  "soft_skills": [
-    "Communication",
-    "Teamwork",
-    "Problem-Solving",
-    "Adaptability",
-    "Time Management",
-    "Creativity",
-    "Leadership",
-    "Critical Thinking",
-    "Attention to Detail",
-    "Continuous Learning"
-  ]
-}
-,
+    "technical_skills": [
+      "Python",
+      "Pandas / NumPy",
+      "Scikit-learn",
+      "PyTorch / Transformers",
+      "LLMs / RAG / Agents",
+      "Embeddings & Vector Search",
+      "FastAPI / REST APIs",
+      "PostgreSQL / SQL",
+      "Evaluation & Testing",
+      "Docker / CI-CD",
+      "Next.js / React / TypeScript",
+      "Data Visualization"
+    ],
+    "soft_skills": [
+      "Research Communication",
+      "Problem-Solving",
+      "Critical Thinking",
+      "System Design",
+      "Attention to Detail",
+      "Ownership",
+      "Collaboration",
+      "Adaptability"
+    ]
+  },
   "education": [
     {
       "degree": "B.Eng. in Computer Engineering",
@@ -102,383 +94,150 @@
   ],
   "projects": [
     {
-      "name": "SmartBrace",
-      "cover_image": "/assets/covers/overview.png",
-      "short_description": "AI-powered health monitoring ecosystem (bracelet + mobile + web).",
-      "description": "Built and deployed ML classification models (~90–95% accuracy) for real-time healthcare monitoring and disease prediction (stroke, autism, asthma). Integrated models with backend (FastAPI) and services for data flow.",
+      "name": "TalentOS",
+      "category": "AI Engineering",
+      "architecture_tag": "Evidence-based ATS + RAG",
+      "ai_components": [
+        "Structured extraction",
+        "Rubric scoring",
+        "Citation verification",
+        "Hybrid search",
+        "Interview copilot"
+      ],
+      "pipeline_steps": [
+        "Ingest resumes",
+        "Parse & normalize",
+        "Embed + retrieve",
+        "Rubric score",
+        "Human review"
+      ],
+      "cover_image": "/assets/generated/talentos-architecture.png",
+      "short_description": "AI-native applicant tracking proof of concept: auditable scoring, semantic search, and recruiter copilots.",
+      "description": "TalentOS is an AI-native ATS proof of concept designed to replace brittle keyword screening with evidence-backed, rubric-weighted evaluation. It models the full hiring pipeline: multi-tenant job/rubric setup, async resume ingestion, structured extraction, hybrid semantic retrieval, citation-verified scoring, interview copilot workflows, and observability for cost/latency/quality.",
       "features": [
-        "Real-time vitals tracking",
-        "AI disease prediction",
-        "Web & mobile dashboards",
-        "IoT wearable integration"
+        "Multi-tenant job and weighted-rubric management",
+        "Async resume ingestion with deterministic parsing and schema validation",
+        "Evidence-backed scoring with citation verification guardrails",
+        "Hybrid talent search (SQL filters + vector retrieval)",
+        "Interview copilot and calibrated scorecards",
+        "AI ops telemetry for latency, cost, and quality"
       ],
       "technologies_used": [
         "Python",
-        "Scikit-learn",
-        "Pandas",
-        "NumPy",
         "FastAPI",
         "PostgreSQL",
-        "Node.js",
-        "React",
-        "MongoDB",
-        "AWS"
+        "pgvector",
+        "Redis/Celery",
+        "Pydantic",
+        "Next.js",
+        "Docker"
       ],
       "links": [
         {
           "type": "GitHub",
-          "url": "https://github.com/islamhasib953/Graduation_Project"
+          "url": "https://github.com/OsamaGharibElwaly/OsamaGharibElwaly"
+        },
+        {
+          "type": "Docs",
+          "url": "https://github.com/OsamaGharibElwaly/OsamaGharibElwaly/blob/main/docs/projects/talentos.md"
         }
       ],
       "media": [
-        "/assets/covers/database_structure.png",
-        "/assets/covers/doctor_dashboard.jpg",
-        "/assets/covers/overview.png",
-        "/assets/covers/Parent_Dashboard.jpg",
-        "/assets/covers/smartbrace(Sigma)_wearable.png",
-        "/assets/covers/web_medical_history.jpg",
-        "/assets/covers/s3_file_storage.png",
-        "/assets/covers/hivemq_structure.png",
-        "/assets/covers/render.png"
-      ]
+        "/assets/generated/talentos-architecture.png",
+        "/assets/generated/delivery-pipeline.png",
+        "/assets/generated/stats-dashboard.png"
+      ],
+      "proof": {
+        "status": "Proof of Concept",
+        "focus": [
+          "AI Engineering",
+          "Data Science",
+          "Backend Systems"
+        ],
+        "highlights": [
+          "Schema-validated extraction",
+          "Citation-grounded scoring",
+          "Hybrid semantic search",
+          "Observability-first design"
+        ]
+      }
     },
     {
-      "name": "FitTrack (Gym Tracker)",
-      "cover_image": "/assets/covers/1.png",
-      "short_description": "Web app for workouts, progress tracking, and plans.",
-      "description": "Next.js platform to log workouts, track progress, and manage personalized training plans with auth, animations, and responsive UI.",
+      "name": "Waly_Presentation",
+      "category": "AI Engineering",
+      "architecture_tag": "Offline agentic presentation factory",
+      "ai_components": [
+        "Markdown parsing",
+        "Agent planning",
+        "Layout routing",
+        "Theme registry",
+        "Artifact generation"
+      ],
+      "pipeline_steps": [
+        "Input markdown",
+        "Plan & outline",
+        "Select design",
+        "Render slides",
+        "Export artifacts"
+      ],
+      "cover_image": "/assets/generated/waly-architecture.png",
+      "short_description": "Offline AI presentation factory proof of concept: Markdown to styled PPTX/PDF with deterministic pipelines.",
+      "description": "Waly_Presentation is an offline AI presentation factory that converts structured Markdown into polished presentation artifacts. It uses an agent-style pipeline for planning and layout routing, a catalog of 30 design archetypes, and deterministic rendering engines for PPTX and PDF export. The project demonstrates practical AI product engineering: controllable workflows, reproducible outputs, and local-first execution.",
       "features": [
-        "Auth & user profiles",
-        "Workout logging",
-        "Progress analytics",
-        "Responsive UI with animations"
+        "Offline Markdown-to-PPTX/PDF generation pipeline",
+        "30 design archetypes with palette/theme catalogs",
+        "Agent-style planning, parsing, and layout routing",
+        "PyQt6 studio for theme selection and export",
+        "Deterministic artifact generation with local outputs",
+        "Extensible catalog-driven design system"
       ],
       "technologies_used": [
-        "Next.js (Turbopack)",
-        "Prisma",
-        "PostgreSQL",
-        "NextAuth",
-        "TailwindCSS",
-        "Framer Motion",
-        "Lucide Icons"
+        "Python",
+        "PyQt6",
+        "python-pptx",
+        "ReportLab",
+        "Pydantic",
+        "JSON Catalogs",
+        "Matplotlib",
+        "Pillow"
       ],
       "links": [
         {
           "type": "GitHub",
-          "url": "https://github.com/OsamaGharibElwaly/fittrack.git"
-        }
-      ],
-      "media": [
-        "/assets/covers/1.png",
-        "/assets/covers/2.png",
-        "/assets/covers/3.png",
-        "/assets/covers/4.png",
-        "/assets/covers/5.png",
-        "/assets/covers/6.png",
-        "/assets/covers/7.png",
-        "/assets/covers/8.png",
-        "/assets/covers/9.png"
-      ]
-    },
-    {
-      "name": "UI/UX Design Collection",
-      "cover_image": "/assets/covers/lingualearn.png",
-      "short_description": "A collection of mobile and web UI/UX projects showcasing clean layouts, structured flows, and modern visual identities.",
-      "description": "A unified set of UI/UX design projects including mobile applications, landing pages, and web interfaces. Each project focuses on user-centered design principles, clear information hierarchy, and visually consistent component systems. This category will continue expanding with new designs and interface concepts over time.",
-      "features": [
-        "Mobile & web interface design",
-        "User-centered experience flows",
-        "Component-based UI systems",
-        "Clear typography hierarchy",
-        "Modern visual identity design",
-        "Responsive layout principles"
-      ],
-      "technologies_used": [
-        "Figma",
-        "Wireframing",
-        "Design Systems",
-        "Prototyping",
-        "UI Components",
-        "Layout Grids"
-      ],
-      "links": [
+          "url": "https://github.com/OsamaGharibElwaly/OsamaGharibElwaly"
+        },
         {
-          "type": "GitHub",
-          "url": "https://github.com/OsamaGharibElwaly/UI-UX-Designs"
+          "type": "Docs",
+          "url": "https://github.com/OsamaGharibElwaly/OsamaGharibElwaly/blob/main/docs/projects/waly-presentation.md"
         }
       ],
       "media": [
-        "/assets/covers/lingualearn.png",
-        "/assets/covers/bajaru.png",
-        "/assets/covers/piddi.png"
-      ]
-    },
-    {
-  "name": "Physio Therapy Web",
-  "cover_image": "/assets/covers/marwan-home.png",
-  "short_description": "A modern, responsive website for a physiotherapy clinic featuring multi-page layout, dynamic content, and interactive user interface.",
-  "description": "This project is a fully responsive website developed for Dr. Marwan Hesham's physiotherapy clinic. Built with Next.js 16, TypeScript, and Tailwind CSS, it includes essential pages such as Home, Services, About, and Contact. Content is dynamically loaded from JSON files for easy management, with interactive components, smooth navigation, and a clean, professional design focused on user experience and accessibility.",
-  "features": [
-    "Responsive multi-page layout (Home, Services, About, Contact)",
-    "Dynamic content loading from JSON",
-    "Interactive components and smooth navigation",
-    "Modern and professional UI design",
-    "SEO-friendly structure with Next.js",
-    "Mobile-first responsive design"
-  ],
-  "technologies_used": [
-    "Next.js 16",
-    "TypeScript",
-    "Tailwind CSS",
-    "React",
-    "Vercel (Deployment)",
-    "JSON for content management"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/physio-therapy-web"
+        "/assets/generated/waly-architecture.png",
+        "/assets/generated/project-scope.png",
+        "/assets/generated/delivery-pipeline.png"
+      ],
+      "proof": {
+        "status": "Proof of Concept",
+        "focus": [
+          "AI Workflow Automation",
+          "Data-to-Artifact",
+          "Desktop Product Engineering"
+        ],
+        "highlights": [
+          "30 design archetypes",
+          "Offline deterministic exports",
+          "Catalog-driven theme system",
+          "Generated PPTX/PDF artifacts"
+        ]
+      }
     }
-  ],
-  "media": [
-    "/assets/covers/marwan-home.png",
-        "/assets/covers/marwan-about.png",
-        "/assets/covers/marwan-contact.png"
-    
-  ]
-},{
-  "name": "Osama Blog - Full Stack Blog Management System",
-  "cover_image": "/assets/covers/osama-blog.png",
-  "short_description": "A full-stack blog management system with responsive frontend and seamless CRUD functionality.",
-  "description": "This project is a complete blog management web application built with Next.js, Prisma, and BFF architecture. It includes a fully responsive frontend with dynamic blog posts, user authentication, and CRUD operations for posts. The backend uses Prisma ORM for data management, and BFF architecture ensures smooth communication between frontend and backend.",
-  "features": [
-    "Fully responsive blog management system",
-    "CRUD functionality for blog posts",
-    "BFF architecture for optimized communication",
-    "Prisma ORM for efficient database management",
-    "Clean, professional UI with seamless navigation",
-    "Mobile-first design"
-  ],
-  "technologies_used": [
-    "Next.js",
-    "Prisma",
-    "React",
-    "Tailwind CSS",
-    "Node.js",
-    "BFF architecture"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/osama_blog"
-    }
-  ],
-  "media": [
-    "/assets/covers/osama-blog.png",
-    "/assets/covers/authors-blog.png",
-    "/assets/covers/osama-blog-home.png"    
-  ]
-},
-{
-  "name": "E-Commerce Full Stack Application",
-  "category": "Fullstack Web",
-  "cover_image": "/assets/covers/home-ecommerce.png",
-  "short_description": "A full-stack e-commerce web application built with a modern frontend and a structured backend, covering the complete shopping flow.",
-  "description": "A full-stack e-commerce web application created to demonstrate end-to-end development, from building a responsive frontend to implementing backend logic and database integration. The project focuses on real e-commerce functionality such as authentication, product browsing, cart operations, and order handling, with clean structure and scalable organization.",
-  "features": [
-    "User authentication & authorization",
-    "Product listing and management",
-    "Shopping cart functionality",
-    "Order creation and checkout flow",
-    "Database integration",
-    "Responsive web interface"
-  ],
-  "technologies_used": [
-    "Angular",
-    "TypeScript",
-    "SQL",
-    "HTML5",
-    "CSS3",
-    "Git"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/ecomm-fullstack"
-    }
-  ],
-  "media": [
-    "/assets/covers/home-ecommerce.png",
-    "/assets/covers/product-ecommerce.png",
-    "/assets/covers/cart-ecommerce.png"
-  ]
-},
-{
-  "name": "QA E-Commerce Automation Portfolio",
-  "category": "QA Testing",
-  "cover_image": "/assets/covers/qa-ecom-testing-1.png",
-  "short_description": "QA-ready full-stack e-commerce app with backend validation, Selenium POM E2E tests, CI pipeline, and Docker setup.",
-  "description": "Comprehensive QA automation portfolio combining a Next.js frontend, Express API, Jest/Supertest backend tests, and Selenium end-to-end flows. Includes robust auth/cart/checkout edge-case handling, test artifacts, and CI jobs for backend, frontend build, and browser automation.",
-  "features": [
-    "Selenium Page Object Model suite with headed/headless modes",
-    "Backend validation and auth/cart/checkout negative-case handling",
-    "Jest + Supertest API tests and CI workflow integration",
-    "Docker orchestration for frontend/backend local runs"
-  ],
-  "technologies_used": [
-    "Next.js",
-    "Express",
-    "Jest",
-    "Supertest",
-    "Selenium",
-    "Pytest",
-    "Docker",
-    "GitHub Actions"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/qa-ecommerce-automation-portfolio"
-    }
-  ],
-  "media": [
-    "/assets/covers/qa-ecom-testing-1.png",
-    "/assets/covers/product-ecommerce.png",
-    "/assets/covers/cart-ecommerce.png"
-  ]
-},
-{
-  "name": "User & Order API QA Automation",
-  "category": "QA Testing",
-  "cover_image": "/assets/covers/api-test-stack-1.png",
-  "short_description": "Express REST API with JWT auth, strict validation, Postman/Newman automation, Jest/Supertest tests, Docker, and CI.",
-  "description": "API-focused QA automation project centered on user/order flows with comprehensive payload validation, status/error coverage, and automated checks. Includes Postman collection execution via Newman, Jest/Supertest API tests, SQL-like integrity checks, and containerized runtime.",
-  "features": [
-    "JWT-protected user and order endpoints with edge-case validation",
-    "Postman collection + Newman command execution for API regression",
-    "Jest and Supertest automated API test suite",
-    "Dockerized service with GitHub Actions CI workflow"
-  ],
-  "technologies_used": [
-    "Node.js",
-    "Express",
-    "JWT",
-    "Jest",
-    "Supertest",
-    "Postman",
-    "Newman",
-    "Docker"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/user-order-api-qa-automation"
-    }
-  ],
-  "media": [
-    "/assets/covers/api-test-stack-1.png",
-    "/assets/covers/database_structure.png",
-    "/assets/covers/render.png"
-  ]
-},
-{
-  "name": "ATS AI System",
-  "category": "AI Engineering",
-  "architecture_tag": "RAG + structured extraction",
-  "ai_components": [
-    "Embeddings",
-    "Vector retrieval",
-    "LLM parsing",
-    "ATS-style scoring"
-  ],
-  "pipeline_steps": [
-    "Ingest CV / job",
-    "Chunk + embed",
-    "Retrieve top-K",
-    "LLM structured output",
-    "Ranked insights"
-  ],
-  "cover_image": "/assets/covers/ats_score.png",
-  "short_description": "resume_job_parser — ATS-oriented AI system for parsing roles and CVs into comparable signals.",
-  "description": "End-to-end ATS-style intelligence: ingest job postings and résumés, embed and retrieve the most relevant chunks, then use an LLM to emit structured fields (skills, seniority, gaps) for recruiters or applicants. Designed around clear pipeline stages, evaluation hooks, and API boundaries suitable for automation.",
-  "features": [
-    "Document ingestion and normalization",
-    "Embedding + similarity retrieval",
-    "LLM-guided structured extraction",
-    "Comparable candidate ↔ role signals",
-    "API-friendly outputs for downstream tools"
-  ],
-  "technologies_used": [
-    "Python",
-    "FastAPI",
-    "Embeddings",
-    "Vector store",
-    "LLM APIs",
-    "Pydantic"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/resume_job_parser"
-    }
-  ],
-  "media": [
-    "/assets/covers/ats_score.png"
-  ]
-},
-{
-  "name": "AI CRM Intelligence Module",
-  "category": "AI Engineering",
-  "architecture_tag": "Event-driven CRM copilot",
-  "ai_components": [
-    "Lead summarization",
-    "RAG on accounts",
-    "Tool-style actions",
-    "Scoring / routing"
-  ],
-  "pipeline_steps": [
-    "CRM event",
-    "Context assembly",
-    "RAG + LLM",
-    "Next-best action",
-    "Audit trail"
-  ],
-  "cover_image": "/assets/covers/ai_hcrm.png",
-  "short_description": "ai-first-crm-hcp-module — AI-first CRM intelligence for HCP workflows: context, retrieval, and guided actions.",
-  "description": "A CRM intelligence layer that listens to CRM signals, assembles account and interaction context, retrieves supporting knowledge, and proposes concise next steps for reps. Emphasizes guardrails, traceability, and pipeline-style decomposition so teams can evolve prompts and tools without losing observability.",
-  "features": [
-    "Account-centric context windows",
-    "Retrieval over product / policy corpora",
-    "Action suggestions with human-in-the-loop",
-    "Modular service boundaries for CRM webhooks",
-    "Logging suitable for compliance review"
-  ],
-  "technologies_used": [
-    "TypeScript",
-    "Next.js",
-    "LLM orchestration",
-    "RAG",
-    "REST / webhooks",
-    "Vector search"
-  ],
-  "links": [
-    {
-      "type": "GitHub",
-      "url": "https://github.com/OsamaGharibElwaly/ai-first-crm-hcp-module"
-    }
-  ],
-  "media": [
-    "/assets/covers/osama-blog.png",
-    "/assets/covers/osama-blog-home.png"
-  ]
-}
   ],
   "reviews": [
     {
-      "clientName": "Marwan Hisham",
-      "jobTitle": "Physiotherapist",
+      "clientName": "Project Stakeholder",
+      "jobTitle": "Product & Research Collaboration",
       "rating": 5,
-      "reviewText": "Working with Osama Alwaly was a fantastic experience. The project was completed ahead of schedule, and the communication was excellent."
+      "reviewText": "Osama brings strong AI engineering discipline: clear architecture, measurable evaluation, and practical delivery from prototype to usable product."
     }
   ]
 }
