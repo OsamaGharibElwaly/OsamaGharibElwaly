@@ -297,10 +297,12 @@
       ],
       "media": [
         "/assets/generated/talentos-architecture.png",
-        "/assets/generated/screenshots/talentos-home.png",
+        "/assets/generated/screenshots/talentos-dashboard.png",
         "/assets/generated/screenshots/talentos-jobs.png",
         "/assets/generated/screenshots/talentos-candidates.png",
         "/assets/generated/screenshots/talentos-search.png",
+        "/assets/generated/screenshots/talentos-interviews.png",
+        "/assets/generated/screenshots/talentos-telemetry.png",
         "/assets/generated/delivery-pipeline.png"
       ],
       "proof": {
@@ -369,7 +371,10 @@
       ],
       "media": [
         "/assets/generated/waly-architecture.png",
-        "/assets/generated/screenshots/waly-studio.png",
+        "/assets/generated/screenshots/waly-editor.png",
+        "/assets/generated/screenshots/waly-design.png",
+        "/assets/generated/screenshots/waly-preview.png",
+        "/assets/generated/screenshots/waly-content.png",
         "/assets/generated/project-scope.png",
         "/assets/generated/delivery-pipeline.png"
       ],

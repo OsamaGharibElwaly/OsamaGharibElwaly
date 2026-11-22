@@ -19,9 +19,17 @@ Creating polished presentations from structured content is slow, repetitive, and
 
 ![Waly_Presentation Architecture](../images/waly-architecture.png)
 
-## Live Screenshot (captured & enhanced)
+## Live Screenshots (captured & enhanced)
 
-![Waly_Presentation studio](../images/screenshots/waly-studio.png)
+Captured from the running Waly_Presentation PyQt6 desktop app, with 8s settle before capture, then enhanced with PIL/matplotlib post-processing.
+
+| Editor Workspace | Design System Controls |
+|---|---|
+| ![Waly editor](../images/screenshots/waly-editor.png) | ![Waly design](../images/screenshots/waly-design.png) |
+
+| Live Preview | Content Pipeline |
+|---|---|
+| ![Waly preview](../images/screenshots/waly-preview.png) | ![Waly content](../images/screenshots/waly-content.png) |
 
 ## Evidence
 

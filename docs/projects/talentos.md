@@ -21,13 +21,19 @@ Recruiting teams lose signal in resume noise: manual triage, brittle keyword fil
 
 ## Live Screenshots (captured & enhanced)
 
+Captured from a running local TalentOS instance (backend + frontend), with 8s settle before capture, then enhanced with PIL/matplotlib post-processing.
+
 | Dashboard | Jobs & Rubrics |
 |---|---|
-| ![TalentOS dashboard](../images/screenshots/talentos-home.png) | ![TalentOS jobs](../images/screenshots/talentos-jobs.png) |
+| ![TalentOS dashboard](../images/screenshots/talentos-dashboard.png) | ![TalentOS jobs](../images/screenshots/talentos-jobs.png) |
 
 | Candidates & Evidence | Talent Search |
 |---|---|
 | ![TalentOS candidates](../images/screenshots/talentos-candidates.png) | ![TalentOS search](../images/screenshots/talentos-search.png) |
+
+| Interview Copilot | AI Telemetry |
+|---|---|
+| ![TalentOS interviews](../images/screenshots/talentos-interviews.png) | ![TalentOS telemetry](../images/screenshots/talentos-telemetry.png) |
 
 ## Data & AI Flow
 

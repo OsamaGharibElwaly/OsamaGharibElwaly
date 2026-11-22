@@ -49,7 +49,7 @@ I build **AI systems with a data-science backbone**: clear problem framing, stru
   <img src="docs/images/banner-projects.png" alt="Featured projects" width="100%" />
 </p>
 
-> Live screenshots captured from running projects (8s settle) and enhanced with PIL framing for portfolio proof.
+> Live screenshots captured from running projects (8s settle) and enhanced with PIL/matplotlib framing for portfolio proof. Multiple real screenshots per project are included below and in project proof docs.
 
 <table>
 <tr>
@@ -123,6 +123,26 @@ An offline agent-style pipeline that converts structured Markdown into styled PP
 | **Backend / APIs** | FastAPI, REST APIs, Pydantic, async workers, auth/RBAC patterns, observability |
 | **Product / Frontend** | Next.js, React, TypeScript, Tailwind, accessible UI, data-driven dashboards |
 | **Delivery** | Docker, Git/GitHub, CI/CD mindset, testing, reproducible docs, artifact generation |
+
+## Live Proof Screenshots
+
+### TalentOS
+| Dashboard | Jobs & Rubrics | Candidates |
+|---|---|---|
+| ![TalentOS dashboard](docs/images/screenshots/talentos-dashboard.png) | ![TalentOS jobs](docs/images/screenshots/talentos-jobs.png) | ![TalentOS candidates](docs/images/screenshots/talentos-candidates.png) |
+
+| Talent Search | Interview Copilot | AI Telemetry |
+|---|---|---|
+| ![TalentOS search](docs/images/screenshots/talentos-search.png) | ![TalentOS interviews](docs/images/screenshots/talentos-interviews.png) | ![TalentOS telemetry](docs/images/screenshots/talentos-telemetry.png) |
+
+### Waly_Presentation
+| Editor Workspace | Design System Controls |
+|---|---|
+| ![Waly editor](docs/images/screenshots/waly-editor.png) | ![Waly design](docs/images/screenshots/waly-design.png) |
+
+| Live Preview | Content Pipeline |
+|---|---|
+| ![Waly preview](docs/images/screenshots/waly-preview.png) | ![Waly content](docs/images/screenshots/waly-content.png) |
 
 ## Repository Structure
 
