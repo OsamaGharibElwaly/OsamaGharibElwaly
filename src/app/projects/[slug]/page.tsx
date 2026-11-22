@@ -19,16 +19,14 @@ function projectSlug(name: string) {
 }
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default async function ProjectDetailPage(props: PageProps) {
-  const params = await props.params;
+export default async function ProjectDetailPage({ params }: PageProps) {
+  const { slug } = await params;
 
   const projects = getProjects();
-  const project = projects.find(
-    (p) => projectSlug(p.name) === params.slug
-  );
+  const project = projects.find((p) => projectSlug(p.name) === slug);
 
   if (!project) return notFound();
 

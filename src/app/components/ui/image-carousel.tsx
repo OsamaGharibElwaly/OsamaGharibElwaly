@@ -31,8 +31,8 @@ export function ImageCarousel({
   // Handle external open trigger
   useEffect(() => {
     if (openTrigger !== undefined && openTrigger > 0) {
-      setCurrentIndex(initialIndex);
-      setIsOpen(true);
+      const t = setTimeout(() => { setCurrentIndex(initialIndex); setIsOpen(true); }, 0);
+      return () => clearTimeout(t);
     }
   }, [openTrigger, initialIndex]);
 

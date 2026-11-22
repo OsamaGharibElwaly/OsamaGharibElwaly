@@ -7,19 +7,6 @@ interface TimelineProps {
   items: ExperienceItem[];
 }
 
-const itemVariants = {
-  hidden: { opacity: 0, x: -10 },
-  visible: (i: number) => ({
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.35,
-      delay: i * 0.08,
-      ease: "easeOut",
-    },
-  }),
-};
-
 export function Timeline({ items }: TimelineProps) {
   return (
     <ol className="relative border-l border-slate-200 dark:border-slate-700">
