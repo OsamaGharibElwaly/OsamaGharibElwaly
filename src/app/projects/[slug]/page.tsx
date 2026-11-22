@@ -3,20 +3,12 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Github } from "lucide-react";
 
 import { getProjects } from "../../lib/portfolio-data";
+import { projectSlug } from "../../lib/slug";
 import { MotionSection } from "../../components/ui/motion-section";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { ProjectImageViewer } from "../../components/ui/project-image-viewer";
 import { ImageCarousel } from "../../components/ui/image-carousel";
-
-// نفس طريقة الـ slug اللي هتستخدمها في الكارد
-function projectSlug(name: string) {
-  return name
-    .toLowerCase()
-    .replace(/[()]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)+/g, "");
-}
 
 type PageProps = {
   params: Promise<{ slug: string }>;

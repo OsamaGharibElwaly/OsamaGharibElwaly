@@ -135,6 +135,8 @@ export function ImageCarousel({
                 fill
                 sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                quality={82}
               />
             </div>
             {/* Overlay on hover */}
@@ -233,6 +235,7 @@ export function ImageCarousel({
                         fill
                         sizes="100vw"
                         className="object-contain"
+                        quality={85}
                         priority
                       />
                     </motion.div>

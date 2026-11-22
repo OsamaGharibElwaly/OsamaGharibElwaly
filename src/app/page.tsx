@@ -17,7 +17,7 @@ import { Timeline } from "./components/ui/timeline";
 import { ReviewCarousel } from "./components/ui/review-carousel";
 import { Mail, Briefcase, FolderGit2, Sparkles, ArrowRight, Github, Linkedin } from "lucide-react";
 import { ProjectsShowcase } from "./components/ui/projects-showcase";
-import { HeroAiThree } from "./components/ui/hero-ai-three";
+import { HeroAiThreeClient } from "./components/ui/hero-ai-three-client";
 
 export default function HomePage() {
   const personal = getPersonalInfo();
@@ -69,7 +69,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex min-h-[280px] flex-col justify-center">
-          <HeroAiThree />
+          <HeroAiThreeClient />
         </div>
       </MotionSection>
 
@@ -86,7 +86,7 @@ export default function HomePage() {
 
       <MotionSection>
         <div className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white/70 shadow-sm dark:border-white/10 dark:bg-slate-950/50">
-          <Image src="/assets/generated/stats-dashboard.png" alt="Portfolio proof snapshot" width={1600} height={500} className="w-full" priority />
+          <Image src="/assets/generated/stats-dashboard.png" alt="Portfolio proof snapshot" width={1600} height={500} className="w-full" priority sizes="(max-width: 1200px) 100vw, 1200px" />
         </div>
       </MotionSection>
 
@@ -104,26 +104,23 @@ export default function HomePage() {
           <p className="mt-3 text-base font-semibold text-slate-900 dark:text-slate-100">{mainEducation?.degree}</p>
           <p className="text-sm text-slate-600 dark:text-slate-400">{mainEducation?.institution} · {mainEducation?.date_range}</p>
           <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200 dark:border-white/10">
-            <Image src="/assets/generated/delivery-pipeline.png" alt="AI delivery workflow" width={1200} height={280} className="w-full" />
+            <Image src="/assets/generated/delivery-pipeline.png" alt="AI delivery workflow" width={1200} height={280} className="w-full" loading="lazy" sizes="(max-width: 768px) 100vw, 500px" />
           </div>
         </div>
       </MotionSection>
 
       <MotionSection id="skills" className="space-y-6">
-        <SectionHeader eyebrow="Skills" title="Technical arsenal" description="Capabilities used across the two flagship projects and AI/data product work." />
+        <SectionHeader eyebrow="Skills" title="Technical arsenal" description="Frontend, backend, AI, and data science tools I use to ship end-to-end products." />
+        <SkillsGrid categories={skills.categories ?? []} />
         <div className="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-white/10">
-          <Image src="/assets/generated/skill-matrix.png" alt="Skill matrix" width={1400} height={700} className="w-full" />
-        </div>
-        <div className="grid gap-4 md:grid-cols-2">
-          <SkillsGrid title="Technical" items={skills.technical_skills} />
-          <SkillsGrid title="Professional" items={skills.soft_skills} />
+          <Image src="/assets/generated/skill-matrix.png" alt="Skill matrix" width={1400} height={700} className="w-full" loading="lazy" />
         </div>
       </MotionSection>
 
       <MotionSection id="projects" className="space-y-6">
         <SectionHeader eyebrow="Featured Projects" title="Two flagship proof-of-concept systems" description="Selected for depth: real architecture, AI/data workflow, and documented proof." />
         <div className="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-white/10">
-          <Image src="/assets/generated/project-scope.png" alt="Project scope comparison" width={1400} height={700} className="w-full" />
+          <Image src="/assets/generated/project-scope.png" alt="Project scope comparison" width={1400} height={700} className="w-full" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" />
         </div>
         <ProjectsShowcase projects={projects} />
       </MotionSection>

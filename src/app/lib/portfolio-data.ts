@@ -21,9 +21,21 @@ export interface PersonalInfo {
   about_me: string;
 }
 
+export interface SkillItem {
+  name: string;
+  icon: string;
+  color: string;
+}
+
+export interface SkillCategory {
+  title: string;
+  items: SkillItem[];
+}
+
 export interface Skills {
   soft_skills: string[];
   technical_skills: string[];
+  categories?: SkillCategory[];
 }
 
 export interface EducationItem {

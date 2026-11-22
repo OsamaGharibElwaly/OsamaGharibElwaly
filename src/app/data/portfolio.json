@@ -22,7 +22,7 @@
     "about_me": "AI Engineer and Data Scientist building auditable AI systems, data-driven products, and production-ready workflows. I focus on LLM/RAG pipelines, evaluation, structured data extraction, and backend services that turn experiments into reliable user-facing systems."
   },
   "projects_num": "2",
-  "experience_num": "3",
+  "experience_num": "4",
   "customers_num": "5",
   "skills": {
     "technical_skills": [
@@ -48,6 +48,148 @@
       "Ownership",
       "Collaboration",
       "Adaptability"
+    ],
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": [
+          {
+            "name": "React",
+            "icon": "react",
+            "color": "#61DAFB"
+          },
+          {
+            "name": "Next.js",
+            "icon": "nextjs",
+            "color": "#FFFFFF"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "ts",
+            "color": "#3178C6"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "tailwind",
+            "color": "#06B6D4"
+          },
+          {
+            "name": "Vue.js",
+            "icon": "vue",
+            "color": "#42B883"
+          },
+          {
+            "name": "HTML5",
+            "icon": "html",
+            "color": "#E34F26"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          {
+            "name": "Python",
+            "icon": "python",
+            "color": "#3776AB"
+          },
+          {
+            "name": "FastAPI",
+            "icon": "fastapi",
+            "color": "#009688"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "postgres",
+            "color": "#4169E1"
+          },
+          {
+            "name": "Docker",
+            "icon": "docker",
+            "color": "#2496ED"
+          },
+          {
+            "name": "Laravel",
+            "icon": "laravel",
+            "color": "#FF2D20"
+          },
+          {
+            "name": "REST APIs",
+            "icon": "postman",
+            "color": "#FF6C37"
+          }
+        ]
+      },
+      {
+        "title": "AI & LLMs",
+        "items": [
+          {
+            "name": "PyTorch",
+            "icon": "pytorch",
+            "color": "#EE4C2C"
+          },
+          {
+            "name": "Scikit-learn",
+            "icon": "sklearn",
+            "color": "#F7931E"
+          },
+          {
+            "name": "Hugging Face",
+            "icon": "huggingface",
+            "color": "#FFD21E"
+          },
+          {
+            "name": "RAG / LLMs",
+            "icon": "openai",
+            "color": "#10A37F"
+          },
+          {
+            "name": "LangChain",
+            "icon": "langchain",
+            "color": "#1C3C3C"
+          },
+          {
+            "name": "Vector Search",
+            "icon": "elasticsearch",
+            "color": "#005571"
+          }
+        ]
+      },
+      {
+        "title": "Data Science",
+        "items": [
+          {
+            "name": "Pandas",
+            "icon": "pandas",
+            "color": "#150458"
+          },
+          {
+            "name": "NumPy",
+            "icon": "numpy",
+            "color": "#013243"
+          },
+          {
+            "name": "SQL",
+            "icon": "mysql",
+            "color": "#4479A1"
+          },
+          {
+            "name": "Visualization",
+            "icon": "matplotlib",
+            "color": "#11557C"
+          },
+          {
+            "name": "Jupyter",
+            "icon": "jupyter",
+            "color": "#F37626"
+          },
+          {
+            "name": "Statistics",
+            "icon": "r",
+            "color": "#276DC3"
+          }
+        ]
+      }
     ]
   },
   "education": [
@@ -59,14 +201,25 @@
   ],
   "experience": [
     {
-      "title": "Intern – Electronics & Software Engineering",
-      "company": "Faculty of Engineering – Port Said University",
-      "location": "Port Foad, Egypt",
-      "date_range": "Jun 2022 – Sep 2022",
+      "title": "Volunteer Software Developer – Programming Team",
+      "company": "Port Said Engineering Syndicate",
+      "location": "Port Said, Egypt",
+      "date_range": "Oct 2025 – Present",
       "description_points": [
-        "Hands-on labs in electronics and applied engineering.",
-        "Practiced MATLAB for simulation and analysis.",
-        "Intro to software engineering: requirements and system design."
+        "Delivered an internal operations system using Google Apps and .gcode automation scripts to streamline syndicate workflows.",
+        "Planned and contributed to an organization website using PHP Laravel and Vue.js to digitize services for engineers across Port Said.",
+        "Collaborated with the programming team to translate operational needs into practical, maintainable digital solutions."
+      ]
+    },
+    {
+      "title": "Volunteer Speaker",
+      "company": "Pioneer of Success Initiative – Ministry of Youth and Sports",
+      "location": "Port Said, Egypt",
+      "date_range": "Aug 2025",
+      "description_points": [
+        "Delivered a live session on using LinkedIn for professional growth.",
+        "Showcased AI-powered tools for interview prep and job search.",
+        "Guided participants on CV optimization and online presence."
       ]
     },
     {
@@ -81,14 +234,14 @@
       ]
     },
     {
-      "title": "Volunteer Speaker",
-      "company": "Pioneer of Success Initiative – Ministry of Youth and Sports",
-      "location": "Port Said, Egypt",
-      "date_range": "Aug 2025",
+      "title": "Intern – Electronics & Software Engineering",
+      "company": "Faculty of Engineering – Port Said University",
+      "location": "Port Foad, Egypt",
+      "date_range": "Jun 2022 – Sep 2022",
       "description_points": [
-        "Delivered a live session on using LinkedIn for professional growth.",
-        "Showcased AI-powered tools for interview prep and job search.",
-        "Guided participants on CV optimization and online presence."
+        "Hands-on labs in electronics and applied engineering.",
+        "Practiced MATLAB for simulation and analysis.",
+        "Intro to software engineering: requirements and system design."
       ]
     }
   ],
