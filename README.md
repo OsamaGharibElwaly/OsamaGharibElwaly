@@ -49,6 +49,8 @@ I build **AI systems with a data-science backbone**: clear problem framing, stru
   <img src="docs/images/banner-projects.png" alt="Featured projects" width="100%" />
 </p>
 
+> Live screenshots captured from running projects (8s settle) and enhanced with PIL framing for portfolio proof.
+
 <table>
 <tr>
 <td width="50%" valign="top">

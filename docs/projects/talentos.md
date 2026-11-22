@@ -19,6 +19,16 @@ Recruiting teams lose signal in resume noise: manual triage, brittle keyword fil
 
 ![TalentOS Architecture](../images/talentos-architecture.png)
 
+## Live Screenshots (captured & enhanced)
+
+| Dashboard | Jobs & Rubrics |
+|---|---|
+| ![TalentOS dashboard](../images/screenshots/talentos-home.png) | ![TalentOS jobs](../images/screenshots/talentos-jobs.png) |
+
+| Candidates & Evidence | Talent Search |
+|---|---|
+| ![TalentOS candidates](../images/screenshots/talentos-candidates.png) | ![TalentOS search](../images/screenshots/talentos-search.png) |
+
 ## Data & AI Flow
 
 1. Ingest resume/job data.

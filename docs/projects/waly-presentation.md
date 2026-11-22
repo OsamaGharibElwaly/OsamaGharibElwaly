@@ -19,6 +19,10 @@ Creating polished presentations from structured content is slow, repetitive, and
 
 ![Waly_Presentation Architecture](../images/waly-architecture.png)
 
+## Live Screenshot (captured & enhanced)
+
+![Waly_Presentation studio](../images/screenshots/waly-studio.png)
+
 ## Evidence
 
 - Local repository includes builder engines, agent pipeline, catalog JSONs, tests, and generated output artifacts in `out/`.
