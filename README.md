@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Focus-AI%20Engineering-22d3ee?style=flat-square" />
   <img src="https://img.shields.io/badge/Focus-Data%20Science-818cf8?style=flat-square" />
-  <img src="https://img.shields.io/badge/Projects-2%20Flagship%20POCs-34d399?style=flat-square" />
+  <img src="https://img.shields.io/badge/Projects-4%20Flagship%20POCs-34d399?style=flat-square" />
   <img src="https://img.shields.io/badge/Approach-Evidence--Driven-f59e0b?style=flat-square" />
 </p>
 
@@ -34,7 +34,7 @@ I build **AI systems with a data-science backbone**: clear problem framing, stru
 
 | Signal | What it means |
 |---|---|
-| **2 flagship POCs** | Deep, architecture-documented projects instead of broad shallow demos |
+| **4 flagship POCs** | Deep, architecture-documented projects across AI engineering, CV/NLP, and data science |
 | **End-to-end workflow** | Problem → Data → Experiment → Evaluate → Ship → Monitor |
 | **Generated visuals** | Charts/diagrams are reproducibly generated via `scripts/generate_visuals.py` |
 | **Docs + proof** | Each project has architecture, scope, and evidence in `docs/projects/` |
@@ -49,7 +49,7 @@ I build **AI systems with a data-science backbone**: clear problem framing, stru
   <img src="docs/images/banner-projects.png" alt="Featured projects" width="100%" />
 </p>
 
-> Live screenshots captured from running projects (8s settle) and enhanced with PIL/matplotlib framing for portfolio proof. Multiple real screenshots per project are included below and in project proof docs.
+> Live screenshots captured from running projects (8s settle) and enhanced with PIL/matplotlib framing for portfolio proof. For VideoPulse-Core and RetailIntelligence, proof visuals are sourced from their repository artifacts/reports and included in project proof docs.
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ An auditable hiring intelligence proof of concept: structured resume extraction,
 
 **Stack:** Python, FastAPI, PostgreSQL, pgvector, Redis/Celery, Pydantic, Next.js, Docker
 
-📄 [Project proof](docs/projects/talentos.md)
+📄 [Project proof](docs/projects/talentos.md) · [Repo](https://github.com/OsamaGharibElwaly/TalentOS)
 
 </td>
 <td width="50%" valign="top">
@@ -96,7 +96,55 @@ An offline agent-style pipeline that converts structured Markdown into styled PP
 
 **Stack:** Python, PyQt6, python-pptx, ReportLab, Pydantic, JSON catalogs, Matplotlib, Pillow
 
-📄 [Project proof](docs/projects/waly-presentation.md)
+📄 [Project proof](docs/projects/waly-presentation.md) · [Repo](https://github.com/OsamaGharibElwaly/Waly_Presentation_App)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 3) VideoPulse-Core — Gated CV + NLP Video Analytics (POC)
+
+**Computer Vision + NLP + Reliable AI Systems**
+
+A gated CV+NLP pipeline that treats video as auditable evidence: YOLO26 detection, content-aware feature gates, transcript/log alignment, retrieval, entity graphs, and claim grounding with explicit skip reasons.
+
+<p align="center">
+  <img src="docs/images/projects/videopulse/videopulse-architecture.png" alt="VideoPulse-Core architecture" width="100%" />
+</p>
+
+**Proof highlights**
+- 10 gated CV/NLP features with explicit `can_run` decisions
+- Real + generated video tracks with provenance
+- Annotated result reels, reports, and telemetry
+- 41 unit tests; fail-soft local-only detector path
+
+**Stack:** Python, OpenCV, Ultralytics YOLO26, scikit-learn, BM25/TF-IDF, NetworkX, Pandas
+
+📄 [Project proof](docs/projects/videopulse-core.md) · [Repo](https://github.com/OsamaGharibElwaly/VideoPulse-Core)
+
+</td>
+<td width="50%" valign="top">
+
+### 4) RetailIntelligence — Evidence-First Retail Analytics & MLOps (POC)
+
+**Data Science + MLOps + Decision Intelligence**
+
+A working retail decision platform on two real datasets: data-quality contracts, leakage-safe forecasting, chronological operational risk modeling, pre-registered experiment design, and traceable decision reports.
+
+<p align="center">
+  <img src="docs/images/projects/retail/architecture.png" alt="RetailIntelligence architecture" width="100%" />
+</p>
+
+**Proof highlights**
+- Typed contracts, manifests, and CI-enforced quality gates
+- Leakage-safe expanding-window backtests and honest gains
+- Negative model result documented as "do not deploy"
+- 140 passing tests, FastAPI, Streamlit, controlled agent tools
+
+**Stack:** Python, Pandas, DuckDB, scikit-learn, FastAPI, Streamlit, Pytest, GitHub Actions
+
+📄 [Project proof](docs/projects/retailintelligence.md) · [Repo](https://github.com/OsamaGharibElwaly/RetailIntelligence)
 
 </td>
 </tr>
@@ -144,13 +192,31 @@ An offline agent-style pipeline that converts structured Markdown into styled PP
 |---|---|
 | ![Waly preview](docs/images/screenshots/waly-preview.png) | ![Waly content](docs/images/screenshots/waly-content.png) |
 
+### VideoPulse-Core
+| Architecture | YOLO Detections | Worker-Zone ROI |
+|---|---|---|
+| ![VideoPulse architecture](docs/images/projects/videopulse/videopulse-architecture.png) | ![VideoPulse YOLO](docs/images/projects/videopulse/videopulse-yolo-people.png) | ![VideoPulse worker zone](docs/images/projects/videopulse/videopulse-yolo-worker-zone.png) |
+
+| Feature Coverage | Detections & Grounding | Result Contact Sheet |
+|---|---|---|
+| ![VideoPulse coverage](docs/images/projects/videopulse/videopulse-feature-coverage.png) | ![VideoPulse grounding](docs/images/projects/videopulse/videopulse-detections.png) | ![VideoPulse contact sheet](docs/images/projects/videopulse/videopulse-contact-sheet.png) |
+
+### RetailIntelligence
+| Executive KPIs | Architecture | Forecast Selection |
+|---|---|---|
+| ![Retail KPIs](docs/images/projects/retail/executive-kpis.png) | ![Retail architecture](docs/images/projects/retail/architecture.png) | ![Retail forecast](docs/images/projects/retail/forecast-selection.png) |
+
+| Model Risk | Experiment Design | Product Hero |
+|---|---|---|
+| ![Retail model risk](docs/images/projects/retail/model-risk.png) | ![Retail experiment](docs/images/projects/retail/experiment-design.png) | ![Retail hero](docs/images/projects/retail/hero.png) |
+
 ## Repository Structure
 
 ```text
 .
 ├── docs/                       # Project proof, architecture notes, generated visuals
 │   ├── images/                 # Matplotlib/PIL generated charts & banners
-│   └── projects/               # TalentOS & Waly_Presentation proof docs
+│   └── projects/               # Project proof docs (TalentOS, Waly, VideoPulse, RetailIntelligence)
 ├── public/assets/generated/    # Same generated visuals for the Next.js site
 ├── scripts/generate_visuals.py # Reproducible visual generation
 ├── src/app/                    # Next.js portfolio app

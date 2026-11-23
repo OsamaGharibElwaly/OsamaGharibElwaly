@@ -118,7 +118,7 @@ export default function HomePage() {
       </MotionSection>
 
       <MotionSection id="projects" className="space-y-6">
-        <SectionHeader eyebrow="Featured Projects" title="Two flagship proof-of-concept systems" description="Selected for depth: real architecture, AI/data workflow, and documented proof." />
+        <SectionHeader eyebrow="Featured Projects" title="Flagship proof-of-concept systems" description="Selected for depth: real architecture, AI/data workflow, and documented proof across AI engineering and data science." />
         <div className="overflow-hidden rounded-3xl border border-slate-200/80 dark:border-white/10">
           <Image src="/assets/generated/project-scope.png" alt="Project scope comparison" width={1400} height={700} className="w-full" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" />
         </div>

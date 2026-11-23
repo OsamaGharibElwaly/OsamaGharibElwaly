@@ -65,7 +65,7 @@ export interface ProjectProof {
 
 export interface Project {
   name: string;
-  category?: "Fullstack Web" | "QA Testing" | "AI Engineering";
+  category?: string;
   /** High-level system pattern (e.g. event-driven, RAG service). */
   architecture_tag?: string;
   /** AI-specific building blocks for this system. */

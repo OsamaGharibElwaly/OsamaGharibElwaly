@@ -13,9 +13,9 @@ export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_0%,rgba(34,211,238,0.08),transparent_50%)]" />
       <div className="relative z-10 mb-6 flex flex-wrap items-center gap-3">
         <span className="rounded-full border border-cyan-400/30 bg-cyan-500/15 px-4 py-2 text-sm font-medium text-cyan-900 dark:bg-cyan-500/20 dark:text-cyan-100">
-          Flagship AI Projects
+          Flagship Projects
         </span>
-        <span className="text-sm text-slate-500 dark:text-slate-400">Proof-driven systems, not demo-only screens.</span>
+        <span className="text-sm text-slate-500 dark:text-slate-400">Proof-driven AI, data, and product systems.</span>
       </div>
       <div className="relative z-10 grid gap-6 md:grid-cols-2">
         {projects.map((project, index) => (

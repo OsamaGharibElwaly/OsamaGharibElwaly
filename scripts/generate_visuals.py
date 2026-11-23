@@ -15,7 +15,7 @@ DOCS.mkdir(parents=True, exist_ok=True)
 PUB.mkdir(parents=True, exist_ok=True)
 
 BG, BG2, CARD = '#0b1220', '#111827', '#182235'
-ACCENT, ACCENT2, ACCENT3 = '#22d3ee', '#818cf8', '#34d399'
+ACCENT, ACCENT2, ACCENT3, ACCENT4 = '#22d3ee', '#818cf8', '#34d399', '#f59e0b'
 TEXT, MUTED, GRID = '#e5eefb', '#94a3b8', '#24324a'
 
 plt.rcParams.update({
@@ -56,7 +56,7 @@ def hero_banner():
     draw.text((70, 120), 'OSAMA GHARIB AL-WALY', fill=TEXT, font=fb)
     draw.text((72, 205), 'AI Engineer  |  Data Scientist', fill=ACCENT, font=fm)
     draw.text((72, 260), 'Building auditable AI systems, data products, and intelligent workflows.', fill=MUTED, font=fs)
-    pills = [('2', 'Flagship Projects'), ('10+', 'Systems Built'), ('End-to-End', 'AI Delivery'), ('R&D', 'Mindset')]
+    pills = [('4', 'Flagship Projects'), ('10+', 'Systems Built'), ('End-to-End', 'AI Delivery'), ('R&D', 'Mindset')]
     x = 72
     for val, label in pills:
         tw = draw.textlength(val + ' ' + label, font=fs)
@@ -105,18 +105,20 @@ def skill_matrix():
     save(fig, 'skill-matrix.png')
 
 def project_scope():
-    labels = ['Pipeline Stages','Automated Checks','Core Modules','User Surfaces','Artifacts']
-    talentos, waly = [6,13,10,5,8], [5,12,9,3,7]
-    x = np.arange(len(labels)); w = 0.36
-    fig, ax = plt.subplots(figsize=(11, 5.5))
-    ax.bar(x-w/2, talentos, w, label='TalentOS', color=ACCENT)
-    ax.bar(x+w/2, waly, w, label='Waly_Presentation', color=ACCENT2)
-    ax.set_xticks(x); ax.set_xticklabels(labels)
-    ax.set_title('Flagship Projects — Scope Snapshot', fontsize=16, fontweight='bold', pad=14)
-    ax.legend(frameon=False, labelcolor=TEXT); ax.grid(axis='y', alpha=0.25)
-    for s in ['top','right']: ax.spines[s].set_visible(False)
-    for i,v in enumerate(talentos): ax.text(i-w/2, v+0.15, str(v), ha='center', color=TEXT, fontsize=9)
-    for i,v in enumerate(waly): ax.text(i+w/2, v+0.15, str(v), ha='center', color=TEXT, fontsize=9)
+    labels = ['AI/ML Depth','Data Pipeline','System Design','Evidence/Docs','UX/Product']
+    data = {
+        'TalentOS':[9,8,9,9,8], 'Waly_Presentation':[8,7,8,8,9],
+        'VideoPulse-Core':[9,8,7,9,6], 'RetailIntelligence':[8,9,8,9,7],
+    }
+    colors=[ACCENT,ACCENT2,ACCENT3,ACCENT4]; x=np.arange(len(labels)); w=0.18
+    fig, ax = plt.subplots(figsize=(12.5,5.8))
+    for (name,vals),c,off in zip(data.items(),colors,[-1.5*w,-0.5*w,0.5*w,1.5*w]):
+        ax.bar(x+off, vals, w, label=name, color=c, alpha=0.9)
+    ax.set_xticks(x); ax.set_xticklabels(labels); ax.set_ylim(0,10)
+    ax.set_title('Flagship Projects ? Scope Snapshot', fontsize=16, fontweight='bold', pad=14)
+    ax.legend(frameon=False, labelcolor=TEXT, ncol=2, fontsize=8)
+    ax.grid(axis='y', alpha=0.25)
+    for sp in ['top','right']: ax.spines[sp].set_visible(False)
     save(fig, 'project-scope.png')
 
 def arch_diagram(name, title, boxes, arrows):
